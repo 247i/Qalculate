@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="theme-color" content="#159881">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1,maximum-scale=1">
+<meta name="google-site-verification"
+	content="ieD5i7-zMM3DIp9oIjGbiFaZpW3znLoQFbwmtbBj79E" />
+<script>		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			
+		ga('create', atob('VUEtMTk0MDkyNjYtNjU='), 'auto');
+  		ga('set', 'page', location.pathname + location.search  + location.hash);
+		ga('send', 'pageview');</script><meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="56SyQVPQC1PWg4tuELBf-D7QmrbtBlznATCPW6O6UDyi0IYEFqVzJbDVuwlF3hCRaJ_Cwt5-JpZpZ_oY5IgdXg==">
+<title>美元  USD 汇率计算器  (美国 United States)</title><meta name="description" content="美元 - USD 汇率计算器，包含所有国家的汇率。">
+<meta name="keywords" content="USD,美元,United States,美国, US, USD, 汇率计算，汇率转换">
+<meta name="theme-color" content="#E1E1E1">
+<link href="/logo.png" rel="icon">
+<link href="/logo.png" rel="apple-touch-icon">
+<link href="https://www.mycurrency.net/webapp/manifest" rel="manifest">
+<link href="/assets/b64db427/css/bootstrap.css" rel="stylesheet">
+<link href="/css/site.css?v=1.91" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/admin-lte@3.2.0/dist/css/adminlte.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/css/flag-icon.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare2.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet"></head>
+<body data-root="/"
+	class="hold-transition sidebar-mini layout-fixed">
+	
+<!-- Modal -->
+<div class='modal fade' id='chromeModal' style='z-index:10000000000'>
+  <div class='modal-dialog' style='position: fixed; bottom: 0; width: 100%; margin: 0;'>
+    <div class='modal-content bg-white text-dark'>
+      <div class='modal-header'>
+        <h5 class='modal-title'>安裝“汇率计算器”app</h5>
+        <button type='button' class='btn btn-secondary btn-sm' onclick='hidePwa()'>
+          <span aria-hidden='true'>取消</span>
+        </button>
+      </div>
+      <div class='modal-body'>
+            <div style="text-align:center"><img src="/logo.png" alt="" style="width:64px;height:64px;display:block;margin:10px auto;">汇率计算器</div>
+      </div>
+      <div class='modal-footer'>
+        <button type='button' class='btn btn-success' id='installButton'>立即安裝</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  if(!isHiding()){
+	  $('#chromeModal').modal('show');
+  }
+});
+
+document.querySelector('#installButton').addEventListener('click', async () => {
+  $('#chromeModal').modal('hide');
+  deferredPrompt.prompt();
+  const { outcome } = await deferredPrompt.userChoice;
+  deferredPrompt = null;
+  if (outcome === 'accepted') {
+    console.log('User accepted the install prompt.');
+  } else if (outcome === 'dismissed') {
+    console.log('User dismissed the install prompt');
+  }
+});
+</script>
+
+<!-- Modal -->
+<div class='modal fade' id='safariModal' style='z-index:10000000000'>
+  <div class='modal-dialog' style='position: fixed; bottom: 0; width: 100%; margin: 0;'>
+    <div class='modal-content bg-white text-dark'>
+      <div class='modal-header'>
+        <h5 class='modal-title'>安裝“汇率计算器”app</h5>
+        <button type='button' class='btn btn-secondary btn-sm' onclick='hidePwa()'>
+          <span aria-hidden='true'>取消</span>
+        </button>
+      </div>
+      <div class='modal-body'>
+            <div style="text-align:center"><img src="/logo.png" alt="" style="width:64px;height:64px;display:block;margin:10px auto;">汇率计算器</div>
+			<hr>
+			<h5>安装步骤</h5>
+            <ol>
+               <li> 
+      <svg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px;' viewBox='0 0 566 670' >
+        <path d='M255 12c4-4 10-8 16-8s12 3 16 8l94 89c3 4 6 7 8 12 2 6 0 14-5 19-7 8-20 9-28 2l-7-7-57-60 2 54v276c0 12-10 22-22 22-12 1-24-10-23-22V110l1-43-60 65c-5 5-13 8-21 6a19 19 0 0 1-16-17c-1-7 2-13 7-18l95-91z' />
+        <path d='M43 207c16-17 40-23 63-23h83v46h-79c-12 0-25 3-33 13-8 9-10 21-10 33v260c0 13 0 27 6 38 5 12 18 18 30 19l14 1h302c14 0 28 0 40-8 11-7 16-21 16-34V276c0-11-2-24-9-33-8-10-22-13-34-13h-78v-46h75c13 0 25 1 37 4 16 4 31 13 41 27 11 17 14 37 14 57v280c0 20-3 41-15 58a71 71 0 0 1-45 27c-11 2-23 3-34 3H109c-19-1-40-4-56-15-14-9-23-23-27-38-4-12-5-25-5-38V270c1-22 6-47 22-63z' />
+      </svg>
+ 點擊Safari底部的“分享”按鈕</li>
+               <li> 
+      <svg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px;' viewBox='0 0 578 584' >
+        <path d='M101 35l19-1h333c12 0 23 0 35 3 17 3 34 12 44 27 13 16 16 38 16 58v329c0 19 0 39-8 57a65 65 0 0 1-37 37c-18 7-38 7-57 7H130c-21 1-44 0-63-10-14-7-25-20-30-34-6-15-8-30-8-45V121c1-21 5-44 19-61 13-16 33-23 53-25m7 46c-10 1-19 6-24 14-7 8-9 20-9 31v334c0 12 2 25 10 34 9 10 23 12 35 12h336c14 1 30-3 38-15 6-9 8-20 8-31V125c0-12-2-24-10-33-9-9-22-12-35-12H121l-13 1z' />
+        <path d='M271 161c9-11 31-10 38 4 3 5 3 11 3 17v87h88c7 0 16 1 21 7 6 6 7 14 6 22a21 21 0 0 1-10 14c-5 4-11 5-17 5h-88v82c0 7-1 15-6 20-10 10-29 10-37-2-3-6-4-13-4-19v-81h-87c-8-1-17-3-23-9-5-6-6-15-4-22a21 21 0 0 1 11-14c6-3 13-3 19-3h84v-88c0-7 1-14 6-20z' />
+      </svg>
+ 點擊“加入主畫面”按钮</li>
+            </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+if(navigator.userAgent.match(/(iPod|iPhone|iPad)/) && !window.navigator.standalone){
+	if(!isHiding()){
+		window.addEventListener('load',function(){
+			$('#safariModal').modal();
+		});
+	}
+}
+function isHiding(){
+	var hideTime = localStorage.getItem('hide') || 0;
+	return new Date().getTime() - hideTime < 86400*1000;
+}
+function hidePwa(){
+	$('#safariModal').modal('hide');
+	$('#chromeModal').modal('hide');
+	localStorage.setItem('hide',new Date().getTime());
+}
+</script>
+	
+	<div class="wrapper">
+		<nav
+			class="main-header navbar navbar-expand navbar-white navbar-light">
+			<!-- Left navbar links -->
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" data-widget="pushmenu"
+					href="#"><i class="fa fa-bars"></i></a></li>
+			</ul>
+			<form class="form-inline ml-3">
+				<div class="input-group input-group-sm">
+					<input class="form-control form-control-navbar" type="search"
+						id='search' placeholder="搜索" aria-label="Search">
+					<div class="input-group-append">
+						<button class="btn btn-navbar" type="submit">
+							<i class="fa fa-search"></i>
+						</button>
+					</div>
+				</div>
+			</form>
+			<div class='navbar-nav ml-auto nav'>
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="/" class="nav-link"><i class='fa fa-home'></i> </a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<aside class="main-sidebar sidebar-dark-primary elevation-4">
+			<!-- Brand Logo -->
+
+			<a href="/" class="brand-link"><img class="brand-image img-circle elevation-3" src="/logo.png" alt=""> <span
+				class="brand-text font-weight-light">汇率计算器</span> </a>
+
+			<!-- Sidebar -->
+			<div class="sidebar">
+								<!-- Sidebar Menu -->
+				<nav class="mt-2">
+					<ul id="w0" class="nav nav-pills nav-sidebar flex-column nav" data-widget="treeview" role="menu" data-accordion="false"></ul><ul class='nav nav-pills nav-sidebar flex-column'><li class='nav-header'>友情链接</li></ul><ul id="w1" class="nav nav-pills nav-sidebar flex-column nav" data-widget="treeview" role="menu" data-accordion="false"><li class="nav-item"><a class="nav-link" href="https://www.shichengbbs.com" target="_blank"><i class='nav-icon fa fa-external-link'></i> <p>狮城BBS</p></a></li>
+<li class="nav-item"><a class="nav-link" href="https://ggg.sg" target="_blank"><i class='nav-icon fa fa-external-link'></i> <p>新加坡房产网</p></a></li>
+<li class="nav-item"><a class="nav-link" href="https://www.sgzhan.com" target="_blank"><i class='nav-icon fa fa-external-link'></i> <p>新加坡网站导航</p></a></li>
+<li class="nav-item"><a class="nav-link" href="https://www.shicheng.news" target="_blank"><i class='nav-icon fa fa-external-link'></i> <p>狮城新闻</p></a></li>
+<li class="nav-item"><a class="nav-link" href="https://www.gongzuo.sg" target="_blank"><i class='nav-icon fa fa-external-link'></i> <p>新加坡工作网</p></a></li>
+<li class="nav-item"><a class="nav-link" href="https://maimai.sg" target="_blank"><i class='nav-icon fa fa-external-link'></i> <p>新加坡买卖网</p></a></li></ul>				</nav>
+			</div>
+
+		</aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<div class="content py-2 px-0">
+				<div class="container-fluid main-wrapper">
+					<div class='row'>
+	<div class='col-md-6 col-xl-5'>
+		<div id='table'>
+			<table class='table table-bordered table-striped'>
+				<tr>
+					<td style='width: 40px;'></td>
+					<th style='width: 50px;text-align:center'><span class=''><span class="flag-icon flag-icon-us" style="font-size:2em"></span> </span>
+						<input value='1' name='key' type="hidden"></th>
+					<td><input value='1.00' name='amount' autocomplete="off"
+						type="number" onkeyup='update()' onchange='update()'
+						data-rate="1"
+						onfocus="this.select()" id='amount' class='form-control'></td>
+					<td style='width: 40px;'><a href="https://en.wikipedia.org/wiki/USD" target="_blank">USD</a></td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Indian Rupee | 印度卢比'
+					data-country='India | 印度'
+					data-currency-code="INR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=IN" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=IN" title="India"><span class="flag-icon flag-icon-in" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="82.70" data-rate='82.6995'>82.70</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>印度卢比 India (INR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-IN" title="美元兑印度卢比汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dollar | 新币'
+					data-country='Singapore | 新加坡'
+					data-currency-code="SGD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SG" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SG" title="Singapore"><span class="flag-icon flag-icon-sg" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.35" data-rate='1.35042'>1.35</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>新币 Singapore (SGD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SG" title="美元兑新币汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Yuan Renminbi | 人民币'
+					data-country='China | 中国'
+					data-currency-code="CNY">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CN" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CN" title="China"><span class="flag-icon flag-icon-cn" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="6.96" data-rate='6.9619'>6.96</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>人民币 China (CNY)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CN" title="美元兑人民币汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Australian Dollars | 澳币'
+					data-country='Australian | 澳洲'
+					data-currency-code="AUD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AU" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AU" title="Australian"><span class="flag-icon flag-icon-au" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.50" data-rate='1.49733'>1.50</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>澳币 Australian (AUD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AU" title="美元兑澳币汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Ringgit | 马币'
+					data-country='Malaysia | 马来西亚'
+					data-currency-code="MYR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MY" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MY" title="Malaysia"><span class="flag-icon flag-icon-my" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="4.43" data-rate='4.4335'>4.43</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>马币 Malaysia (MYR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MY" title="美元兑马币汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Canadian Dollar | 加币'
+					data-country='Canada | 加拿大'
+					data-currency-code="CAD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CA" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CA" title="Canada"><span class="flag-icon flag-icon-ca" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.36" data-rate='1.36135'>1.36</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>加币 Canada (CAD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CA" title="美元兑加币汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Sterling | 英镑'
+					data-country='United Kingdom | 英国'
+					data-currency-code="GBP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=GB" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=GB" title="United Kingdom"><span class="flag-icon flag-icon-gb" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.821" data-rate='0.820686'>0.821</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>英镑 United Kingdom (GBP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-GB" title="美元兑英镑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Euro | 欧元'
+					data-country='Europe Union | 欧盟'
+					data-currency-code="EUR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=EU" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=EU" title="Europe Union"><span class="flag-icon flag-icon-eu" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.941" data-rate='0.941354'>0.941</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>欧元 Europe Union (EUR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-EU" title="美元兑欧元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Japanese Yen | 日元'
+					data-country='Japan | 日本'
+					data-currency-code="JPY">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=JP" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=JP" title="Japan"><span class="flag-icon flag-icon-jp" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="131.74" data-rate='131.738'>131.74</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>日元 Japan (JPY)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-JP" title="美元兑日元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Swiss Franc | 瑞士法郎'
+					data-country='Switzerland | 瑞士'
+					data-currency-code="CHF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CH" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CH" title="Switzerland"><span class="flag-icon flag-icon-ch" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.926" data-rate='0.92615'>0.926</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>瑞士法郎 Switzerland (CHF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CH" title="美元兑瑞士法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+		<tr class='ads'><td colspan=100><!-- ads0 start --><div id="ads0" class="adsDiv">		<ins class="adsbygoogle" data-ad-slot="3811773152" data-ad-client="ca-pub-5098302407872782" style='display:inline-block;width:336px;height:280px'></ins>
+		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><!-- ads0 end --></td></tr>		<tr class='country'
+					data-currency-name='Rand | 南非兰特'
+					data-country='South Africa | 南非'
+					data-currency-code="ZAR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=ZA" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=ZA" title="South Africa"><span class="flag-icon flag-icon-za" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="17.30" data-rate='17.2998'>17.30</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>南非兰特 South Africa (ZAR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-ZA" title="美元兑南非兰特汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Afghani | 阿富汗尼'
+					data-country='Afghanistan | ﻿阿富汗'
+					data-currency-code="AFN">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AF" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AF" title="Afghanistan"><span class="flag-icon flag-icon-af" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="87.69" data-rate='87.6858'>87.69</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>阿富汗尼 Afghanistan (AFN)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AF" title="美元兑阿富汗尼汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Lek | 欧元'
+					data-country='Albania | 阿尔巴尼亚'
+					data-currency-code="ALL">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AL" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AL" title="Albania"><span class="flag-icon flag-icon-al" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="107.43" data-rate='107.432'>107.43</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>欧元 Albania (ALL)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AL" title="美元兑欧元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Algerian Dinar | 阿尔及利亚第纳尔'
+					data-country='Algeria | 阿尔及利亚'
+					data-currency-code="DZD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=DZ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=DZ" title="Algeria"><span class="flag-icon flag-icon-dz" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="137.51" data-rate='137.514'>137.51</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>阿尔及利亚第纳尔 Algeria (DZD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-DZ" title="美元兑阿尔及利亚第纳尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Angolan kwanza | 安哥拉宽扎'
+					data-country='Angola | 安哥拉'
+					data-currency-code="AOA">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AO" title="Angola"><span class="flag-icon flag-icon-ao" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="504.26" data-rate='504.258'>504.26</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>安哥拉宽扎 Angola (AOA)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AO" title="美元兑安哥拉宽扎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='East Caribbean Dollar | 东加勒比元'
+					data-country='Anguilla | 安圭拉'
+					data-currency-code="XCD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AI" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AI" title="Anguilla"><span class="flag-icon flag-icon-ai" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2.70" data-rate='2.70255'>2.70</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>东加勒比元 Anguilla (XCD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AI" title="美元兑东加勒比元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Peso | 阿根廷比索'
+					data-country='Argentina | 阿根廷'
+					data-currency-code="ARS">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AR" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AR" title="Argentina"><span class="flag-icon flag-icon-ar" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="173.92" data-rate='173.919'>173.92</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>阿根廷比索 Argentina (ARS)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AR" title="美元兑阿根廷比索汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dram | 亚美尼亚德拉姆'
+					data-country='Armenia | 亚美尼亚'
+					data-currency-code="AMD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AM" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AM" title="Armenia"><span class="flag-icon flag-icon-am" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="393.68" data-rate='393.678'>393.68</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>亚美尼亚德拉姆 Armenia (AMD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AM" title="美元兑亚美尼亚德拉姆汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Netherlands Antilles Guilder | 阿鲁巴盾／弗罗林'
+					data-country='Aruba | 阿卢巴岛'
+					data-currency-code="ANG">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AW" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AW" title="Aruba"><span class="flag-icon flag-icon-aw" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.80" data-rate='1.80312'>1.80</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>阿鲁巴盾／弗罗林 Aruba (ANG)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AW" title="美元兑阿鲁巴盾／弗罗林汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Manat | 阿塞拜疆马纳特'
+					data-country='Azerbaijan | 阿塞拜疆'
+					data-currency-code="AZN">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AZ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AZ" title="Azerbaijan"><span class="flag-icon flag-icon-az" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.70" data-rate='1.7'>1.70</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>阿塞拜疆马纳特 Azerbaijan (AZN)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AZ" title="美元兑阿塞拜疆马纳特汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Bahamian Dollar | 巴哈马元'
+					data-country='Bahamas | 巴哈马'
+					data-currency-code="BSD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BS" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BS" title="Bahamas"><span class="flag-icon flag-icon-bs" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.000" data-rate='1'>1.000</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>巴哈马元 Bahamas (BSD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BS" title="美元兑巴哈马元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Bahraini Dinar | 巴林第纳尔'
+					data-country='Bahrain | 巴林'
+					data-currency-code="BHD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BH" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BH" title="Bahrain"><span class="flag-icon flag-icon-bh" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.377" data-rate='0.376947'>0.377</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>巴林第纳尔 Bahrain (BHD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BH" title="美元兑巴林第纳尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+		<tr class='ads'><td colspan=100><!-- ads1 start --><div id="ads1" class="adsDiv">		<ins class="adsbygoogle" data-ad-slot="3811773152" data-ad-client="ca-pub-5098302407872782" style='display:inline-block;width:336px;height:280px'></ins>
+		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><!-- ads1 end --></td></tr>		<tr class='country'
+					data-currency-name='Taka | 孟加拉塔卡'
+					data-country='Bangladesh | 孟加拉'
+					data-currency-code="BDT">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BD" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BD" title="Bangladesh"><span class="flag-icon flag-icon-bd" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="102.69" data-rate='102.692'>102.69</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>孟加拉塔卡 Bangladesh (BDT)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BD" title="美元兑孟加拉塔卡汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Barbadian Dollar | 巴巴多斯元'
+					data-country='Barbados | 巴巴多斯'
+					data-currency-code="BBD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BB" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BB" title="Barbados"><span class="flag-icon flag-icon-bb" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2.00" data-rate='2'>2.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>巴巴多斯元 Barbados (BBD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BB" title="美元兑巴巴多斯元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Belarus Ruble | 白俄罗斯卢布'
+					data-country='Belarus | 白俄罗斯'
+					data-currency-code="BYR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BY" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BY" title="Belarus"><span class="flag-icon flag-icon-by" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="19,600.00" data-rate='19600'>19,600.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>白俄罗斯卢布 Belarus (BYR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BY" title="美元兑白俄罗斯卢布汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Belizean Dollar | 伯利兹元'
+					data-country='Belize | 伯利兹'
+					data-currency-code="BZD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BZ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BZ" title="Belize"><span class="flag-icon flag-icon-bz" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2.02" data-rate='2.01673'>2.02</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>伯利兹元 Belize (BZD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BZ" title="美元兑伯利兹元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='CFA Franc BCEAO | 西非国家中央银行非洲法郎'
+					data-country='Benin | 贝南'
+					data-currency-code="XOF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BJ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BJ" title="Benin"><span class="flag-icon flag-icon-bj" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="617.49" data-rate='617.488'>617.49</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>西非国家中央银行非洲法郎 Benin (XOF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BJ" title="美元兑西非国家中央银行非洲法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Bermudian Dollar | 百慕大元'
+					data-country='Bermuda | 百慕大群岛'
+					data-currency-code="BMD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BM" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BM" title="Bermuda"><span class="flag-icon flag-icon-bm" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.000" data-rate='1'>1.000</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>百慕大元 Bermuda (BMD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BM" title="美元兑百慕大元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Boliviano | 玻利维亚比索'
+					data-country='Bolivia | 玻利维亚'
+					data-currency-code="BOB">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BO" title="Bolivia"><span class="flag-icon flag-icon-bo" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="6.91" data-rate='6.91354'>6.91</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>玻利维亚比索 Bolivia (BOB)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BO" title="美元兑玻利维亚比索汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Bosnia and Herzegovina convertible mark | 波斯尼亚马克'
+					data-country='Bosnia and Herzegovina | 波斯尼亚'
+					data-currency-code="BAM">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BA" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BA" title="Bosnia and Herzegovina"><span class="flag-icon flag-icon-ba" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.84" data-rate='1.84427'>1.84</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>波斯尼亚马克 Bosnia and Herzegovina (BAM)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BA" title="美元兑波斯尼亚马克汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Pula | 博茨瓦纳普拉'
+					data-country='Botswana | 博茨瓦纳'
+					data-currency-code="BWP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BW" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BW" title="Botswana"><span class="flag-icon flag-icon-bw" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="12.91" data-rate='12.9098'>12.91</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>博茨瓦纳普拉 Botswana (BWP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BW" title="美元兑博茨瓦纳普拉汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Brazil | 巴西雷亚尔'
+					data-country='Brazil | 巴西'
+					data-currency-code="BRL">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BR" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BR" title="Brazil"><span class="flag-icon flag-icon-br" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="5.20" data-rate='5.20056'>5.20</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>巴西雷亚尔 Brazil (BRL)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BR" title="美元兑巴西雷亚尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Bruneian Dollar | 文莱元'
+					data-country='Brunei Darussalam | 文莱'
+					data-currency-code="BND">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BN" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BN" title="Brunei Darussalam"><span class="flag-icon flag-icon-bn" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.35" data-rate='1.35187'>1.35</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>文莱元 Brunei Darussalam (BND)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BN" title="美元兑文莱元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Lev | 欧元'
+					data-country='Bulgaria | 保加利亚'
+					data-currency-code="BGN">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BG" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BG" title="Bulgaria"><span class="flag-icon flag-icon-bg" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.84" data-rate='1.84232'>1.84</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>欧元 Bulgaria (BGN)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BG" title="美元兑欧元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Burundi Franc | 布隆迪法郎'
+					data-country='Burundi | 布隆迪'
+					data-currency-code="BIF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=BI" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=BI" title="Burundi"><span class="flag-icon flag-icon-bi" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2,073.00" data-rate='2073'>2,073.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>布隆迪法郎 Burundi (BIF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-BI" title="美元兑布隆迪法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Riel | 柬埔寨瑞尔'
+					data-country='Cambodia | 柬埔寨'
+					data-currency-code="KHR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=KH" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=KH" title="Cambodia"><span class="flag-icon flag-icon-kh" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="4,115.50" data-rate='4115.5'>4,115.50</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>柬埔寨瑞尔 Cambodia (KHR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-KH" title="美元兑柬埔寨瑞尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='CFA Franc BEAC | 中非共同体法郎'
+					data-country='Cameroon | 喀麦隆'
+					data-currency-code="XAF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CM" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CM" title="Cameroon"><span class="flag-icon flag-icon-cm" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="617.49" data-rate='617.488'>617.49</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>中非共同体法郎 Cameroon (XAF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CM" title="美元兑中非共同体法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Escudo | 佛得角群岛埃斯库多'
+					data-country='Cape Verde | 佛得角群岛'
+					data-currency-code="CVE">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CV" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CV" title="Cape Verde"><span class="flag-icon flag-icon-cv" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="104.28" data-rate='104.28'>104.28</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>佛得角群岛埃斯库多 Cape Verde (CVE)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CV" title="美元兑佛得角群岛埃斯库多汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Caymanian Dollar | 开曼元'
+					data-country='Cayman Islands | 开曼群岛'
+					data-currency-code="KYD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=KY" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=KY" title="Cayman Islands"><span class="flag-icon flag-icon-ky" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.834" data-rate='0.833686'>0.834</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>开曼元 Cayman Islands (KYD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-KY" title="美元兑开曼元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Chilean Peso | 智利比索'
+					data-country='Chile | 智利'
+					data-currency-code="CLP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CL" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CL" title="Chile"><span class="flag-icon flag-icon-cl" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="885.86" data-rate='885.859'>885.86</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>智利比索 Chile (CLP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CL" title="美元兑智利比索汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Peso | 哥伦比亚比索'
+					data-country='Colombia | 哥伦比亚'
+					data-currency-code="COP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CO" title="Colombia"><span class="flag-icon flag-icon-co" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="4,784.70" data-rate='4784.7'>4,784.70</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>哥伦比亚比索 Colombia (COP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CO" title="美元兑哥伦比亚比索汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Comoran Franc | 科摩罗法郎'
+					data-country='Comoros | 科摩罗'
+					data-currency-code="KMF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=KM" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=KM" title="Comoros"><span class="flag-icon flag-icon-km" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="463.93" data-rate='463.925'>463.93</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>科摩罗法郎 Comoros (KMF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-KM" title="美元兑科摩罗法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Congolese Frank | 刚果法郎'
+					data-country='Congo (Kinshasa) | 刚果民主共和国'
+					data-currency-code="CDF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CD" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CD" title="Congo (Kinshasa)"><span class="flag-icon flag-icon-cd" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2,033.00" data-rate='2033'>2,033.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>刚果法郎 Congo (Kinshasa) (CDF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CD" title="美元兑刚果法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Costa Rican Colon | 哥斯达黎加科朗'
+					data-country='Costa Rica | 哥斯达黎加'
+					data-currency-code="CRC">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CR" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CR" title="Costa Rica"><span class="flag-icon flag-icon-cr" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="584.28" data-rate='584.281'>584.28</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>哥斯达黎加科朗 Costa Rica (CRC)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CR" title="美元兑哥斯达黎加科朗汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Croatian Dinar | 欧元'
+					data-country='Croatia (Hrvatska) | 克罗地亚'
+					data-currency-code="HRK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=HR" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=HR" title="Croatia (Hrvatska)"><span class="flag-icon flag-icon-hr" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="7.10" data-rate='7.1002'>7.10</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>欧元 Croatia (Hrvatska) (HRK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-HR" title="美元兑欧元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Cuban Peso | 古巴披索'
+					data-country='Cuba | 古巴'
+					data-currency-code="CUP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CU" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CU" title="Cuba"><span class="flag-icon flag-icon-cu" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="25.75" data-rate='25.75'>25.75</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>古巴披索 Cuba (CUP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CU" title="美元兑古巴披索汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Koruna | 捷克克朗'
+					data-country='Czech Republic | 捷克共和国'
+					data-currency-code="CZK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=CZ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=CZ" title="Czech Republic"><span class="flag-icon flag-icon-cz" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="22.77" data-rate='22.7722'>22.77</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>捷克克朗 Czech Republic (CZK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-CZ" title="美元兑捷克克朗汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Danish Krone | 丹麦克朗'
+					data-country='Denmark | 丹麦'
+					data-currency-code="DKK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=DK" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=DK" title="Denmark"><span class="flag-icon flag-icon-dk" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="7.00" data-rate='7.00327'>7.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>丹麦克朗 Denmark (DKK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-DK" title="美元兑丹麦克朗汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Djiboutian Franc | 吉布提法郎'
+					data-country='Djibouti | 吉布提'
+					data-currency-code="DJF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=DJ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=DJ" title="Djibouti"><span class="flag-icon flag-icon-dj" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="177.50" data-rate='177.5'>177.50</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>吉布提法郎 Djibouti (DJF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-DJ" title="美元兑吉布提法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dominican Peso | 多米尼加比索'
+					data-country='Dominican Republic | 多米尼加共和国'
+					data-currency-code="DOP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=DO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=DO" title="Dominican Republic"><span class="flag-icon flag-icon-do" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="55.40" data-rate='55.3986'>55.40</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>多米尼加比索 Dominican Republic (DOP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-DO" title="美元兑多米尼加比索汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Indonesian Rupiah | '
+					data-country='East Timor | '
+					data-currency-code="IDR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=TP" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=TP" title="East Timor"><span class="flag-icon flag-icon-tp" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="15,563.10" data-rate='15563.1'>15,563.10</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> East Timor (IDR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-TP" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Egyptian Pound | 埃及镑'
+					data-country='Egypt | 埃及'
+					data-currency-code="EGP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=EG" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=EG" title="Egypt"><span class="flag-icon flag-icon-eg" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="24.71" data-rate='24.71'>24.71</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>埃及镑 Egypt (EGP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-EG" title="美元兑埃及镑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Salvadoran Colon | 美元'
+					data-country='El Salvador | 萨尔瓦多'
+					data-currency-code="SVC">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SV" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SV" title="El Salvador"><span class="flag-icon flag-icon-sv" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="8.75" data-rate='8.75427'>8.75</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>美元 El Salvador (SVC)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SV" title="美元兑美元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Ethiopian Birr | 厄立特里亚纳克法'
+					data-country='Eritrea | 厄立特里亚'
+					data-currency-code="ETB">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=ER" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=ER" title="Eritrea"><span class="flag-icon flag-icon-er" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="53.55" data-rate='53.55'>53.55</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>厄立特里亚纳克法 Eritrea (ETB)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-ER" title="美元兑厄立特里亚纳克法汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Estonian Kroon | 欧元'
+					data-country='Estonia | 爱沙尼亚'
+					data-currency-code="EEK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=EE" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=EE" title="Estonia"><span class="flag-icon flag-icon-ee" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="13.95" data-rate='13.947'>13.95</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>欧元 Estonia (EEK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-EE" title="美元兑欧元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Ethiopian Birr | 埃塞俄比亚比尔'
+					data-country='Ethiopia | 埃塞俄比亚'
+					data-currency-code="ETB">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=ET" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=ET" title="Ethiopia"><span class="flag-icon flag-icon-et" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="53.55" data-rate='53.55'>53.55</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>埃塞俄比亚比尔 Ethiopia (ETB)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-ET" title="美元兑埃塞俄比亚比尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Falkland Pound | '
+					data-country='Falkland Islands (Malvinas) | '
+					data-currency-code="FKP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=FK" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=FK" title="Falkland Islands (Malvinas)"><span class="flag-icon flag-icon-fk" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.821" data-rate='0.820686'>0.821</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Falkland Islands (Malvinas) (FKP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-FK" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Danish Krone | 丹麦克朗'
+					data-country='Faroe Islands | 法罗群岛'
+					data-currency-code="DKK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=FO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=FO" title="Faroe Islands"><span class="flag-icon flag-icon-fo" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="7.00" data-rate='7.00327'>7.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>丹麦克朗 Faroe Islands (DKK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-FO" title="美元兑丹麦克朗汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Fijian Dollar | 斐济元'
+					data-country='Fiji | 斐济'
+					data-currency-code="FJD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=FJ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=FJ" title="Fiji"><span class="flag-icon flag-icon-fj" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2.23" data-rate='2.2272'>2.23</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>斐济元 Fiji (FJD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-FJ" title="美元兑斐济元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='CFP Franc | 太平洋法郎'
+					data-country='French Polynesia | 塔希提岛'
+					data-currency-code="XPF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=PF" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=PF" title="French Polynesia"><span class="flag-icon flag-icon-pf" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="112.33" data-rate='112.333'>112.33</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>太平洋法郎 French Polynesia (XPF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-PF" title="美元兑太平洋法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dalasi | 冈比亚达拉西'
+					data-country='Gambia | 冈比亚'
+					data-currency-code="GMD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=GM" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=GM" title="Gambia"><span class="flag-icon flag-icon-gm" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="61.83" data-rate='61.825'>61.83</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>冈比亚达拉西 Gambia (GMD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-GM" title="美元兑冈比亚达拉西汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Lari | 格鲁吉亚拉里'
+					data-country='Georgia | 格鲁吉亚'
+					data-currency-code="GEL">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=GE" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=GE" title="Georgia"><span class="flag-icon flag-icon-ge" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2.66" data-rate='2.655'>2.66</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>格鲁吉亚拉里 Georgia (GEL)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-GE" title="美元兑格鲁吉亚拉里汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Ghana cedi | 加纳塞地'
+					data-country='Ghana | 加纳'
+					data-currency-code="GHS">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=GH" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=GH" title="Ghana"><span class="flag-icon flag-icon-gh" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="8.91" data-rate='8.905'>8.91</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>加纳塞地 Ghana (GHS)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-GH" title="美元兑加纳塞地汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Gibraltar Pound | 直布罗陀镑'
+					data-country='Gibraltar | 直布罗陀'
+					data-currency-code="GIP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=GI" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=GI" title="Gibraltar"><span class="flag-icon flag-icon-gi" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.821" data-rate='0.820686'>0.821</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>直布罗陀镑 Gibraltar (GIP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-GI" title="美元兑直布罗陀镑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Danish Krone | 丹麦克朗'
+					data-country='Greenland | 格陵兰'
+					data-currency-code="DKK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=GL" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=GL" title="Greenland"><span class="flag-icon flag-icon-gl" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="7.00" data-rate='7.00327'>7.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>丹麦克朗 Greenland (DKK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-GL" title="美元兑丹麦克朗汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Quetzal | 危地马拉格查尔'
+					data-country='Guatemala | 危地马拉'
+					data-currency-code="GTQ">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=GT" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=GT" title="Guatemala"><span class="flag-icon flag-icon-gt" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="7.86" data-rate='7.86399'>7.86</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>危地马拉格查尔 Guatemala (GTQ)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-GT" title="美元兑危地马拉格查尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Guernsey pound | 英镑'
+					data-country='Guernsey | 根西岛'
+					data-currency-code="GGP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=GG" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=GG" title="Guernsey"><span class="flag-icon flag-icon-gg" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.821" data-rate='0.820686'>0.821</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>英镑 Guernsey (GGP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-GG" title="美元兑英镑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Guinean Franc | 几内亚法郎'
+					data-country='Guinea | 几内亚'
+					data-currency-code="GNF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=GN" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=GN" title="Guinea"><span class="flag-icon flag-icon-gn" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="8,770.00" data-rate='8770'>8,770.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>几内亚法郎 Guinea (GNF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-GN" title="美元兑几内亚法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Guyanaese Dollar | 圭亚那元'
+					data-country='Guyana | 圭亚那'
+					data-currency-code="GYD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=GY" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=GY" title="Guyana"><span class="flag-icon flag-icon-gy" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="209.32" data-rate='209.324'>209.32</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>圭亚那元 Guyana (GYD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-GY" title="美元兑圭亚那元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Gourde | 海地古德'
+					data-country='Haiti | 海地'
+					data-currency-code="HTG">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=HT" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=HT" title="Haiti"><span class="flag-icon flag-icon-ht" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="146.08" data-rate='146.075'>146.08</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>海地古德 Haiti (HTG)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-HT" title="美元兑海地古德汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Lempira | 洪都拉斯伦皮拉'
+					data-country='Honduras | 洪都拉斯'
+					data-currency-code="HNL">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=HN" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=HN" title="Honduras"><span class="flag-icon flag-icon-hn" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="24.65" data-rate='24.65'>24.65</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>洪都拉斯伦皮拉 Honduras (HNL)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-HN" title="美元兑洪都拉斯伦皮拉汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='HKD | 港币'
+					data-country='Hong Kong | 香港'
+					data-currency-code="HKD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=HK" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=HK" title="Hong Kong"><span class="flag-icon flag-icon-hk" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="7.79" data-rate='7.78751'>7.79</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>港币 Hong Kong (HKD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-HK" title="美元兑港币汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Forint | 匈牙利福林'
+					data-country='Hungary | 匈牙利'
+					data-currency-code="HUF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=HU" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=HU" title="Hungary"><span class="flag-icon flag-icon-hu" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="378.44" data-rate='378.44'>378.44</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>匈牙利福林 Hungary (HUF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-HU" title="美元兑匈牙利福林汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Icelandic Krona | 冰岛克朗'
+					data-country='Iceland | 冰岛'
+					data-currency-code="ISK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=IS" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=IS" title="Iceland"><span class="flag-icon flag-icon-is" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="142.60" data-rate='142.6'>142.60</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>冰岛克朗 Iceland (ISK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-IS" title="美元兑冰岛克朗汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Indonesian Rupiah | 印尼盾'
+					data-country='Indonesia | 印尼'
+					data-currency-code="IDR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=ID" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=ID" title="Indonesia"><span class="flag-icon flag-icon-id" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="15,563.10" data-rate='15563.1'>15,563.10</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>印尼盾 Indonesia (IDR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-ID" title="美元兑印尼盾汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Iranian Rial | '
+					data-country='Iran (Islamic Republic of) | 伊朗'
+					data-currency-code="IRR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=IR" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=IR" title="Iran (Islamic Republic of)"><span class="flag-icon flag-icon-ir" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="41,600.00" data-rate='41600'>41,600.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Iran (Islamic Republic of) (IRR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-IR" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Iraqi Dinar | 伊拉克第纳尔'
+					data-country='Iraq | 伊拉克'
+					data-currency-code="IQD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=IQ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=IQ" title="Iraq"><span class="flag-icon flag-icon-iq" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1,460.50" data-rate='1460.5'>1,460.50</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>伊拉克第纳尔 Iraq (IQD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-IQ" title="美元兑伊拉克第纳尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Shekel | 以色列谢克尔'
+					data-country='Israel | 以色列'
+					data-currency-code="ILS">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=IL" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=IL" title="Israel"><span class="flag-icon flag-icon-il" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="3.47" data-rate='3.4657'>3.47</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>以色列谢克尔 Israel (ILS)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-IL" title="美元兑以色列谢克尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Jamaican Dollar | 牙买加元'
+					data-country='Jamaica | 牙买加'
+					data-currency-code="JMD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=JM" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=JM" title="Jamaica"><span class="flag-icon flag-icon-jm" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="152.98" data-rate='152.982'>152.98</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>牙买加元 Jamaica (JMD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-JM" title="美元兑牙买加元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Jordanian Dinar | 约旦第纳尔'
+					data-country='Jordan | 约旦'
+					data-currency-code="JOD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=JO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=JO" title="Jordan"><span class="flag-icon flag-icon-jo" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.709" data-rate='0.7093'>0.709</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>约旦第纳尔 Jordan (JOD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-JO" title="美元兑约旦第纳尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Tenge | 哈萨克斯坦坚戈'
+					data-country='Kazakhstan | 哈萨克斯坦共和国'
+					data-currency-code="KZT">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=KZ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=KZ" title="Kazakhstan"><span class="flag-icon flag-icon-kz" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="467.60" data-rate='467.604'>467.60</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>哈萨克斯坦坚戈 Kazakhstan (KZT)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-KZ" title="美元兑哈萨克斯坦坚戈汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Kenyan Shilling | 肯尼亚先令'
+					data-country='Kenya | 肯尼亚'
+					data-currency-code="KES">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=KE" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=KE" title="Kenya"><span class="flag-icon flag-icon-ke" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="123.20" data-rate='123.2'>123.20</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>肯尼亚先令 Kenya (KES)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-KE" title="美元兑肯尼亚先令汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Won | '
+					data-country='Korea North | '
+					data-currency-code="KPW">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=KP" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=KP" title="Korea North"><span class="flag-icon flag-icon-kp" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="900.00" data-rate='900'>900.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Korea North (KPW)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-KP" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Won | 韩圆'
+					data-country='Korea South | 韩国'
+					data-currency-code="KRW">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=KR" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=KR" title="Korea South"><span class="flag-icon flag-icon-kr" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1,284.06" data-rate='1284.06'>1,284.06</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>韩圆 Korea South (KRW)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-KR" title="美元兑韩圆汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Kuwaiti Dinar | 科威特第纳尔'
+					data-country='Kuwait | 科威特'
+					data-currency-code="KWD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=KW" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=KW" title="Kuwait"><span class="flag-icon flag-icon-kw" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.306" data-rate='0.30602'>0.306</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>科威特第纳尔 Kuwait (KWD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-KW" title="美元兑科威特第纳尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Som | 吉尔吉斯索姆'
+					data-country='Kyrgyzstan | 吉尔吉斯共和国'
+					data-currency-code="KGS">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=KG" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=KG" title="Kyrgyzstan"><span class="flag-icon flag-icon-kg" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="85.67" data-rate='85.67'>85.67</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>吉尔吉斯索姆 Kyrgyzstan (KGS)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-KG" title="美元兑吉尔吉斯索姆汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Lao kip | 老挝基普'
+					data-country='Laos | 老挝'
+					data-currency-code="LAK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=LA" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=LA" title="Laos"><span class="flag-icon flag-icon-la" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="17,296.80" data-rate='17296.8'>17,296.80</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>老挝基普 Laos (LAK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-LA" title="美元兑老挝基普汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Lat | 拉脱维亚拉特'
+					data-country='Latvia | 拉脱维亚'
+					data-currency-code="LVL">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=LV" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=LV" title="Latvia"><span class="flag-icon flag-icon-lv" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.605" data-rate='0.60489'>0.605</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>拉脱维亚拉特 Latvia (LVL)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-LV" title="美元兑拉脱维亚拉特汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Lebanese Pound | 黎巴嫩镑'
+					data-country='Lebanon | 黎巴嫩'
+					data-currency-code="LBP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=LB" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=LB" title="Lebanon"><span class="flag-icon flag-icon-lb" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1,523.00" data-rate='1523'>1,523.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>黎巴嫩镑 Lebanon (LBP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-LB" title="美元兑黎巴嫩镑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Loti | 莱索托洛蒂'
+					data-country='Lesotho | 莱索托'
+					data-currency-code="LSL">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=LS" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=LS" title="Lesotho"><span class="flag-icon flag-icon-ls" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="17.52" data-rate='17.52'>17.52</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>莱索托洛蒂 Lesotho (LSL)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-LS" title="美元兑莱索托洛蒂汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Liberian Dollar | 利比里亚元'
+					data-country='Liberia | 利比里亚'
+					data-currency-code="LRD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=LR" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=LR" title="Liberia"><span class="flag-icon flag-icon-lr" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="154.23" data-rate='154.225'>154.23</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>利比里亚元 Liberia (LRD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-LR" title="美元兑利比里亚元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Libyan Dinar | 利比亚第纳尔'
+					data-country='Libyan Arab Jamahiriya | 利比亚'
+					data-currency-code="LYD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=LY" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=LY" title="Libyan Arab Jamahiriya"><span class="flag-icon flag-icon-ly" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="4.83" data-rate='4.83'>4.83</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>利比亚第纳尔 Libyan Arab Jamahiriya (LYD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-LY" title="美元兑利比亚第纳尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Lita | 欧元'
+					data-country='Lithuania | 立陶宛'
+					data-currency-code="LTL">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=LT" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=LT" title="Lithuania"><span class="flag-icon flag-icon-lt" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2.95" data-rate='2.95274'>2.95</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>欧元 Lithuania (LTL)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-LT" title="美元兑欧元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Macanese pataca | 澳门元'
+					data-country='Macao S.A.R. | 澳门'
+					data-currency-code="MOP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MO" title="Macao S.A.R."><span class="flag-icon flag-icon-mo" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="8.02" data-rate='8.02127'>8.02</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>澳门元 Macao S.A.R. (MOP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MO" title="美元兑澳门元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Denar | 欧元'
+					data-country='Macedonia | 马其顿（前南斯拉夫马其顿共和国）'
+					data-currency-code="MKD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MK" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MK" title="Macedonia"><span class="flag-icon flag-icon-mk" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="58.10" data-rate='58.1005'>58.10</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>欧元 Macedonia (MKD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MK" title="美元兑欧元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Malagasy Franc | 马达加斯加阿里亚里'
+					data-country='Madagascar | 马达加斯加'
+					data-currency-code="MGA">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MG" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MG" title="Madagascar"><span class="flag-icon flag-icon-mg" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="4,433.22" data-rate='4433.22'>4,433.22</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>马达加斯加阿里亚里 Madagascar (MGA)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MG" title="美元兑马达加斯加阿里亚里汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Malawian Kwacha | 马拉维克瓦查'
+					data-country='Malawi | 马拉维'
+					data-currency-code="MWK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MW" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MW" title="Malawi"><span class="flag-icon flag-icon-mw" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1,027.63" data-rate='1027.63'>1,027.63</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>马拉维克瓦查 Malawi (MWK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MW" title="美元兑马拉维克瓦查汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Rufiyaa | 马尔代夫卢比'
+					data-country='Maldives | 马尔代夫'
+					data-currency-code="MVR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MV" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MV" title="Maldives"><span class="flag-icon flag-icon-mv" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="15.40" data-rate='15.4'>15.40</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>马尔代夫卢比 Maldives (MVR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MV" title="美元兑马尔代夫卢比汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Ouguiya | 毛里塔尼亚乌吉亚'
+					data-country='Mauritania | 毛里塔尼亚'
+					data-currency-code="MRO">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MR" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MR" title="Mauritania"><span class="flag-icon flag-icon-mr" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="357.00" data-rate='357'>357.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>毛里塔尼亚乌吉亚 Mauritania (MRO)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MR" title="美元兑毛里塔尼亚乌吉亚汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Mauritian Rupee | 毛里求斯卢比'
+					data-country='Mauritius | 毛里求斯'
+					data-currency-code="MUR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MU" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MU" title="Mauritius"><span class="flag-icon flag-icon-mu" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="44.00" data-rate='44'>44.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>毛里求斯卢比 Mauritius (MUR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MU" title="美元兑毛里求斯卢比汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Peso | 墨西哥比索'
+					data-country='Mexico | 墨西哥'
+					data-currency-code="MXN">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MX" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MX" title="Mexico"><span class="flag-icon flag-icon-mx" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="19.76" data-rate='19.7611'>19.76</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>墨西哥比索 Mexico (MXN)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MX" title="美元兑墨西哥比索汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Leu | 摩尔多瓦列伊'
+					data-country='Moldova Republic of | 摩尔多瓦'
+					data-currency-code="MDL">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MD" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MD" title="Moldova Republic of"><span class="flag-icon flag-icon-md" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="19.35" data-rate='19.3459'>19.35</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>摩尔多瓦列伊 Moldova Republic of (MDL)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MD" title="美元兑摩尔多瓦列伊汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Tugrik | 蒙古图格里克'
+					data-country='Mongolia | 蒙古'
+					data-currency-code="MNT">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MN" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MN" title="Mongolia"><span class="flag-icon flag-icon-mn" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="3,406.97" data-rate='3406.97'>3,406.97</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>蒙古图格里克 Mongolia (MNT)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MN" title="美元兑蒙古图格里克汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dirham | 摩洛哥迪拉姆'
+					data-country='Morocco | 摩洛哥'
+					data-currency-code="MAD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MA" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MA" title="Morocco"><span class="flag-icon flag-icon-ma" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="10.48" data-rate='10.4848'>10.48</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>摩洛哥迪拉姆 Morocco (MAD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MA" title="美元兑摩洛哥迪拉姆汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Metical | 莫桑比克梅蒂卡尔'
+					data-country='Mozambique | 莫桑比克'
+					data-currency-code="MZN">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MZ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MZ" title="Mozambique"><span class="flag-icon flag-icon-mz" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="63.90" data-rate='63.9'>63.90</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>莫桑比克梅蒂卡尔 Mozambique (MZN)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MZ" title="美元兑莫桑比克梅蒂卡尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Kyat | '
+					data-country='Myanmar | '
+					data-currency-code="MMK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MM" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MM" title="Myanmar"><span class="flag-icon flag-icon-mm" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2,101.07" data-rate='2101.07'>2,101.07</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Myanmar (MMK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MM" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dollar | 纳米比亚元'
+					data-country='Namibia | 纳米比亚'
+					data-currency-code="NAD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=NA" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=NA" title="Namibia"><span class="flag-icon flag-icon-na" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="17.52" data-rate='17.52'>17.52</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>纳米比亚元 Namibia (NAD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-NA" title="美元兑纳米比亚元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Nepalese Rupee | 尼泊尔卢比'
+					data-country='Nepal | 尼泊尔'
+					data-currency-code="NPR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=NP" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=NP" title="Nepal"><span class="flag-icon flag-icon-np" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="132.43" data-rate='132.432'>132.43</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>尼泊尔卢比 Nepal (NPR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-NP" title="美元兑尼泊尔卢比汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Netherlands Antilles Guilder | '
+					data-country='Netherlands Antilles | '
+					data-currency-code="ANG">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AN" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AN" title="Netherlands Antilles"><span class="flag-icon flag-icon-an" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.80" data-rate='1.80312'>1.80</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Netherlands Antilles (ANG)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AN" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='CFP Franc | 太平洋法郎'
+					data-country='New Caledonia | 新喀里多尼亚'
+					data-currency-code="XPF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=NC" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=NC" title="New Caledonia"><span class="flag-icon flag-icon-nc" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="112.33" data-rate='112.333'>112.33</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>太平洋法郎 New Caledonia (XPF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-NC" title="美元兑太平洋法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='New Zealand Dollars | 新西兰元'
+					data-country='New Zealand | 新西兰'
+					data-currency-code="NZD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=NZ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=NZ" title="New Zealand"><span class="flag-icon flag-icon-nz" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.58" data-rate='1.57571'>1.58</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>新西兰元 New Zealand (NZD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-NZ" title="美元兑新西兰元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Cordoba Oro | 尼加拉瓜金科多巴'
+					data-country='Nicaragua | 尼加拉瓜'
+					data-currency-code="NIO">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=NI" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=NI" title="Nicaragua"><span class="flag-icon flag-icon-ni" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="36.40" data-rate='36.4'>36.40</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>尼加拉瓜金科多巴 Nicaragua (NIO)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-NI" title="美元兑尼加拉瓜金科多巴汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Naira | 尼日利亚奈拉'
+					data-country='Nigeria | 尼日利亚'
+					data-currency-code="NGN">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=NG" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=NG" title="Nigeria"><span class="flag-icon flag-icon-ng" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="445.88" data-rate='445.884'>445.88</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>尼日利亚奈拉 Nigeria (NGN)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-NG" title="美元兑尼日利亚奈拉汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Norwegian Krone | 挪威克朗'
+					data-country='Norway | 挪威'
+					data-currency-code="NOK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=NO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=NO" title="Norway"><span class="flag-icon flag-icon-no" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="9.88" data-rate='9.87752'>9.88</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>挪威克朗 Norway (NOK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-NO" title="美元兑挪威克朗汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Sul Rial | 阿曼里亚尔'
+					data-country='Oman | 阿曼'
+					data-currency-code="OMR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=OM" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=OM" title="Oman"><span class="flag-icon flag-icon-om" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.385" data-rate='0.384982'>0.385</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>阿曼里亚尔 Oman (OMR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-OM" title="美元兑阿曼里亚尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Rupee | 巴基斯坦卢比'
+					data-country='Pakistan | 巴基斯坦'
+					data-currency-code="PKR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=PK" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=PK" title="Pakistan"><span class="flag-icon flag-icon-pk" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="225.18" data-rate='225.175'>225.18</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>巴基斯坦卢比 Pakistan (PKR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-PK" title="美元兑巴基斯坦卢比汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Jordanian dinar | '
+					data-country='Palestinian Territory | '
+					data-currency-code="JOD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=PS" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=PS" title="Palestinian Territory"><span class="flag-icon flag-icon-ps" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="0.709" data-rate='0.7093'>0.709</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Palestinian Territory (JOD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-PS" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Balboa | 巴拿马巴波亚'
+					data-country='Panama | 巴拿马'
+					data-currency-code="PAB">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=PA" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=PA" title="Panama"><span class="flag-icon flag-icon-pa" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.000" data-rate='1'>1.000</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>巴拿马巴波亚 Panama (PAB)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-PA" title="美元兑巴拿马巴波亚汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Kina | 巴布亚基纳'
+					data-country='Papua New Guinea | 巴布亚新几内亚'
+					data-currency-code="PGK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=PG" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=PG" title="Papua New Guinea"><span class="flag-icon flag-icon-pg" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="3.57" data-rate='3.57071'>3.57</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>巴布亚基纳 Papua New Guinea (PGK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-PG" title="美元兑巴布亚基纳汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Guarani | 巴拉圭瓜拉尼'
+					data-country='Paraguay | 巴拉圭'
+					data-currency-code="PYG">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=PY" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=PY" title="Paraguay"><span class="flag-icon flag-icon-py" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="7,248.17" data-rate='7248.17'>7,248.17</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>巴拉圭瓜拉尼 Paraguay (PYG)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-PY" title="美元兑巴拉圭瓜拉尼汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Nuevo Sol | 秘鲁新索尔'
+					data-country='Peru | 秘鲁'
+					data-currency-code="PEN">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=PE" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=PE" title="Peru"><span class="flag-icon flag-icon-pe" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="3.81" data-rate='3.81375'>3.81</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>秘鲁新索尔 Peru (PEN)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-PE" title="美元兑秘鲁新索尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Peso | 菲律宾比索'
+					data-country='Philippines | 菲律宾'
+					data-currency-code="PHP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=PH" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=PH" title="Philippines"><span class="flag-icon flag-icon-ph" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="55.07" data-rate='55.0722'>55.07</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>菲律宾比索 Philippines (PHP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-PH" title="美元兑菲律宾比索汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Zloty | 波兰兹罗提'
+					data-country='Poland | 波兰'
+					data-currency-code="PLN">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=PL" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=PL" title="Poland"><span class="flag-icon flag-icon-pl" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="4.40" data-rate='4.39775'>4.40</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>波兰兹罗提 Poland (PLN)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-PL" title="美元兑波兰兹罗提汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Rial | 卡塔尔里亚尔'
+					data-country='Qatar | 卡塔尔'
+					data-currency-code="QAR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=QA" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=QA" title="Qatar"><span class="flag-icon flag-icon-qa" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="3.64" data-rate='3.641'>3.64</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>卡塔尔里亚尔 Qatar (QAR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-QA" title="美元兑卡塔尔里亚尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Leu | 罗马尼亚列伊'
+					data-country='Romania | 罗马尼亚'
+					data-currency-code="RON">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=RO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=RO" title="Romania"><span class="flag-icon flag-icon-ro" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="4.62" data-rate='4.62'>4.62</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>罗马尼亚列伊 Romania (RON)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-RO" title="美元兑罗马尼亚列伊汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Ruble | 俄罗斯卢布'
+					data-country='Russian Federation | 俄罗斯'
+					data-currency-code="RUB">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=RU" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=RU" title="Russian Federation"><span class="flag-icon flag-icon-ru" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="70.25" data-rate='70.25'>70.25</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>俄罗斯卢布 Russian Federation (RUB)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-RU" title="美元兑俄罗斯卢布汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Rwanda Franc | 卢旺达法郎'
+					data-country='Rwanda | 卢旺达'
+					data-currency-code="RWF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=RW" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=RW" title="Rwanda"><span class="flag-icon flag-icon-rw" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1,066.50" data-rate='1066.5'>1,066.50</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>卢旺达法郎 Rwanda (RWF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-RW" title="美元兑卢旺达法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Netherlands Antillean guilder | '
+					data-country='Saint Martin (French part) | '
+					data-currency-code="ANG">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=MF" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=MF" title="Saint Martin (French part)"><span class="flag-icon flag-icon-mf" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="1.80" data-rate='1.80312'>1.80</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Saint Martin (French part) (ANG)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-MF" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dobra | 圣多美和普林西比多布拉'
+					data-country='Sao Tome and Principe | 圣多美与普林西比'
+					data-currency-code="STD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=ST" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=ST" title="Sao Tome and Principe"><span class="flag-icon flag-icon-st" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="22,824.00" data-rate='22824'>22,824.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>圣多美和普林西比多布拉 Sao Tome and Principe (STD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-ST" title="美元兑圣多美和普林西比多布拉汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Riyal | 沙特里亚尔'
+					data-country='Saudi Arabia | 沙特阿拉伯'
+					data-currency-code="SAR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SA" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SA" title="Saudi Arabia"><span class="flag-icon flag-icon-sa" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="3.76" data-rate='3.7607'>3.76</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>沙特里亚尔 Saudi Arabia (SAR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SA" title="美元兑沙特里亚尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Serbian dinar | 塞尔维亚第纳尔'
+					data-country='Serbia | 塞尔维亚'
+					data-currency-code="RSD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=RS" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=RS" title="Serbia"><span class="flag-icon flag-icon-rs" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="110.46" data-rate='110.46'>110.46</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>塞尔维亚第纳尔 Serbia (RSD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-RS" title="美元兑塞尔维亚第纳尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Rupee | 塞舌尔卢比'
+					data-country='Seychelles | 塞舌尔'
+					data-currency-code="SCR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SC" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SC" title="Seychelles"><span class="flag-icon flag-icon-sc" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="13.21" data-rate='13.2079'>13.21</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>塞舌尔卢比 Seychelles (SCR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SC" title="美元兑塞舌尔卢比汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Leone | 塞拉利昂 利昂'
+					data-country='Sierra Leone | 塞拉利昂'
+					data-currency-code="SLL">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SL" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SL" title="Sierra Leone"><span class="flag-icon flag-icon-sl" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="17,665.00" data-rate='17665'>17,665.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>塞拉利昂 利昂 Sierra Leone (SLL)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SL" title="美元兑塞拉利昂 利昂汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Solomon Islands Dollar | 所罗门群岛元'
+					data-country='Solomon Islands | 所罗门群岛'
+					data-currency-code="SBD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SB" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SB" title="Solomon Islands"><span class="flag-icon flag-icon-sb" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="8.21" data-rate='8.21038'>8.21</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>所罗门群岛元 Solomon Islands (SBD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SB" title="美元兑所罗门群岛元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Shilling | '
+					data-country='Somalia | '
+					data-currency-code="SOS">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SO" title="Somalia"><span class="flag-icon flag-icon-so" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="568.50" data-rate='568.5'>568.50</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Somalia (SOS)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SO" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Rupee | 斯里 兰卡卢比'
+					data-country='Sri Lanka | 斯里兰卡'
+					data-currency-code="LKR">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=LK" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=LK" title="Sri Lanka"><span class="flag-icon flag-icon-lk" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="365.69" data-rate='365.686'>365.69</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>斯里 兰卡卢比 Sri Lanka (LKR)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-LK" title="美元兑斯里 兰卡卢比汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dinar | '
+					data-country='Sudan | '
+					data-currency-code="SDG">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SD" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SD" title="Sudan"><span class="flag-icon flag-icon-sd" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="579.50" data-rate='579.5'>579.50</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Sudan (SDG)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SD" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Surinamese Guilder | 苏里南盾'
+					data-country='Suriname | 苏里南'
+					data-currency-code="SRD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SR" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SR" title="Suriname"><span class="flag-icon flag-icon-sr" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="31.60" data-rate='31.6'>31.60</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>苏里南盾 Suriname (SRD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SR" title="美元兑苏里南盾汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Lilangeni | 斯威士兰 里兰吉尼'
+					data-country='Swaziland | 斯威士兰'
+					data-currency-code="SZL">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SZ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SZ" title="Swaziland"><span class="flag-icon flag-icon-sz" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="17.30" data-rate='17.3'>17.30</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>斯威士兰 里兰吉尼 Swaziland (SZL)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SZ" title="美元兑斯威士兰 里兰吉尼汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Krona | 瑞典克朗'
+					data-country='Sweden | 瑞典'
+					data-currency-code="SEK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SE" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SE" title="Sweden"><span class="flag-icon flag-icon-se" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="10.42" data-rate='10.4164'>10.42</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>瑞典克朗 Sweden (SEK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SE" title="美元兑瑞典克朗汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Syrian Pound | '
+					data-country='Syrian Arab Republic | '
+					data-currency-code="SYP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=SY" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=SY" title="Syrian Arab Republic"><span class="flag-icon flag-icon-sy" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2,512.53" data-rate='2512.53'>2,512.53</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Syrian Arab Republic (SYP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-SY" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dollar | 新台币'
+					data-country='Taiwan | 台湾'
+					data-currency-code="TWD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=TW" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=TW" title="Taiwan"><span class="flag-icon flag-icon-tw" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="30.74" data-rate='30.7425'>30.74</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>新台币 Taiwan (TWD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-TW" title="美元兑新台币汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Tajikistan Ruble | 塔吉克斯坦共和国 索莫尼'
+					data-country='Tajikistan | 塔吉克斯坦共和国'
+					data-currency-code="TJS">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=TJ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=TJ" title="Tajikistan"><span class="flag-icon flag-icon-tj" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="10.19" data-rate='10.1908'>10.19</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>塔吉克斯坦共和国 索莫尼 Tajikistan (TJS)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-TJ" title="美元兑塔吉克斯坦共和国 索莫尼汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Shilling | 坦桑尼亚先令'
+					data-country='Tanzania | 坦桑尼亚'
+					data-currency-code="TZS">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=TZ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=TZ" title="Tanzania"><span class="flag-icon flag-icon-tz" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2,334.00" data-rate='2334'>2,334.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>坦桑尼亚先令 Tanzania (TZS)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-TZ" title="美元兑坦桑尼亚先令汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Baht | 泰铢'
+					data-country='Thailand | 泰国'
+					data-currency-code="THB">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=TH" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=TH" title="Thailand"><span class="flag-icon flag-icon-th" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="34.68" data-rate='34.6814'>34.68</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>泰铢 Thailand (THB)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-TH" title="美元兑泰铢汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='PaÕanga | 汤加 潘加'
+					data-country='Tonga | 汤加'
+					data-currency-code="TOP">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=TO" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=TO" title="Tonga"><span class="flag-icon flag-icon-to" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="2.35" data-rate='2.34733'>2.35</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>汤加 潘加 Tonga (TOP)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-TO" title="美元兑汤加 潘加汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Trinidad and Tobago Dollar | 特立尼达和多巴哥元'
+					data-country='Trinidad and Tobago | 特立尼达和多巴哥'
+					data-currency-code="TTD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=TT" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=TT" title="Trinidad and Tobago"><span class="flag-icon flag-icon-tt" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="6.81" data-rate='6.80618'>6.81</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>特立尼达和多巴哥元 Trinidad and Tobago (TTD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-TT" title="美元兑特立尼达和多巴哥元汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Tunisian Dinar | 突尼斯第纳尔'
+					data-country='Tunisia | 突尼斯'
+					data-currency-code="TND">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=TN" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=TN" title="Tunisia"><span class="flag-icon flag-icon-tn" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="3.15" data-rate='3.1505'>3.15</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>突尼斯第纳尔 Tunisia (TND)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-TN" title="美元兑突尼斯第纳尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Lira | 土耳其里拉'
+					data-country='Turkey | 土耳其'
+					data-currency-code="TRY">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=TR" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=TR" title="Turkey"><span class="flag-icon flag-icon-tr" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="18.66" data-rate='18.6613'>18.66</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>土耳其里拉 Turkey (TRY)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-TR" title="美元兑土耳其里拉汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Manat | 土库曼斯坦斯坦马纳特'
+					data-country='Turkmenistan | 土库曼斯坦共和国'
+					data-currency-code="TMT">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=TM" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=TM" title="Turkmenistan"><span class="flag-icon flag-icon-tm" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="3.50" data-rate='3.5'>3.50</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>土库曼斯坦斯坦马纳特 Turkmenistan (TMT)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-TM" title="美元兑土库曼斯坦斯坦马纳特汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Shilling | 乌干达先令'
+					data-country='Uganda | 乌干达'
+					data-currency-code="UGX">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=UG" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=UG" title="Uganda"><span class="flag-icon flag-icon-ug" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="3,646.82" data-rate='3646.82'>3,646.82</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>乌干达先令 Uganda (UGX)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-UG" title="美元兑乌干达先令汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Hryvnia | 乌克兰 格里夫纳'
+					data-country='Ukraine | 乌克兰'
+					data-currency-code="UAH">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=UA" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=UA" title="Ukraine"><span class="flag-icon flag-icon-ua" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="36.77" data-rate='36.7722'>36.77</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>乌克兰 格里夫纳 Ukraine (UAH)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-UA" title="美元兑乌克兰 格里夫纳汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dirham | 阿联酋迪拉姆'
+					data-country='United Arab Emirates | 阿拉伯联合酋长国'
+					data-currency-code="AED">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=AE" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=AE" title="United Arab Emirates"><span class="flag-icon flag-icon-ae" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="3.67" data-rate='3.67241'>3.67</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>阿联酋迪拉姆 United Arab Emirates (AED)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-AE" title="美元兑阿联酋迪拉姆汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Peso | 乌拉圭比索'
+					data-country='Uruguay | 乌拉圭'
+					data-currency-code="UYU">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=UY" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=UY" title="Uruguay"><span class="flag-icon flag-icon-uy" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="38.78" data-rate='38.7794'>38.78</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>乌拉圭比索 Uruguay (UYU)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-UY" title="美元兑乌拉圭比索汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Som | 乌兹别克斯坦斯坦索姆'
+					data-country='Uzbekistan | 乌兹别克斯坦共和国'
+					data-currency-code="UZS">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=UZ" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=UZ" title="Uzbekistan"><span class="flag-icon flag-icon-uz" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="11,295.00" data-rate='11295'>11,295.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>乌兹别克斯坦斯坦索姆 Uzbekistan (UZS)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-UZ" title="美元兑乌兹别克斯坦斯坦索姆汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Vatu | 瓦努阿图 瓦图'
+					data-country='Vanuatu | 瓦努阿图'
+					data-currency-code="VUV">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=VU" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=VU" title="Vanuatu"><span class="flag-icon flag-icon-vu" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="118.04" data-rate='118.044'>118.04</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>瓦努阿图 瓦图 Vanuatu (VUV)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-VU" title="美元兑瓦努阿图 瓦图汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Bolivar | 委内瑞拉博利瓦'
+					data-country='Venezuela | 委内瑞拉'
+					data-currency-code="VEF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=VE" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=VE" title="Venezuela"><span class="flag-icon flag-icon-ve" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="248,488.00" data-rate='248488'>248,488.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>委内瑞拉博利瓦 Venezuela (VEF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-VE" title="美元兑委内瑞拉博利瓦汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dong | 越南盾'
+					data-country='Vietnam | 越南'
+					data-currency-code="VND">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=VN" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=VN" title="Vietnam"><span class="flag-icon flag-icon-vn" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="23,750.00" data-rate='23750'>23,750.00</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>越南盾 Vietnam (VND)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-VN" title="美元兑越南盾汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='CFP Franc | 太平洋法郎'
+					data-country='Wallis and Futuna Islands | 瓦利斯和 富图纳群岛'
+					data-currency-code="XPF">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=WF" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=WF" title="Wallis and Futuna Islands"><span class="flag-icon flag-icon-wf" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="112.33" data-rate='112.333'>112.33</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>太平洋法郎 Wallis and Futuna Islands (XPF)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-WF" title="美元兑太平洋法郎汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Dirham | '
+					data-country='Western Sahara | '
+					data-currency-code="MAD">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=EH" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=EH" title="Western Sahara"><span class="flag-icon flag-icon-eh" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="10.48" data-rate='10.4848'>10.48</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'> Western Sahara (MAD)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-EH" title="美元兑汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Rial | 也门里亚尔'
+					data-country='Yemen | 也门'
+					data-currency-code="YER">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=YE" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=YE" title="Yemen"><span class="flag-icon flag-icon-ye" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="250.33" data-rate='250.325'>250.33</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>也门里亚尔 Yemen (YER)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-YE" title="美元兑也门里亚尔汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+				<tr class='country'
+					data-currency-name='Kwacha | 赞比亚克瓦查'
+					data-country='Zambia | 赞比亚'
+					data-currency-code="ZMK">
+					<td class='iconBtn'><a href="/site/star?from=US&amp;to=ZM" title="收藏"><i class="fa fa-star-o"></i> </a></td>
+					<td style='text-align: center'><a href="/=ZM" title="Zambia"><span class="flag-icon flag-icon-zm" style="font-size:2em"></span></a>					</td>
+					<td><span class='money d-block clip' data-clipboard-text="9,001.20" data-rate='9001.2'>9,001.20</span>
+						<span class='country-name d-block text-truncate'
+						style='width: 200px'>赞比亚克瓦查 Zambia (ZMK)</span>
+					</td>
+					<td class='iconBtn'><a href="/US-ZM" title="美元兑赞比亚克瓦查汇率走势图" target="_self"><i class='fa fa-line-chart'></i> </a>					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class='col-md-6  col-xl-7'>
+	</div>
+</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p class="pull-left">
+			&copy; 07:52:19 - 08:04:38		</p>
+			</div>
+		</footer>
+	</div>
+<script src="/assets/c81946c9/jquery.js"></script>
+<script src="/assets/3bb6b15c/yii.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2.0/dist/js/adminlte.min.js"></script>
+<script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="/js/main.js?v=3"></script>
+<script src="/js/site/index.js?v=1.28"></script>
+<script src="/assets/b64db427/js/bootstrap.bundle.js"></script>
+<script src="https://cdnjs.cloudflare2.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+<script>jQuery(function ($) {
+		var scrollFunc = function(){
+			$(".lazyimage").each(function(){
+				r = this.getBoundingClientRect();
+				if($(window).height() - r.top + 200 > 0 ){
+					$(this).attr("src",$(this).data("src"));
+					$(this).removeClass("lazyimage");
+					$(this).on("error", function () {
+						var errorImage = $(this).data("error") || "";
+						$(this).attr("src", errorImage);
+					});
+				}
+			});
+		};
+		scrollFunc();
+		$(window).scroll(scrollFunc);
+		$(document).keyup(scrollFunc); 
+
+    if (location.protocol !== 'https:' && !/localhost/.test(location.host)) {
+        location.protocol = 'https:';
+    }else{
+        navigator.serviceWorker && navigator.serviceWorker.register('/sw.js');
+    }
+
+
+		$.getScript('https://cdnjs.cloudflare2.com/ajax/libs/toastr.js/2.1.4/toastr.min.js').done(function() {
+				var clipboard = new Clipboard('.clip');
+				clipboard.on('success', function(e) {
+					console.info('Action:', e.action);
+					toastr.info('复制成功');
+				});
+		});
+		$('.clip').click(function(){
+			var desired_url = $(this).data('url');
+			current_url = window.location.href;    
+			history.replaceState({},'',desired_url);
+			history.replaceState({},'',current_url);
+		});
+    
+});</script></body>
+</html>

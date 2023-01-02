@@ -1,0 +1,2001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QALCULATE version="3.0.0">
+  <category>
+    <title>Small Numbers</title>
+    <title xml:lang="es">Números pequeños</title>
+    <title xml:lang="fr">Petits nombres</title>
+    <title xml:lang="nl">Kleine getallen</title>
+    <title xml:lang="ru">Малые числа</title>
+    <title xml:lang="sv">Små tal</title>
+    <title xml:lang="zh_CN">小数字</title>
+    <builtin_variable name="permille">
+      <title>Per Mille</title>
+      <title xml:lang="es">Por mil</title>
+      <title xml:lang="fr">Pour mille</title>
+      <title xml:lang="nl">Promille</title>
+      <title xml:lang="ru">Промилле</title>
+      <title xml:lang="sv">Promille</title>
+      <title xml:lang="zh_CN">千分之一</title>
+      <names>r:permille,au:&#x2030;</names>
+      <names xml:lang="nl">promille,au:&#x2030;</names>
+      <names xml:lang="ru">промилле,au:&#x2030;</names>
+      <names xml:lang="sv">promille,au:&#x2030;</names>
+    </builtin_variable>
+    <builtin_variable name="permyriad">
+      <title>Per Myriad</title>
+      <title xml:lang="es">Por diez mil</title>
+      <title xml:lang="fr">Pour myriade</title>
+      <title xml:lang="nl">Promyriad</title>
+      <title xml:lang="ru">Базисный пункт</title>
+      <title xml:lang="sv">Permyriad</title>
+      <title xml:lang="zh_CN">万分之一</title>
+      <names>r:permyriad,au:&#x2031;</names>
+      <names xml:lang="fr">pourmyriade,au:&#x2031;</names>
+      <names xml:lang="ru">баз.пункт,au:&#x2031;</names>
+    </builtin_variable>
+    <builtin_variable name="%">
+      <title>Percent</title>
+      <title xml:lang="es">Por ciento</title>
+      <title xml:lang="fr">Pour cent</title>
+      <title xml:lang="nl">Procent</title>
+      <title xml:lang="ru">Процент</title>
+      <title xml:lang="sv">Procent</title>
+      <title xml:lang="zh_CN">百分之一</title>
+      <names>a:%,r:percent</names>
+      <names xml:lang="es">a:%,porciento</names>
+      <names xml:lang="fr">a:%,pourcent</names>
+      <names xml:lang="nl">a:%,procent</names>
+      <names xml:lang="ru">a:%,процент,p:процента,p:процентов</names>
+      <names xml:lang="sv">a:%,procent</names>
+    </builtin_variable>
+  </category>
+  <category>
+    <title>Large Numbers</title>
+    <title xml:lang="es">Números grandes</title>
+    <title xml:lang="fr">Grands nombres</title>
+    <title xml:lang="nl">Grote getallen</title>
+    <title xml:lang="ru">Большие числа</title>
+    <title xml:lang="sv">Stora tal</title>
+    <title xml:lang="zh_CN">大数</title>
+    <variable>
+      <title>Googolplex</title>
+      <title xml:lang="es">Gúgolplex</title>
+      <title xml:lang="ru">Гуголплекс</title>
+      <title xml:lang="zh_CN">古戈尔普勒克斯</title>
+      <names>r:googolplex</names>
+      <names xml:lang="ru">гуголплекс</names>
+      <names xml:lang="zh_CN">古戈尔普勒克斯</names>
+      <value>10^(10^100)</value>
+    </variable>
+    <variable>
+      <title>Googol</title>
+      <title xml:lang="es">Gúgol</title>
+      <title xml:lang="ru">Гугол</title>
+      <title xml:lang="zh_CN">古戈尔</title>
+      <names>r:googol</names>
+      <names xml:lang="ru">гугол</names>
+      <names xml:lang="zh_CN">古戈尔</names>
+      <value>10^100</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Centillion</title>
+      <title xml:lang="es">1E303</title>
+      <title xml:lang="nl">Quinquagintiljard</title>
+      <title xml:lang="ru">центиллион</title>
+      <title xml:lang="zh_CN">千的一百〇一次幂</title>
+      <names>-r:centillion</names>
+      <names xml:lang="es">(1E303)</names>
+      <names xml:lang="nl">quinquagintiljard</names>
+      <names xml:lang="ru">центиллион,p:центиллионы</names>
+      <value>1E303</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Vigintillion</title>
+      <title xml:lang="es">Mil decillones</title>
+      <title xml:lang="nl">Deciljard</title>
+      <title xml:lang="ru">Вигинтиллион</title>
+      <title xml:lang="sv">Deciljard</title>
+      <title xml:lang="zh_CN">千的二十一次幂</title>
+      <names>-r:vigintillion</names>
+      <names xml:lang="es">(1E63)</names>
+      <names xml:lang="nl">deciljard</names>
+      <names xml:lang="ru">вигинтиллион</names>
+      <names xml:lang="sv">deciljard,p:deciljarder,vigintillion</names>
+      <value>1E63</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Novemdecillion</title>
+      <title xml:lang="es">Decillón</title>
+      <title xml:lang="nl">deciljoen</title>
+      <title xml:lang="ru">Новемдециллион</title>
+      <title xml:lang="sv">Deciljon</title>
+      <title xml:lang="zh_CN">千的二十次幂</title>
+      <names>-r:novemdecillion</names>
+      <names xml:lang="es">decillón</names>
+      <names xml:lang="nl">deciljoen</names>
+      <names xml:lang="ru">новемдециллион</names>
+      <names xml:lang="sv">deciljon,p:deciljoner,novemdecillion</names>
+      <value>1E60</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Octodecillion</title>
+      <title xml:lang="es">Mil nonillones</title>
+      <title xml:lang="nl">Noniljard</title>
+      <title xml:lang="ru">Октодециллион</title>
+      <title xml:lang="sv">Noniljard</title>
+      <title xml:lang="zh_CN">千的十九次幂</title>
+      <names>-r:octodecillion</names>
+      <names xml:lang="es">(1E57)</names>
+      <names xml:lang="nl">noniljard</names>
+      <names xml:lang="ru">октодециллион</names>
+      <names xml:lang="sv">noniljard,p:noniljarder.octodecillion</names>
+      <value>1E57</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Septendecillion</title>
+      <title xml:lang="es">Nonillón</title>
+      <title xml:lang="nl">Noniljoen</title>
+      <title xml:lang="ru">Септендециллион</title>
+      <title xml:lang="sv">Noniljon</title>
+      <title xml:lang="zh_CN">千的十八次幂</title>
+      <names>-r:septendecillion</names>
+      <names xml:lang="es">nonillón</names>
+      <names xml:lang="nl">noniljoen</names>
+      <names xml:lang="ru">септендециллион</names>
+      <names xml:lang="sv">noniljon,p:noniljoner,septendecillion</names>
+      <value>1E54</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Sexdecillion</title>
+      <title xml:lang="es">Mil octillones</title>
+      <title xml:lang="nl">Octiljard</title>
+      <title xml:lang="ru">Сексдециллион</title>
+      <title xml:lang="sv">Oktiljard</title>
+      <title xml:lang="zh_CN">千的十七次幂</title>
+      <names>-r:sexdecillion</names>
+      <names xml:lang="es">(1E51)</names>
+      <names xml:lang="nl">octiljard</names>
+      <names xml:lang="ru">сексдециллион</names>
+      <names xml:lang="sv">oktiljard,p:oktiljarder,sexdecillion</names>
+      <value>1E51</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Quindecillion</title>
+      <title xml:lang="es">Octillón</title>
+      <title xml:lang="nl">Octiljoen</title>
+      <title xml:lang="ru">Квиндециллион</title>
+      <title xml:lang="sv">Oktiljon</title>
+      <title xml:lang="zh_CN">千的十六次幂</title>
+      <names>-r:quindecillion</names>
+      <names xml:lang="es">octillón</names>
+      <names xml:lang="nl">octiljoen</names>
+      <names xml:lang="ru">квиндециллион</names>
+      <names xml:lang="sv">oktiljon,p:oktiljoner,quindecillion</names>
+      <value>1E48</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Quattuordecillion</title>
+      <title xml:lang="es">Mil septillones</title>
+      <title xml:lang="nl">Septiljard</title>
+      <title xml:lang="ru">Кваттордециллион</title>
+      <title xml:lang="sv">Septiljard</title>
+      <title xml:lang="zh_CN">千的十五次幂</title>
+      <names>-r:quattuordecillion</names>
+      <names xml:lang="es">(1E45)</names>
+      <names xml:lang="nl">septiljard</names>
+      <names xml:lang="ru">кваттордециллион</names>
+      <names xml:lang="sv">septiljard,p:septiljarder,quattuordecillion</names>
+      <value>1E45</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Tredecillion</title>
+      <title xml:lang="es">Septillón</title>
+      <title xml:lang="nl">Septiljoen</title>
+      <title xml:lang="ru">Тредециллион</title>
+      <title xml:lang="sv">Septiljon</title>
+      <title xml:lang="zh_CN">千的十四次幂</title>
+      <names>-r:tredecillion</names>
+      <names xml:lang="es">septillón</names>
+      <names xml:lang="nl">septiljoen</names>
+      <names xml:lang="ru">тредециллион</names>
+      <names xml:lang="sv">septiljon,p:septiljoner,tredecillion</names>
+      <value>1E42</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Duodecillion</title>
+      <title xml:lang="es">Mil sextillones</title>
+      <title xml:lang="nl">Sextiljard</title>
+      <title xml:lang="ru">Дуодециллион</title>
+      <title xml:lang="sv">Sextiljard</title>
+      <title xml:lang="zh_CN">千的十三次幂</title>
+      <names>-r:duodecillion</names>
+      <names xml:lang="es">(1E39)</names>
+      <names xml:lang="nl">sextiljard</names>
+      <names xml:lang="ru">дуодециллион</names>
+      <names xml:lang="sv">sextiljard,p:sextiljarder,duodecillion</names>
+      <value>1E39</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Undecillion</title>
+      <title xml:lang="es">Sextillón</title>
+      <title xml:lang="nl">Sextiljoen</title>
+      <title xml:lang="ru">Ундециллион</title>
+      <title xml:lang="sv">Sextiljon</title>
+      <title xml:lang="zh_CN">千的十二次幂</title>
+      <names>-r:undecillion</names>
+      <names xml:lang="es">sextillón</names>
+      <names xml:lang="nl">sextiljoen</names>
+      <names xml:lang="ru">ундециллион</names>
+      <names xml:lang="sv">sextiljon,p:sextiljoner,undecillion</names>
+      <value>1E36</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Decillion</title>
+      <title xml:lang="es">Mil quintillones</title>
+      <title xml:lang="nl">Quintiljard</title>
+      <title xml:lang="ru">Дециллион</title>
+      <title xml:lang="sv">Kvintiljard</title>
+      <title xml:lang="zh_CN">千的十一次幂</title>
+      <names>-r:decillion</names>
+      <names xml:lang="es">(1E33)</names>
+      <names xml:lang="nl">quintiljard</names>
+      <names xml:lang="ru">дециллион</names>
+      <names xml:lang="sv">kvintiljard,p:kvintiljarder,decillion</names>
+      <value>1E33</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Nonillion</title>
+      <title xml:lang="es">Quintillón</title>
+      <title xml:lang="nl">Quintiljoen</title>
+      <title xml:lang="ru">Нониллион</title>
+      <title xml:lang="sv">Kvintiljon</title>
+      <title xml:lang="zh_CN">千的十次幂</title>
+      <names>-r:nonillion</names>
+      <names xml:lang="es">quintillón</names>
+      <names xml:lang="nl">quintiljoen</names>
+      <names xml:lang="ru">нониллион</names>
+      <names xml:lang="sv">kvintiljon,p:kvintiljoner,nonillion</names>
+      <value>1E30</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Octillion</title>
+      <title xml:lang="es">Mil cuatrillones</title>
+      <title xml:lang="nl">Quadriljard</title>
+      <title xml:lang="ru">Октиллион</title>
+      <title xml:lang="sv">Kvadriljard</title>
+      <title xml:lang="zh_CN">千的九次幂</title>
+      <names>-r:octillion</names>
+      <names xml:lang="es">(1E27)</names>
+      <names xml:lang="nl">quadriljard</names>
+      <names xml:lang="ru">октиллион</names>
+      <names xml:lang="sv">kvadriljard,p:kvadriljarder,octillion</names>
+      <value>1E27</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Septillion</title>
+      <title xml:lang="es">Cuatrillón</title>
+      <title xml:lang="nl">Quadriljoen</title>
+      <title xml:lang="ru">Септиллион</title>
+      <title xml:lang="sv">Kvadriljon</title>
+      <title xml:lang="zh_CN">千的八次幂</title>
+      <names>-r:septillion</names>
+      <names xml:lang="es">cuatrillón</names>
+      <names xml:lang="nl">quadriljoen</names>
+      <names xml:lang="ru">септиллион</names>
+      <names xml:lang="sv">kvadriljon,p:kvadriljoner,septillion</names>
+      <value>1E24</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Sextillion</title>
+      <title xml:lang="es">Trillardo</title>
+      <title xml:lang="nl">Triljard</title>
+      <title xml:lang="ru">Секстиллион</title>
+      <title xml:lang="sv">Triljard</title>
+      <title xml:lang="zh_CN">千的七次幂</title>
+      <names>-r:sextillion</names>
+      <names xml:lang="es">trillardo</names>
+      <names xml:lang="nl">triljard</names>
+      <names xml:lang="ru">секстиллион</names>
+      <names xml:lang="sv">triljard,p:triljarder,sextillion</names>
+      <value>1E21</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Quintillion</title>
+      <title xml:lang="es">Trillón</title>
+      <title xml:lang="nl">Triljoen</title>
+      <title xml:lang="ru">Квинтиллион</title>
+      <title xml:lang="sv">Triljon</title>
+      <title xml:lang="zh_CN">千的六次幂</title>
+      <names>-r:quintillion</names>
+      <names xml:lang="es">trillón</names>
+      <names xml:lang="nl">triljoen</names>
+      <names xml:lang="ru">квинтиллион</names>
+      <names xml:lang="sv">triljon,p:triljoner,quintillion</names>
+      <value>1E18</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Quadrillion</title>
+      <title xml:lang="es">Billardo</title>
+      <title xml:lang="nl">Biljard</title>
+      <title xml:lang="ru">Квадриллион</title>
+      <title xml:lang="sv">Biljard</title>
+      <title xml:lang="zh_CN">千的五次幂</title>
+      <names>-r:quadrillion</names>
+      <names xml:lang="es">billardo</names>
+      <names xml:lang="nl">biljard</names>
+      <names xml:lang="ru">квадриллион</names>
+      <names xml:lang="sv">biljard,p:biljarder,quadrillion</names>
+      <value>1E15</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Trillion</title>
+      <title xml:lang="es">Billón</title>
+      <title xml:lang="nl">Biljoen</title>
+      <title xml:lang="ru">Триллион</title>
+      <title xml:lang="sv">Biljon</title>
+      <title xml:lang="zh_CN">兆</title>
+      <names>-r:trillion</names>
+      <names xml:lang="es">billón</names>
+      <names xml:lang="nl">biljoen</names>
+      <names xml:lang="ru">триллион</names>
+      <names xml:lang="sv">biljon,p:biljoner,trillion</names>
+      <value>1E12</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Billion</title>
+      <title xml:lang="es">Millardo</title>
+      <title xml:lang="fr">Milliard</title>
+      <title xml:lang="nl">Miljard</title>
+      <title xml:lang="ru">Миллиард</title>
+      <title xml:lang="sv">Miljard</title>
+      <title xml:lang="zh_CN">十亿</title>
+      <names>-r:billion</names>
+      <names xml:lang="es">millardo</names>
+      <names xml:lang="nl">miljard</names>
+      <names xml:lang="ru">миллиард</names>
+      <names xml:lang="sv">miljard,p:miljarder,billion</names>
+      <value>1E9</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Million</title>
+      <title xml:lang="es">Millón</title>
+      <title xml:lang="nl">Miljoen</title>
+      <title xml:lang="ru">Миллион</title>
+      <title xml:lang="sv">Miljon</title>
+      <title xml:lang="zh_CN">百万</title>
+      <names>-r:million</names>
+      <names xml:lang="es">millón</names>
+      <names xml:lang="nl">miljoen</names>
+      <names xml:lang="ru">миллион</names>
+      <names xml:lang="sv">miljon,p:miljoner,million</names>
+      <value>1E6</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Thousand</title>
+      <title xml:lang="es">Mil</title>
+      <title xml:lang="nl">Duizend</title>
+      <title xml:lang="ru">Тысяча</title>
+      <title xml:lang="sv">Tusen</title>
+      <title xml:lang="zh_CN">千</title>
+      <names>-r:thousand</names>
+      <names xml:lang="nl">duizend</names>
+      <names xml:lang="ru">тысяча</names>
+      <names xml:lang="sv">tusen,thousand</names>
+      <value>1E3</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Hundred</title>
+      <title xml:lang="es">Cien</title>
+      <title xml:lang="nl">Honderd</title>
+      <title xml:lang="ru">Сотня</title>
+      <title xml:lang="sv">Hundra</title>
+      <title xml:lang="zh_CN">百</title>
+      <names>-r:hundred</names>
+      <names xml:lang="nl">honderd</names>
+      <names xml:lang="ru">сотня</names>
+      <names xml:lang="sv">hundra,hundred</names>
+      <value>1E2</value>
+    </variable>
+  </category>
+  <category>
+    <title>Traditional Numbers</title>
+    <title xml:lang="es">Números tradicionales</title>
+    <title xml:lang="ru">Национальные числа</title>
+    <title xml:lang="sv">Traditionella tal</title>
+    <variable require_translation="true">
+      <title>Dozen</title>
+      <title xml:lang="es">Docena</title>
+      <title xml:lang="nl">Dozijn</title>
+      <title xml:lang="ru">Дюжина</title>
+      <title xml:lang="sv">Dussin</title>
+      <names>-r:dozen,a:dz,a:doz</names>
+      <names xml:lang="nl">dozijn</names>
+      <names xml:lang="ru">дюжина,p:дюжины,p:дюжин,</names>
+      <names xml:lang="sv">dussin</names>
+      <value>12</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Baker's Dozen</title>
+      <title xml:lang="es">Docena del panadero</title>
+      <title xml:lang="nl">Bakkersdozijn</title>
+      <title xml:lang="ru">Чёртова дюжина</title>
+      <title xml:lang="sv">Bagardussin</title>
+      <names>-r:bakers_dozen</names>
+      <names xml:lang="nl">bakkers_dozijn</names>
+      <names xml:lang="ru">чёртова_дюжина,чертова_дюжина</names>
+      <names xml:lang="sv">bagardussin</names>
+      <value>13</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Score</title>
+      <title xml:lang="nl">Stijg</title>
+      <title xml:lang="sv">Tjog</title>
+      <names>-r:score</names>
+      <names xml:lang="nl">stijg</names>
+      <names xml:lang="sv">tjog</names>
+      <value>20</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Long Hundred</title>
+      <title xml:lang="es">Centena larga</title>
+      <title xml:lang="ru">Длинная сотня</title>
+      <title xml:lang="sv">Stor-hundrade</title>
+      <names>-r:long_hundred,great_hundred,twelfty</names>
+      <names xml:lang="ru">длинная_сотня</names>
+      <names xml:lang="sv">storhundra,storhundrade,p:sotrhundraden</names>
+      <value>120</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Gross</title>
+      <title xml:lang="es">Gruesa</title>
+      <title xml:lang="nl">Gros</title>
+      <title xml:lang="ru">Гросс</title>
+      <names>-r:gross,a:gro</names>
+      <names xml:lang="nl">gros</names>
+      <names xml:lang="ru">гросс</names>
+      <names xml:lang="sv">gross</names>
+      <value>144</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Long Thousand</title>
+      <title xml:lang="es">Millar largo</title>
+      <title xml:lang="ru">Длинная тысяча</title>
+      <names>-r:long_thousand</names>
+      <names xml:lang="ru">длинная_тысяча</names>
+      <value>1200</value>
+    </variable>
+    <variable require_translation="true">
+      <title>Great Gross</title>
+      <title xml:lang="es">Gran gruesa</title>
+      <title xml:lang="ru">Большой гросс (Масса)</title>
+      <names>-r:great_gross</names>
+      <names xml:lang="ru">большой_гросс,масса</names>
+      <value>1728</value>
+    </variable>
+  </category>
+  <category>
+    <title>Physical Constants</title>
+    <title xml:lang="es">Constantes físicas</title>
+    <title xml:lang="fr">Constantes physiques</title>
+    <title xml:lang="nl">Natuurkundige constanten</title>
+    <title xml:lang="ru">Физические константы</title>
+    <title xml:lang="sv">Fysikaliska konstanter</title>
+    <title xml:lang="zh_CN">物理常数</title>
+    <category>
+      <title>Universal Constants</title>
+      <title xml:lang="es">Constantes universales</title>
+      <title xml:lang="fr">Constantes universelles</title>
+      <title xml:lang="nl">Universele constanten</title>
+      <title xml:lang="ru">Мировые константы</title>
+      <title xml:lang="sv">Universala konstanter</title>
+      <title xml:lang="zh_CN">普适常数</title>
+      <variable>
+        <title>Characteristic Impedance of Vacuum</title>
+        <title xml:lang="es">Impedancia característica del vacío</title>
+        <title xml:lang="fr">Impédance caractéristique du vide</title>
+        <title xml:lang="nl">Karakteristieke impedantie vacuüm</title>
+        <title xml:lang="ru">Волновое сопротивление вакуума</title>
+        <title xml:lang="sv">Karaktäristisk impedans för vakuum</title>
+        <title xml:lang="zh_CN">真空特性阻抗</title>
+        <names>r:characteristic_impedance,as:Z_0</names>
+        <value>(2*planck*fine_structure)/(elementary_charge^2)</value>
+      </variable>
+      <variable>
+        <title>Electric Constant (Permittivity of Free Space)</title>
+        <title xml:lang="es">Constante eléctrica (Permitividad de espacio libre)</title>
+        <title xml:lang="fr">Constante électrique (permittivité du vide)</title>
+        <title xml:lang="nl">Elektrische constante (permittiviteit vrije ruimte)</title>
+        <title xml:lang="ru">Электрическая постоянная (диэлектрическая проницаемость вакуума)</title>
+        <title xml:lang="sv">Elektriska konstanten (tomrummets permettivitet)</title>
+        <title xml:lang="zh_CN">介电常数(自由空间介电常数)</title>
+        <names>r:electric_constant,asu:&#x3B5;_0,vacuum_permittivity,aos:epsilon_0</names>
+        <value>elementary_charge^2/(2*planck*fine_structure*c)</value>
+      </variable>
+      <variable>
+        <title>Magnetic Constant (Permeability of Free Space)</title>
+        <title xml:lang="es">Constante magnética (Permeabilidad de espacio libre)</title>
+        <title xml:lang="fr">Constante magnétique (perméabilité du vide)</title>
+        <title xml:lang="nl">Magnetische constante (permeabiliteit vrije ruimte)</title>
+        <title xml:lang="ru">Магнитная постоянная (магнитная проницаемость вакуума)</title>
+        <title xml:lang="sv">Magnetiska konstanten (tomrummets permeabilitet)</title>
+        <title xml:lang="zh_CN">磁常数(自由空间磁导率)</title>
+        <names>r:magnetic_constant,asu:&#x3BC;_0,asou:&#x0B5;_0,vacuum_permeability,aos:mu_0</names>
+        <value>(2*planck*fine_structure)/(c*elementary_charge^2)</value>
+      </variable>
+      <variable>
+        <title>Planck Constant</title>
+        <title xml:lang="es">Constante de Planck</title>
+        <title xml:lang="fr">Constantes de Planck</title>
+        <title xml:lang="nl">Constante van Planck</title>
+        <title xml:lang="ru">Постоянная Планка</title>
+        <title xml:lang="sv">Plancks konstant</title>
+        <title xml:lang="zh_CN">普朗克常数</title>
+        <names>r:planck,au:&#x210e;</names>
+        <value unit="J*s">6.62607015E-34</value>
+      </variable>
+      <variable>
+        <title>Reduced Planck Constant (Dirac constant)</title>
+        <title xml:lang="es">Constante de Planck reducida (constante de Dirac)</title>
+        <title xml:lang="fr">Constante de Planck réduite (constante de Dirac)</title>
+        <title xml:lang="nl">Gereduceerde constante van Planck (constante van Dirac)</title>
+        <title xml:lang="ru">Приведённая постоянная Планка (постоянная Дирака)</title>
+        <title xml:lang="sv">Reducerad Plancks konstant (Diracs konstant)</title>
+        <title xml:lang="zh_CN">约化普朗克常数(狄拉克常数)</title>
+        <names>r:planck2pi,dirac,au:&#x210f;,o:hbar</names>
+        <value>planck/(2*pi)</value>
+      </variable>
+      <variable>
+        <title>Newtonian Constant of Gravitation</title>
+        <title xml:lang="es">Constante de gravitación universal</title>
+        <title xml:lang="fr">Constante de la gravitation de Newton</title>
+        <title xml:lang="nl">Gravitatieconstante</title>
+        <title xml:lang="ru">Гравитационная постоянная, постоянная Ньютона</title>
+        <title xml:lang="sv">Newtonska gravitationskonstanten</title>
+        <title xml:lang="zh_CN">牛顿引力常数</title>
+        <names>r:newtonian_constant,a:G</names>
+        <value unit="m^3*kg^(-1)*s^(-2)" uncertainty="1.5E-15">6.67430E-11</value>
+      </variable>
+      <variable>
+        <title>Speed of Light in Vacuum</title>
+        <title xml:lang="es">Velocidad de la luz en el vacío</title>
+        <title xml:lang="fr">Vitesse de la lumière dans le vide</title>
+        <title xml:lang="nl">Lichtsnelheid in vacuüm</title>
+        <title xml:lang="ru">Скорость света в вакууме</title>
+        <title xml:lang="sv">Ljusets hastighet i vakuum</title>
+        <title xml:lang="zh_CN">真空中光速</title>
+        <names>ar:c,speed_of_light</names>
+        <value unit="m*s^(-1)">299792458</value>
+      </variable>
+      <variable>
+        <title>Standard Acceleration due to Gravity</title>
+        <title xml:lang="es">Aceleración estándar debida a la gravedad</title>
+        <title xml:lang="fr">Accélération normale de la pesanteur terrestre</title>
+        <title xml:lang="ru">Ускорение свободного падения</title>
+        <title xml:lang="sv">Standardacceleration av gravitet</title>
+        <title xml:lang="zh_CN">标准重力加速度</title>
+        <names>r:standard_gravity,asu:g_0,asu:&#x0261;_0,asu:&#x0261;_n</names>
+        <value unit="m s^(-2)">9.80665</value>
+      </variable>
+    </category>
+    <category>
+      <title>Electromagnetic Constants</title>
+      <title xml:lang="es">Constantes electromagnéticas</title>
+      <title xml:lang="fr">Constantes électromagnétiques</title>
+      <title xml:lang="nl">Elektromagnetische constanten</title>
+      <title xml:lang="ru">Электромагнитные константы</title>
+      <title xml:lang="sv">Elektromagnetiska konstanter</title>
+      <title xml:lang="zh_CN">电磁常数</title>
+      <variable>
+        <title>Bohr Magneton</title>
+        <title xml:lang="es">Magnetón de Bohr</title>
+        <title xml:lang="fr">Magnéton de Bohr</title>
+        <title xml:lang="nl">Bohrmagneton</title>
+        <title xml:lang="ru">Магнетон Бора</title>
+        <title xml:lang="sv">Bohrs magneton</title>
+        <title xml:lang="zh_CN">玻尔磁子</title>
+        <names>r:bohr_magneton,asu:&#x3BC;_B,asou:&#x0B5;_0,aos:mu_B</names>
+        <value>(elementary_charge*planck)/(4*electron_mass*pi)</value>
+      </variable>
+      <variable>
+        <title>Conductance Quantum</title>
+        <title xml:lang="es">Cuanto de conductancia</title>
+        <title xml:lang="fr">Conductance élémentaire</title>
+        <title xml:lang="nl">Geleidingskwantum</title>
+        <title xml:lang="ru">Квант кондактанса (точечного квантового контакта)</title>
+        <title xml:lang="sv">Konduktanskvantum</title>
+        <title xml:lang="zh_CN">电导量子</title>
+        <names>r:conductance_quantum,as:G_0</names>
+        <value>2*elementary_charge^2/planck</value>
+      </variable>
+      <variable>
+        <title>Coulomb's Constant (Electric Force Constant)</title>
+        <title xml:lang="es">Constante de Coulomb (constante de fuerza eléctrica)</title>
+        <title xml:lang="fr">Constante de Coulomb (constante de force électrique)</title>
+        <title xml:lang="nl">Constante van Coulomb</title>
+        <title xml:lang="ru">Постоянная Кулона (постоянная электрической силы)</title>
+        <title xml:lang="sv">Coulombs konstant</title>
+        <title xml:lang="zh_CN">库仑常数(电力常数)</title>
+        <names>r:coulombs_constant,as:k_e</names>
+        <value>(magnetic_constant*c^2)/(4pi)</value>
+      </variable>
+      <variable>
+        <title>Elementary Charge</title>
+        <title xml:lang="es">Carga elemental</title>
+        <title xml:lang="fr">Charge élémentaire</title>
+        <title xml:lang="nl">Elementaire lading</title>
+        <title xml:lang="ru">Элементарный заряд</title>
+        <title xml:lang="sv">Elementarladdning</title>
+        <title xml:lang="zh_CN">基本电荷</title>
+        <names>r:elementary_charge,as:q_e,as:e_charge</names>
+        <value unit="C">1.602176634E-19</value>
+      </variable>
+      <variable>
+        <title>Inverse of Conductance Quantum</title>
+        <title xml:lang="es">Inverso del cuanto de conductancia</title>
+        <title xml:lang="fr">Inverse de la conductance élémentaire</title>
+        <title xml:lang="nl">Omgekeerd van geleidingskwantum</title>
+        <title xml:lang="ru">Квант сопротивления (точечного квантового контакта)</title>
+        <title xml:lang="sv">Invers av Konduktanskvantum</title>
+        <title xml:lang="zh_CN">逆量子电导</title>
+        <names>r:inverse_conductance_quantum</names>
+        <value>planck/(2*elementary_charge^2)</value>
+      </variable>
+      <variable>
+        <title>Josephson Constant</title>
+        <title xml:lang="es">Constante de Josephson</title>
+        <title xml:lang="fr">Constant de Josephson</title>
+        <title xml:lang="nl">Josephson constante</title>
+        <title xml:lang="ru">Постоянная Джозефсона</title>
+        <title xml:lang="sv">Josephsons konstant</title>
+        <title xml:lang="zh_CN">约瑟夫森常数</title>
+        <names>r:josephson,as:K_J</names>
+        <value>2*elementary_charge/planck</value>
+      </variable>
+      <variable>
+        <title>Josephson Constant (conventional value)</title>
+        <title xml:lang="es">Constante de Josephson (valor convencional)</title>
+        <title xml:lang="fr">Constant de Josephson (valeur conventionnelle)</title>
+        <title xml:lang="nl">Josephson constante (conventionele waarde)</title>
+        <title xml:lang="ru">Постоянная Джозефсона (конвенциональное определение)</title>
+        <title xml:lang="sv">Josephsons konstant (konventionellt värde)</title>
+        <title xml:lang="zh_CN">约瑟夫逊常数(旧值)</title>
+        <names>rs:josephson_conventional,as:K_J90</names>
+        <value unit="Hz*V^(-1)">4.835979E14</value>
+      </variable>
+      <variable>
+        <title>Magnetic Flux Quantum</title>
+        <title xml:lang="es">Cuanto de flujo magnético</title>
+        <title xml:lang="nl">Magnetische flux kwantum</title>
+        <title xml:lang="ru">Квант магнитного потока</title>
+        <title xml:lang="sv">Magnetflödeskonstanten</title>
+        <title xml:lang="zh_CN">磁通量量子</title>
+        <names>r:magnetic_flux_quantum,asu:&#x3A6;_0,aos:phi_0</names>
+        <value>planck/(2*elementary_charge)</value>
+      </variable>
+      <variable>
+        <title>Nuclear Magneton</title>
+        <title xml:lang="es">Magnetón nuclear</title>
+        <title xml:lang="fr">Magnéton nucléaire</title>
+        <title xml:lang="nl">Nucleaire magneton</title>
+        <title xml:lang="ru">Ядерный магнетон</title>
+        <title xml:lang="sv">Kärnmagneton</title>
+        <title xml:lang="zh_CN">核磁子</title>
+        <names>r:nuclear_magneton,asu:&#x3BC;_N,asou:&#x0B5;_N,aos:mu_N</names>
+        <value>elementary_charge*planck2pi/(2*proton_mass)</value>
+      </variable>
+      <variable>
+        <title>von Klitzing Constant</title>
+        <title xml:lang="es">Constante de von Klitzing</title>
+        <title xml:lang="fr">Constante de von Klitzing</title>
+        <title xml:lang="nl">von Klitzing constante</title>
+        <title xml:lang="ru">константа фон Клитцинга</title>
+        <title xml:lang="sv">von Klitzing-konstanten</title>
+        <title xml:lang="zh_CN">冯·克里青常数</title>
+        <names>r:klitzing,as:R_K</names>
+        <value>planck/elementary_charge^2</value>
+      </variable>
+      <variable>
+        <title>von Klitzing Constant (conventional value)</title>
+        <title xml:lang="es">Constante de von Klitzing (valor convencional)</title>
+        <title xml:lang="fr">Constante de von Klitzing (valeur conventionnelle)</title>
+        <title xml:lang="nl">von Klitzing constante (conventionele waarde)</title>
+        <title xml:lang="ru">константа фон Клитцинга (конвенциональное определение)</title>
+        <title xml:lang="sv">von Klitzing-konstanten (konventionellt värde)</title>
+        <title xml:lang="zh_CN">冯·克里青常数(旧值)</title>
+        <names>rs:klitzing_conventional,as:R_K90</names>
+        <value unit="ohm">25812.807</value>
+      </variable>
+    </category>
+    <category>
+      <title>Particle Mass in u</title>
+      <title xml:lang="es">Masa de partícula en unidades de masa atómica</title>
+      <title xml:lang="fr">Masse de particules en u</title>
+      <title xml:lang="nl">Deeltjesmassa in u</title>
+      <title xml:lang="ru">Масса частиц (а. е. м.)</title>
+      <title xml:lang="sv">Partikelmassa i u</title>
+      <title xml:lang="zh_CN">粒子质量(u)</title>
+      <variable>
+        <title>Deuteron Mass (in u)</title>
+        <title xml:lang="es">Masa de deuterón (en u)</title>
+        <title xml:lang="fr">Masse du deutéron (u)</title>
+        <title xml:lang="nl">Neutronmassa (u)</title>
+        <title xml:lang="ru">Масса дейтрона (а. е. м.)</title>
+        <title xml:lang="sv">Deuteronmassa (i u)</title>
+        <title xml:lang="zh_CN">氘核质量(u)</title>
+        <names>rs:deuteron_u</names>
+        <value unit="u" uncertainty="4.0E-11">2.013553212745</value>
+      </variable>
+      <variable>
+        <title>Electron Mass (in u)</title>
+        <title xml:lang="es">Masa de electrón (en u)</title>
+        <title xml:lang="fr">Masse de l'électron (u)</title>
+        <title xml:lang="nl">Elektronmassa (u)</title>
+        <title xml:lang="ru">Масса электрона (а. е. м.)</title>
+        <title xml:lang="sv">Elektronmassa (i u)</title>
+        <title xml:lang="zh_CN">电子质量(u)</title>
+        <names>rs:electron_u</names>
+        <value unit="u" uncertainty="1.6E-14">5.48579909065E-4</value>
+      </variable>
+      <variable>
+        <title>Helion Mass (in u)</title>
+        <title xml:lang="es">Masa de helión (en u)</title>
+        <title xml:lang="fr">Masse du hélion (u)</title>
+        <title xml:lang="nl">Helionmassa (u)</title>
+        <title xml:lang="ru">Масса гелиона (а. е. м.)</title>
+        <title xml:lang="sv">Helionmassa (i u)</title>
+        <title xml:lang="zh_CN">氦3质量(u)</title>
+        <names>rs:helion_u</names>
+        <value unit="u" uncertainty="9.7E-11">3.014932247175</value>
+      </variable>
+      <variable>
+        <title>Neutron Mass (in u)</title>
+        <title xml:lang="es">Masa de neutrón (en u)</title>
+        <title xml:lang="fr">Masse du neutron (u)</title>
+        <title xml:lang="nl">Neutronmassa (u)</title>
+        <title xml:lang="ru">Масса нейтрона (а. е. м.)</title>
+        <title xml:lang="sv">Neutronmassa (i u)</title>
+        <title xml:lang="zh_CN">中子质量(u)</title>
+        <names>rs:neutron_u</names>
+        <value unit="u" uncertainty="4.9E-10">1.00866491595</value>
+      </variable>
+      <variable>
+        <title>Proton Mass (in u)</title>
+        <title xml:lang="es">Masa de protón (en u)</title>
+        <title xml:lang="fr">Masse du proton (u)</title>
+        <title xml:lang="nl">Protonmassa (u)</title>
+        <title xml:lang="ru">Масса протона (а. е. м.)</title>
+        <title xml:lang="sv">Protonmassa (i u)</title>
+        <title xml:lang="zh_CN">质子质量(u)</title>
+        <names>rs:proton_u</names>
+        <value unit="u" uncertainty="5.3E-11">1.007276466621</value>
+      </variable>
+      <variable>
+        <title>Tau Mass (in u)</title>
+        <title xml:lang="es">Masa de tau (en u)</title>
+        <title xml:lang="fr">Masse du tau (u)</title>
+        <title xml:lang="nl">Taumassa (u)</title>
+        <title xml:lang="ru">Масса таона (тау-лептона) (а. е. м.)</title>
+        <title xml:lang="sv">Taumassa (i u)</title>
+        <title xml:lang="zh_CN">τ子质量(u)</title>
+        <names>rs:tau_u</names>
+        <value unit="u" uncertainty="1.3E-4">1.90754</value>
+      </variable>
+      <variable>
+        <title>Muon Mass (in u)</title>
+        <title xml:lang="es">Masa de muon (en u)</title>
+        <title xml:lang="fr">Masse du muon (u)</title>
+        <title xml:lang="nl">Muonmassa (u)</title>
+        <title xml:lang="ru">Масса мюона (а. е. м.)</title>
+        <title xml:lang="sv">Muonmassa (i u)</title>
+        <title xml:lang="zh_CN">μ子质量(u)</title>
+        <names>rs:muon_u</names>
+        <value unit="u" uncertainty="2.5E-9">0.1134289259</value>
+      </variable>
+      <variable>
+        <title>Triton Mass (in u)</title>
+        <title xml:lang="es">Masa de tritón (en u)</title>
+        <title xml:lang="fr">Masse du triton (u)</title>
+        <title xml:lang="nl">Tritonmassa (u)</title>
+        <title xml:lang="ru">Масса тритона (ядро атома трития) (а. е. м.)</title>
+        <title xml:lang="sv">Tritonmassa (i u)</title>
+        <title xml:lang="zh_CN">氚核质量(u)</title>
+        <names>rs:triton_u</names>
+        <value unit="u" uncertainty="1.2E-10">3.01550071621</value>
+      </variable>
+      <variable>
+        <title>Alpha Particle Mass (in u)</title>
+        <title xml:lang="es">Masa de partícula alfa (en u)</title>
+        <title xml:lang="fr">Masse d'une particule alpha</title>
+        <title xml:lang="nl">Massa alfadeeltje (u)</title>
+        <title xml:lang="ru">Масса альфа частицы (ядро атома гелия) (а. е. м.)</title>
+        <title xml:lang="sv">Alfapartikelmassa (i u)</title>
+        <title xml:lang="zh_CN">α粒子质量(u)</title>
+        <names>rs:alpha_particle_u</names>
+        <value unit="u" uncertainty="6.3E-11">4.001506179127</value>
+      </variable>
+    </category>
+    <category>
+      <title>Particle Mass in MeV*c^(-2)</title>
+      <title xml:lang="es">Masa de partícula en MeV*c^(-2)</title>
+      <title xml:lang="fr">Masse de particules en MeV*c^(-2)</title>
+      <title xml:lang="nl">Deeltjesmassa in MeV*c^(-2)</title>
+      <title xml:lang="ru">Масса частицы в МэВ/c&#x00B2;</title>
+      <title xml:lang="sv">Partikelmassa i MeV*c^(-2)</title>
+      <title xml:lang="zh_CN">粒子质量(MeV*c^(-2))</title>
+      <variable>
+        <title>Electron Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de electrón (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse de l'électron (MeV/c^2)</title>
+        <title xml:lang="nl">Elektronmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса электрона (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Elektronmassa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">电子质量(MeV/c^2)</title>
+        <names>rs:electron_eV</names>
+        <value unit="MeV*c_unit^(-2)">electron_mass*c^2/electronvolt_constant*1E-6</value>
+      </variable>
+      <variable>
+        <title>Neutron Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de neutrón (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du neutron (MeV/c^2)</title>
+        <title xml:lang="nl">Neutronmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса нейтрона (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Neutronmassa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">中子质量(MeV/c^2)</title>
+        <names>rs:neutron_eV</names>
+        <value unit="MeV*c_unit^(-2)">neutron_mass*c^2/electronvolt_constant*1E-6</value>
+      </variable>
+      <variable>
+        <title>Proton Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de protón (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du proton (MeV/c^2)</title>
+        <title xml:lang="nl">Protonmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса протона (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Protonmassa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">质子质量(MeV/c^2)</title>
+        <names>rs:proton_eV</names>
+        <value unit="MeV*c_unit^(-2)">proton_mass*c^2/electronvolt_constant*1E-6</value>
+      </variable>
+      <variable>
+        <title>Tau Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de tau (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du tau (MeV/c^2)</title>
+        <title xml:lang="nl">Taumassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса таона (тау-лептона) (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Taumassa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">τ子质量(MeV/c^2)</title>
+        <names>rs:tau_eV</names>
+        <value unit="MeV*c_unit^(-2)">tau_mass*c^2/electronvolt_constant*1E-6</value>
+      </variable>
+      <variable>
+        <title>Muon Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de muon (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du muon (MeV/c^2)</title>
+        <title xml:lang="nl">Muonmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса мюона (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Muonmassa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">μ子质量(MeV/c^2)</title>
+        <names>rs:muon_eV</names>
+        <value unit="MeV*c_unit^(-2)">muon_mass*c^2/electronvolt_constant*1E-6</value>
+      </variable>
+      <variable>
+        <title>Alpha Particle Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de partícula alfa (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse d'une particule alpha (MeV/c^2)</title>
+        <title xml:lang="nl">Massa alfadeeltje (MeV/c^2)</title>
+        <title xml:lang="ru">Масса альфа частицы (ядро атома гелия) (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Alfapartikelmassa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">α粒子质量(MeV/c^2)</title>
+        <names>rs:alpha_particle_eV</names>
+        <value unit="MeV*c_unit^(-2)">alpha_particle_mass*c^2/electronvolt_constant*1E-6</value>
+      </variable>
+      <variable>
+        <title>Up Quark Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de cuark arriba (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du quark up (MeV/c^2)</title>
+        <title xml:lang="nl">Upquarkmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса u-кварка (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Uppkvarks massa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">上夸克质量(MeV/c^2)</title>
+        <names>r:quark_u</names>
+        <value unit="MeV*c_unit^(-2)" uncertainty="0.5">2.2</value>
+      </variable>
+      <variable>
+        <title>Down Quark Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de cuark abajo (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du quark down (MeV/c^2)</title>
+        <title xml:lang="nl">Downquarkmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса d-кварка (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Nerkvarks massa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">下夸克质量(MeV/c^2)</title>
+        <names>r:quark_d</names>
+        <value unit="MeV*c_unit^(-2)" uncertainty="0.5">4.7</value>
+      </variable>
+      <variable>
+        <title>Charm Quark Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de cuark encanto (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du quark charm (MeV/c^2)</title>
+        <title xml:lang="nl">Charmquarkmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса c-кварка (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Charmkvarks massa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">粲夸克质量(MeV/c^2)</title>
+        <names>r:quark_c</names>
+        <value unit="MeV*c_unit^(-2)" uncertainty="35">1275</value>
+      </variable>
+      <variable>
+        <title>Strange Quark Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de cuark extraño (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du quark strange (MeV/c^2)</title>
+        <title xml:lang="nl">Strangequarkmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса s-кварка (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Särkvarks massa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">奇夸克质量(MeV/c^2)</title>
+        <names>r:quark_s</names>
+        <value unit="MeV*c_unit^(-2)" uncertainty="9">95</value>
+      </variable>
+      <variable>
+        <title>Top Quark Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de cuark cima (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du quark top (MeV/c^2)</title>
+        <title xml:lang="nl">Topquarkmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса t-кварка (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Toppkvarks massa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">顶夸克质量(MeV/c^2)</title>
+        <names>r:quark_t</names>
+        <value unit="MeV*c_unit^(-2)" uncertainty="510">173210</value>
+      </variable>
+      <variable>
+        <title>Bottom Quark Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de cuark fondo (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du quark bottom (MeV/c^2)</title>
+        <title xml:lang="nl">Bottomquarkmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса b-кварка (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Bottenkvarks massa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">底夸克质量(MeV/c^2)</title>
+        <names>r:quark_b</names>
+        <value unit="MeV*c_unit^(-2)" uncertainty="40">4180</value>
+      </variable>
+      <variable>
+        <title>Higgs Boson Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de bosón de Higgs (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du boson de Higgs (MeV/c^2)</title>
+        <title xml:lang="nl">Higgsbosonmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса бозона Хиггса (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Higgsbosons massa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">希格斯玻色子质量(MeV/c^2)</title>
+        <names>r:higgs_boson</names>
+        <value unit="MeV*c_unit^(-2)" uncertainty="160">125180</value>
+      </variable>
+      <variable>
+        <title>W Boson Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de bosón W (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du boson W (MeV/c^2)</title>
+        <title xml:lang="nl">W-bosonmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса W-бозона (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">W-bosons massa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">W玻色子质量(MeV/c^2)</title>
+        <names>r:w_boson</names>
+        <value unit="MeV*c_unit^(-2)" uncertainty="12">80379</value>
+      </variable>
+      <variable>
+        <title>Z Boson Mass (in MeV/c^2)</title>
+        <title xml:lang="es">Masa de bosón Z (en MeV*c^(-2))</title>
+        <title xml:lang="fr">Masse du boson Z (MeV/c^2)</title>
+        <title xml:lang="nl">Z-bosonmassa (MeV/c^2)</title>
+        <title xml:lang="ru">Масса Z-бозона (в МэВ/c&#x00B2;)</title>
+        <title xml:lang="sv">Z-bosons massa (i MeV/c^2)</title>
+        <title xml:lang="zh_CN">Z玻色子(MeV/c^2)</title>
+        <names>r:z_boson</names>
+        <value unit="MeV*c_unit^(-2)" uncertainty="2.1">91187.6</value>
+      </variable>
+    </category>
+    <category>
+      <title>Particle Mass in kg</title>
+      <title xml:lang="es">Masa de partícula en kg</title>
+      <title xml:lang="fr">Masse de particules en kg</title>
+      <title xml:lang="nl">Deeltjesmassa in kg</title>
+      <title xml:lang="ru">Масса частиц (кг)</title>
+      <title xml:lang="sv">Partikelmassa i kg</title>
+      <title xml:lang="zh_CN">粒子质量(kg)</title>
+      <variable>
+        <title>Deuteron Mass</title>
+        <title xml:lang="es">Masa de deuterón</title>
+        <title xml:lang="fr">Masse du deutéron</title>
+        <title xml:lang="nl">Deuteronmassa</title>
+        <title xml:lang="ru">Масса дейтрона</title>
+        <title xml:lang="sv">Deuteronmassa</title>
+        <title xml:lang="zh_CN">氘核质量</title>
+        <names>rs:deuteron_mass</names>
+        <value>nounit(deuteron_u)*atomic_mass_constant</value>
+      </variable>
+      <variable>
+        <title>Electron Mass</title>
+        <title xml:lang="es">Masa de electrón</title>
+        <title xml:lang="fr">Masse de l'électron</title>
+        <title xml:lang="nl">Elektronmassa</title>
+        <title xml:lang="ru">Масса электрона</title>
+        <title xml:lang="sv">Elektronmassa</title>
+        <title xml:lang="zh_CN">电子质量</title>
+        <names>rs:electron_mass,as:m_e</names>
+        <value>(2*rydberg*planck)/(c*fine_structure^2)</value>
+      </variable>
+      <variable>
+        <title>Helion Mass</title>
+        <title xml:lang="es">Masa de helión</title>
+        <title xml:lang="fr">Masse du hélion</title>
+        <title xml:lang="nl">Helionmassa</title>
+        <title xml:lang="ru">Масса гелиона (ядро лёгкого изотопа гелия)</title>
+        <title xml:lang="sv">Helionmassa</title>
+        <title xml:lang="zh_CN">氦3质量</title>
+        <names>rs:helion_mass,as:m_h</names>
+        <value>nounit(helion_u)*atomic_mass_constant</value>
+      </variable>
+      <variable>
+        <title>Neutron Mass</title>
+        <title xml:lang="es">Masa de neutrón</title>
+        <title xml:lang="fr">Masse du neutron</title>
+        <title xml:lang="nl">Neutronmassa</title>
+        <title xml:lang="ru">Масса нейтрона</title>
+        <title xml:lang="sv">Neutronmassa</title>
+        <title xml:lang="zh_CN">中子质量</title>
+        <names>rs:neutron_mass,as:m_n</names>
+        <value>nounit(neutron_u)*atomic_mass_constant</value>
+      </variable>
+      <variable>
+        <title>Proton Mass</title>
+        <title xml:lang="es">Masa de protón</title>
+        <title xml:lang="fr">Masse du proton</title>
+        <title xml:lang="nl">Protonmassa</title>
+        <title xml:lang="ru">Масса протона</title>
+        <title xml:lang="sv">Protonmassa</title>
+        <title xml:lang="zh_CN">质子质量</title>
+        <names>rs:proton_mass,as:m_p</names>
+        <value>nounit(proton_u)*atomic_mass_constant</value>
+      </variable>
+      <variable>
+        <title>Tau Mass</title>
+        <title xml:lang="es">Masa de tau</title>
+        <title xml:lang="fr">Masse du tau</title>
+        <title xml:lang="nl">Taumassa</title>
+        <title xml:lang="ru">Масса таона (тау-лептона)</title>
+        <title xml:lang="sv">Taumassa</title>
+        <title xml:lang="zh_CN">τ子质量</title>
+        <names>rs:tau_mass,asu:m_&#x3C4;,aos:m_tau</names>
+        <value>nounit(tau_u)*atomic_mass_constant</value>
+      </variable>
+      <variable>
+        <title>Muon Mass</title>
+        <title xml:lang="es">Masa de muon</title>
+        <title xml:lang="fr">Masse du muon</title>
+        <title xml:lang="nl">Mounmassa</title>
+        <title xml:lang="ru">Масса мюона</title>
+        <title xml:lang="sv">Muonmassa</title>
+        <title xml:lang="zh_CN">μ子质量</title>
+        <names>rs:muon_mass,asu:m_&#x3BC;,asou:m_&#x0B5;,aos:m_mu</names>
+        <value>nounit(muon_u)*atomic_mass_constant</value>
+      </variable>
+      <variable>
+        <title>Triton Mass</title>
+        <title xml:lang="es">Masa de tritón</title>
+        <title xml:lang="fr">Masse du triton</title>
+        <title xml:lang="nl">Tritonmassa</title>
+        <title xml:lang="ru">Масса тритона (ядро атома трития)</title>
+        <title xml:lang="sv">Tritonmassa</title>
+        <title xml:lang="zh_CN">氚核质量</title>
+        <names>rs:triton_mass</names>
+        <value>nounit(triton_u)*atomic_mass_constant</value>
+      </variable>
+      <variable>
+        <title>Alpha Particle Mass</title>
+        <title xml:lang="es">Masa de partícula alfa</title>
+        <title xml:lang="fr">Masse d'une particule alpha</title>
+        <title xml:lang="nl">Massa alfadeeltje</title>
+        <title xml:lang="ru">Масса альфа частицы (ядро атома гелия)</title>
+        <title xml:lang="sv">Alfapartikelmassa</title>
+        <title xml:lang="zh_CN">α粒子质量</title>
+        <names>rs:alpha_particle_mass,asu:m_&#x3B1;,aos:m_alpha</names>
+        <value>nounit(alpha_particle_u)*atomic_mass_constant</value>
+      </variable>
+    </category>
+    <category>
+      <title>Atomic and Nuclear Constants</title>
+      <title xml:lang="es">Constantes atómicas y nucleares</title>
+      <title xml:lang="fr">Constantes atomiques et nucléaires</title>
+      <title xml:lang="nl">Atomaire- en nucleaire constanten</title>
+      <title xml:lang="ru">Атомные и ядерные константы</title>
+      <title xml:lang="sv">Atomära och nukleära konstanter</title>
+      <title xml:lang="zh_CN">原子与核物理常数</title>
+      <variable>
+        <title>Bohr Radius</title>
+        <title xml:lang="es">Radio de Bohr</title>
+        <title xml:lang="fr">Rayon de Bohr</title>
+        <title xml:lang="nl">Bohr-straal</title>
+        <title xml:lang="ru">Боровский радиус</title>
+        <title xml:lang="sv">Bohr-radie</title>
+        <title xml:lang="zh_CN">玻尔半径</title>
+        <names>r:bohr_radius,as:a_0</names>
+        <value>planck2pi/(fine_structure*electron_mass*c)</value>
+      </variable>
+      <variable>
+        <title>Classical Electron Radius</title>
+        <title xml:lang="es">Radio clásico del electrón</title>
+        <title xml:lang="nl">Klassieke straal elektron</title>
+        <title xml:lang="ru">Классический радиус электрона</title>
+        <title xml:lang="sv">Klassisk elektron-radie</title>
+        <title xml:lang="zh_CN">经典电子半径</title>
+        <names>r:classical_electron_radius,as:r_e</names>
+        <value>elementary_charge^2/(4*pi*electric_constant*electron_mass*c^2)</value>
+      </variable>
+      <variable>
+        <title>Fermi Coupling Constant</title>
+        <title xml:lang="es">Constante de acoplamiento de Fermi</title>
+        <title xml:lang="fr">Constante de Fermi</title>
+        <title xml:lang="ru">Константа слабого взаимодействия (постоянная Ферми)</title>
+        <title xml:lang="sv">Fermi Coupling-konstanten</title>
+        <title xml:lang="zh_CN">费米耦合常数</title>
+        <names>r:fermi_coupling</names>
+        <value unit="GeV^(-2)" uncertainty="6E-12">1.1663787E-5</value>
+      </variable>
+      <variable>
+        <title>Fine-Structure Constant</title>
+        <title xml:lang="es">Constante de estructura fina</title>
+        <title xml:lang="fr">Constante de structure fine</title>
+        <title xml:lang="nl">Fijnstructuurconstante</title>
+        <title xml:lang="ru">Постоянная тонкой структуры</title>
+        <title xml:lang="sv">Finstrukturkonstanten</title>
+        <title xml:lang="zh_CN">精细结构常数</title>
+        <names>r:fine_structure,au:&#x03B1;,ao:alpha</names>
+        <value uncertainty="1.1E-12">7.2973525693E-3</value>
+      </variable>
+      <variable>
+        <title>Hartree Energy (constant)</title>
+        <title xml:lang="es">Energía de Hartree (constante)</title>
+        <title xml:lang="fr">Hartree (constante)</title>
+        <title xml:lang="nl">Hartree-energie (constante)</title>
+        <title xml:lang="ru">Энергия Хартри (константа)</title>
+        <title xml:lang="sv">Hartreeenergi (konstant)</title>
+        <title xml:lang="zh_CN">哈特里能量(常数)</title>
+        <names>rs:hartree_constant,as:Ha_constant</names>
+        <value>2*rydberg*planck*c</value>
+      </variable>
+      <variable>
+        <title>Quantum of Circulation</title>
+        <title xml:lang="es">Cuanto de circulación</title>
+        <title xml:lang="ru">Квант циркуляции скорости (для электрона)</title>
+        <title xml:lang="sv">Cirkulationskvantum</title>
+        <title xml:lang="zh_CN">环量量子</title>
+        <names>r:quantum_circulation</names>
+        <value>planck/(2*electron_mass)</value>
+      </variable>
+      <variable>
+        <title>Quantum of Circulation times 2</title>
+        <title xml:lang="es">Cuanto de circulación por 2</title>
+        <title xml:lang="ru">Удвоенный квант циркуляции скорости (для электрона)</title>
+        <title xml:lang="sv">Cirkulationskvantum gånger 2</title>
+        <title xml:lang="zh_CN">环量量子×2</title>
+        <names>r:quantum_circulation_2</names>
+        <value>quantum_circulation*2</value>
+      </variable>
+      <variable>
+        <title>Rydberg Constant</title>
+        <title xml:lang="es">Constante de Rydberg</title>
+        <title xml:lang="fr">Constante de Rydberg</title>
+        <title xml:lang="nl">Rydberg constante</title>
+        <title xml:lang="ru">Постоянная Ридберга</title>
+        <title xml:lang="sv">Rydbergs konstant</title>
+        <title xml:lang="zh_CN">里德伯常数</title>
+        <names>r:rydberg,asu:R_&#x221E;</names>
+        <value unit="m^(-1)" uncertainty="0.000021">10973731.568160</value>
+      </variable>
+      <variable>
+        <title>Thomson cross section</title>
+        <title xml:lang="es">Sección eficaz de Thomson</title>
+        <title xml:lang="ru">Томсоновское сечение рассеяния электрона</title>
+        <title xml:lang="sv">Thomsons krossektion</title>
+        <title xml:lang="zh_CN">汤姆逊散射截面</title>
+        <names>r:thomson_cross_section,asu:&#x03C3;_t,aos:sigma_t</names>
+        <value>(8*pi/3)*classical_electron_radius^2</value>
+      </variable>
+      <variable>
+        <title>Weak Mixing Angle (Weinberg Angle)</title>
+        <title xml:lang="es">Ángulo de mezcla débil (ángulo de Weinberg)</title>
+        <title xml:lang="fr">Angle de Weinberg</title>
+        <title xml:lang="ru">Угол смешивания слабого взаимодействия (угол Вайнберга)</title>
+        <title xml:lang="sv">Svag blandningsvinken (Weinbergvinkeln)</title>
+        <title xml:lang="zh_CN">溫伯格角</title>
+        <names>r:weinberg,weak_mixing_angle,asu:&#x03B8;_W,aos:theta_W</names>
+        <value uncertainty="0.00030">0.22290</value>
+      </variable>
+      <variable>
+        <title>W to Z Mass Ratio</title>
+        <title xml:lang="es">Relación de masa de W a Z</title>
+        <title xml:lang="fr">Fraction massique</title>
+        <title xml:lang="ru">Отношение масс W и Z бозонов</title>
+        <title xml:lang="sv">W till Z massförhållande</title>
+        <title xml:lang="zh_CN">W与Z玻色子质量比</title>
+        <names>r:w_z_ratio</names>
+        <value uncertainty="0.00017">0.88153</value>
+      </variable>
+    </category>
+    <category>
+      <title>Physico-Chemical Constants</title>
+      <title xml:lang="es">Constantes físico-químicas</title>
+      <title xml:lang="fr">Constantes physico-chimiques</title>
+      <title xml:lang="nl">Fysisch-chemische constanten</title>
+      <title xml:lang="ru">Физико-химические константы</title>
+      <title xml:lang="sv">Fysikalisk-kemiska konstanter</title>
+      <title xml:lang="zh_CN">物理化学常数</title>
+      <variable>
+        <title>Lattice Spacing of Ideal Silicon (220)</title>
+        <title xml:lang="es">Espaciado de red de silicio ideal (220)</title>
+        <title xml:lang="ru">Период кристаллической решётки идеального кремния (220)</title>
+        <title xml:lang="sv">Gitteravstånd för idealt silikon (220)</title>
+        <title xml:lang="zh_CN">理想硅的晶格间距(220)</title>
+        <names>rs:lattice_spacing_Si220,as:d_220</names>
+        <value>lattice_parameter_Si/sqrt(8)</value>
+      </variable>
+      <variable>
+        <title>Atomic Mass Constant</title>
+        <title xml:lang="es">Constante de masa atómica</title>
+        <title xml:lang="fr">Constante de masse atomique</title>
+        <title xml:lang="nl">Atomaire massaconstante</title>
+        <title xml:lang="ru">Атомная единица массы (а. е. м.)</title>
+        <title xml:lang="sv">Atommassakonstanten</title>
+        <title xml:lang="zh_CN">原子质量常数</title>
+        <names>r:atomic_mass_constant,as:m_u</names>
+        <value units="auto">(2*rydberg*planck)/(c*fine_structure^2*nounit(electron_u))</value>
+      </variable>
+      <variable>
+        <title>Avogadro Constant</title>
+        <title xml:lang="es">Constante de Avogadro</title>
+        <title xml:lang="fr">Constante d'Avogadro</title>
+        <title xml:lang="nl">Constante van Avogadro</title>
+        <title xml:lang="ru">Постоянная Авогадро</title>
+        <title xml:lang="sv">Avogadros konstant</title>
+        <title xml:lang="zh_CN">阿伏伽德罗常数</title>
+        <names>r:avogadro,as:N_A</names>
+        <value unit="mol^(-1)">6.02214076E23</value>
+      </variable>
+      <variable>
+        <title>Boltzmann Constant</title>
+        <title xml:lang="es">Constante de Boltzmann</title>
+        <title xml:lang="fr">Constante de Boltzmann</title>
+        <title xml:lang="nl">Boltzmannconstante</title>
+        <title xml:lang="ru">Постоянная Больцмана</title>
+        <title xml:lang="sv">Boltzmanns konstant</title>
+        <title xml:lang="zh_CN">玻耳兹曼常数</title>
+        <names>r:boltzmann,as:k_B</names>
+        <value unit="J*K^(-1)">1.380649E-23</value>
+      </variable>
+      <variable>
+        <title>Molar Mass Constant</title>
+        <title xml:lang="es">Constante de masa molar</title>
+        <title xml:lang="fr">Constante de masse molaire</title>
+        <title xml:lang="ru">Молярная единица массы</title>
+        <title xml:lang="sv">Molmassakonstant</title>
+        <title xml:lang="zh_CN">摩尔质量常数</title>
+        <names>r:molar_mass,as:M_u</names>
+        <value>(2*planck*rydberg*avogadro)/(c*fine_structure^2*nounit(electron_u))</value>
+      </variable>
+      <variable>
+        <title>Compton Wavelength</title>
+        <title xml:lang="es">Longitud de onda de Compton</title>
+        <title xml:lang="fr">Longueur d'onde de Compton</title>
+        <title xml:lang="nl">Compton golflengte</title>
+        <title xml:lang="ru">Комптоновская длина волны (для электрона)</title>
+        <title xml:lang="sv">Compton-våglängd</title>
+        <title xml:lang="zh_CN">康普顿波长</title>
+        <names>r:compton_wavelength,asu:&#x3BB;_C,aos:lambda_C</names>
+        <value>planck/(electron_mass*c)</value>
+      </variable>
+      <variable>
+        <title>Reduced Compton Wavelength</title>
+        <title xml:lang="es">Longitud de onda de Compton reducida</title>
+        <title xml:lang="fr">Longueur d'onde de Compton réduite</title>
+        <title xml:lang="nl">Gereduceerde Compton golflengte</title>
+        <title xml:lang="ru">Приведённая комптоновская длина волны (для электрона)</title>
+        <title xml:lang="sv">Reducerad Compton-våglängd</title>
+        <title xml:lang="zh_CN">约化康普顿波长</title>
+        <names>r:compton_wavelength_2pi</names>
+        <value>compton_wavelength/(2*pi)</value>
+      </variable>
+      <variable>
+        <title>Electronvolt (constant)</title>
+        <title xml:lang="es">Electronvoltio (constante)</title>
+        <title xml:lang="fr">Électronvolt (constante)</title>
+        <title xml:lang="nl">Elektronvolt (constante)</title>
+        <title xml:lang="ru">Электронвольт (постоянная)</title>
+        <title xml:lang="sv">Elektronvolt (konstant)</title>
+        <title xml:lang="zh_CN">电子伏(常数)</title>
+        <names>rs:electronvolt_constant,as:eV_constant</names>
+        <value unit="auto">elementary_charge/C*J</value>
+      </variable>
+      <variable>
+        <title>Faraday Constant</title>
+        <title xml:lang="es">Constante de Faraday</title>
+        <title xml:lang="fr">Constante de Faraday</title>
+        <title xml:lang="nl">Faradayconstante</title>
+        <title xml:lang="ru">Постоянная Фарадея</title>
+        <title xml:lang="sv">Faradays konstant</title>
+        <title xml:lang="zh_CN">法拉第常数</title>
+        <names>r:faraday,au:&#x2131;</names>
+        <value>avogadro*elementary_charge</value>
+      </variable>
+      <variable>
+        <title>First Radiation Constant</title>
+        <title xml:lang="es">Primera constante de radiación</title>
+        <title xml:lang="nl">Eerste stralingsconstante</title>
+        <title xml:lang="ru">Постоянная радиационная первая</title>
+        <title xml:lang="sv">Första strålningskonstanten</title>
+        <title xml:lang="zh_CN">第一辐射常数</title>
+        <names>r:first_radiation,as:c_1</names>
+        <value>2*pi*planck*c^2</value>
+      </variable>
+      <variable>
+        <title>First Radiation Constant for Spectral Radiance</title>
+        <title xml:lang="es">Primera constante de radiación para radiancia espectral</title>
+        <title xml:lang="ru">Постоянная радиационная первая для спектральной яркости</title>
+        <title xml:lang="sv">Första strålningskonstanten för spektralradians</title>
+        <title xml:lang="zh_CN">光谱辐射的第一辐射常数</title>
+        <names>rs:first_radiation_sr,as:c_1L</names>
+        <value>first_radiation/pi</value>
+      </variable>
+      <variable>
+        <title>Gas Constant</title>
+        <title xml:lang="es">Constante de los gases ideales</title>
+        <title xml:lang="fr">Constante universelle des gaz parfaits</title>
+        <title xml:lang="nl">Gasconstante</title>
+        <title xml:lang="ru">Газовая постоянная</title>
+        <title xml:lang="sv">Gaskonstanten</title>
+        <title xml:lang="zh_CN">气体常数</title>
+        <names>r:gas_constant,ideal_gas</names>
+        <value>boltzmann*avogadro</value>
+      </variable>
+      <variable>
+        <title>Lattice Parameter of Silicon</title>
+        <title xml:lang="es">Parámetro de red del silicio</title>
+        <title xml:lang="ru">Постоянная решётки кремния</title>
+        <title xml:lang="sv">Gitterparameter för silikon</title>
+        <title xml:lang="zh_CN">硅晶格参数</title>
+        <names>rs:lattice_parameter_Si</names>
+        <value unit="m" uncertainty="8.9E-18">543.1020511E-12</value>
+      </variable>
+      <variable>
+        <title>Loschmidt Constant (273.15 K, 100 kPa)</title>
+        <title xml:lang="es">Constante de Loschmidt (273.15 K, 100 kPa)</title>
+        <title xml:lang="fr">Constante de Loschmidt (273.15 K, 100 kPa)</title>
+        <title xml:lang="ru">Постоянная Лошмидта (273,15 К, 100 кПа)</title>
+        <title xml:lang="sv">Loschmidts konstant (273.15 K, 100 kPa)</title>
+        <title xml:lang="zh_CN">洛施密特常数(273.15K,100kPa)</title>
+        <names>loschmidt_100</names>
+        <value unit="auto">(100000*Pa)/(boltzmann*273.15*K)</value>
+      </variable>
+      <variable>
+        <title>Loschmidt Constant (273.15 K, 101.325 kPa)</title>
+        <title xml:lang="es">Constante de Loschmidt (273.15 K, 101.325 kPa)</title>
+        <title xml:lang="fr">Constante de Loschmidt (273.15 K, 101.325 kPa)</title>
+        <title xml:lang="ru">Постоянная Лошмидта (273,15 К, 101,325 кПа)</title>
+        <title xml:lang="sv">Loschmidts konstant (273.15 K, 101.325 kPa)</title>
+        <title xml:lang="zh_CN">洛施密特常数(273.15K,101.325kPa)</title>
+        <names>rs:loschmidt,as:n_0</names>
+        <value unit="auto">(101325*Pa)/(boltzmann*273.15*K)</value>
+      </variable>
+      <variable>
+        <title>Molar Planck Constant</title>
+        <title xml:lang="es">Constante de Planck molar</title>
+        <title xml:lang="fr">Constantes de Planck</title>
+        <title xml:lang="ru">Молярная постоянная Планка</title>
+        <title xml:lang="sv">Molplanckkonstant</title>
+        <title xml:lang="zh_CN">摩尔普朗克常数</title>
+        <names>r:molar_planck</names>
+        <value>avogadro*planck</value>
+      </variable>
+      <variable>
+        <title>Molar Volume of Ideal Gas (273.15 K, 100 kPa)</title>
+        <title xml:lang="es">Volumen molar del gas ideal (273.15 K, 100 kPa)</title>
+        <title xml:lang="fr">Volume molaire du gaz parfait (273.15 K, 100 kPa)</title>
+        <title xml:lang="nl">Molaire volume van één mol ideaal gas (273.15 K, 100 kPa)</title>
+        <title xml:lang="ru">Молярный объём идеального газа (273,15 К, 100 кПа)</title>
+        <title xml:lang="sv">Molvolym för ideal gas (273.15 K, 100 kPa)</title>
+        <title xml:lang="zh_CN">理想气体的摩尔体积(273.15K,100kPa)</title>
+        <names>r:ideal_gas_molar,as:V_m</names>
+        <value unit="auto">(gas_constant*273.15*K)/(100000*Pa)</value>
+      </variable>
+      <variable>
+        <title>Molar Volume of Ideal Gas (273.15 K, 101.325 kPa)</title>
+        <title xml:lang="es">Volumen molar del gas ideal (273.15 K, 101.325 kPa)</title>
+        <title xml:lang="fr">Volume molaire du gaz parfait (273.15 K, 101.325 kPa)</title>
+        <title xml:lang="nl">Molaire volume van één mol ideaal gas (273.15 K, 101.325 kPa)</title>
+        <title xml:lang="ru">Молярный объём идеального газа (273,15 К, 101,325 кПа)</title>
+        <title xml:lang="sv">Molvolym för ideal gas (273.15 K, 101.325 kPa)</title>
+        <title xml:lang="zh_CN">理想气体的摩尔体积(273.15K,101.325kPa)</title>
+        <names>rs:ideal_gas_molar_101,as:V_m101</names>
+        <value unit="auto">(gas_constant*273.15*K)/(101325*Pa)</value>
+      </variable>
+      <variable>
+        <title>Sackur-Tetrode constant (1 K, 100 kPa)</title>
+        <title xml:lang="es">Constante de Sackur-Tetrode (1 K, 100 kPa)</title>
+        <title xml:lang="fr">Constante de Sackur-Tetrode (1 K, 100 kPa)</title>
+        <title xml:lang="ru">Постоянная Сакура–Тетроде (1 К, 100 кПа)</title>
+        <title xml:lang="sv">Sackur-Tetrodes konstant (1 K, 100 kPa))</title>
+        <title xml:lang="zh_CN">Sackur-Tetrode常数(1K,100kPa)</title>
+        <names>r:sackur_tetrode</names>
+        <value uncertainty="4.5E-10">-1.15170753706</value>
+      </variable>
+      <variable>
+        <title>Sackur-Tetrode constant (1 K, 101.325 kPa)</title>
+        <title xml:lang="es">Constante de Sackur-Tetrode (1 K, 101.325 kPa)</title>
+        <title xml:lang="fr">Constante de Sackur-Tetrode (1 K, 101.325 kPa)</title>
+        <title xml:lang="ru">Постоянная Сакура–Тетроде (1 К, 101,325 кПа)</title>
+        <title xml:lang="sv">Sackur-Tetrodes konstant (1 K, 101.325 kPa)</title>
+        <title xml:lang="zh_CN">Sackur-Tetrode常数(1K,101325 kPa)</title>
+        <names>rs:sackur_tetrode_101</names>
+        <value uncertainty="4.5E-10">-1.16487052358</value>
+      </variable>
+      <variable>
+        <title>Second Radiation Constant</title>
+        <title xml:lang="es">Segunda constante de radiación</title>
+        <title xml:lang="nl">Tweede stralingsconstante</title>
+        <title xml:lang="ru">Постоянная радиационная вторая</title>
+        <title xml:lang="sv">Andra strålningskonstanten</title>
+        <title xml:lang="zh_CN">第二辐射常数</title>
+        <names>r:second_radiation,as:c_2</names>
+        <value>planck*c/boltzmann</value>
+      </variable>
+      <variable>
+        <title>Stefan-Boltzmann Constant</title>
+        <title xml:lang="es">Constante de Stefan-Boltzmann</title>
+        <title xml:lang="fr">Constante de Stefan-Boltzmann</title>
+        <title xml:lang="nl">Constante van Stefan-Boltzmann</title>
+        <title xml:lang="ru">Постоянная Стефана-Больцмана</title>
+        <title xml:lang="sv">Stefan-Boltzmanns konstant</title>
+        <title xml:lang="zh_CN">斯忒藩-玻尔兹曼常数</title>
+        <names>r:stefan,au:&#x03C3;,ao:sigma</names>
+        <value>(2pi^5*boltzmann^4)/(15*planck^3*c^2)</value>
+      </variable>
+      <variable>
+        <title>Wien frequency displacement law constant</title>
+        <title xml:lang="es">Constante de ley de desplazamiento de frecuencia de Wien</title>
+        <title xml:lang="ru">Постоянная Вина (для частоты)</title>
+        <title xml:lang="sv">Wiens frekvensförskjutningskonstant</title>
+        <title xml:lang="zh_CN">维恩频率位移定律常数</title>
+        <names>r:wien_frequency</names>
+        <value>(k_B/planck)×(lambertw(−3/e^3)+3)</value>
+      </variable>
+      <variable>
+        <title>Wien wavelength displacement law constant</title>
+        <title xml:lang="es">Constante de ley de desplazamiento de longitud de onda de Wien</title>
+        <title xml:lang="ru">Постоянная Вина (для длины волны)</title>
+        <title xml:lang="sv">Wiens våglängdsförskjutningskonstant</title>
+        <title xml:lang="zh_CN">维恩波长位移定律常数</title>
+        <names>r:wien_displacement,ais:b_energy</names>
+        <value>(planck×c/k_B)/(lambertw(−5/e^5)+5)</value>
+      </variable>
+    </category>
+    <category>
+      <title>Conversion factors for energy equivalents</title>
+      <title xml:lang="es">Factores de conversión para equivalentes de energía</title>
+      <title xml:lang="ru">Коэффициенты преобразования для эквивалентов энергии</title>
+      <title xml:lang="sv">Omvandlingsfaktorer för energiekvivalenter</title>
+      <title xml:lang="zh_CN">能量当量换算系数</title>
+      <variable>
+        <title>Hertz - Inverse Meter Relationship</title>
+        <title xml:lang="es">Relación hercio - inverso de metro</title>
+        <title xml:lang="ru">Отношение метр&#x207B;&#x00B9;/герц</title>
+        <title xml:lang="sv">Förhållande Hertz till reciprok meter</title>
+        <title xml:lang="zh_CN">赫兹-倒数米关系</title>
+        <names>r:Hz_to_m</names>
+        <value>1/c</value>
+      </variable>
+      <variable>
+        <title>Hertz - Joule Relationship</title>
+        <title xml:lang="es">Relación hercio - julio</title>
+        <title xml:lang="ru">Отношение джоуль/герц</title>
+        <title xml:lang="sv">Förhållande Hertz till Joule</title>
+        <title xml:lang="zh_CN">赫兹-焦耳关系</title>
+        <names>r:Hz_to_J</names>
+        <value>planck</value>
+      </variable>
+      <variable>
+        <title>Hertz - Kelvin Relationship</title>
+        <title xml:lang="es">Relación hercio - kelvin</title>
+        <title xml:lang="ru">Отношение кельвин/герц</title>
+        <title xml:lang="sv">Förhållande Hertz till Kelvin</title>
+        <title xml:lang="zh_CN">赫兹-开尔文关系</title>
+        <names>r:Hz_to_K</names>
+        <value>planck/boltzmann</value>
+      </variable>
+      <variable>
+        <title>Hertz - Kilogram Relationship</title>
+        <title xml:lang="es">Relación hercio - kilogramo</title>
+        <title xml:lang="ru">Отношение килограмм/герц</title>
+        <title xml:lang="sv">Förhållande Hertz till kilogram</title>
+        <title xml:lang="zh_CN">赫兹-千克关系</title>
+        <names>r:Hz_to_kg</names>
+        <value>planck/c^2</value>
+      </variable>
+      <variable>
+        <title>Inverse Meter - Hertz Relationship</title>
+        <title xml:lang="es">Relación inverso de metro - hercio</title>
+        <title xml:lang="ru">Отношение герц/метр&#x207B;&#x00B9;</title>
+        <title xml:lang="sv">Förhållande reciprok meter till Hertz</title>
+        <title xml:lang="zh_CN">倒数米-赫兹关系</title>
+        <names>r:m_to_Hz</names>
+        <value>c</value>
+      </variable>
+      <variable>
+        <title>Inverse Meter - Joule Relationship</title>
+        <title xml:lang="es">Relación inverso de metro - julio</title>
+        <title xml:lang="ru">Отношение джоуль/метр&#x207B;&#x00B9;</title>
+        <title xml:lang="sv">Förhållande reciprok meter till Joule</title>
+        <title xml:lang="zh_CN">倒数米-焦耳关系</title>
+        <names>r:m_to_J</names>
+        <value>planck*c</value>
+      </variable>
+      <variable>
+        <title>Inverse Meter - Kelvin Relationship</title>
+        <title xml:lang="es">Relación inverso de metro - kelvin</title>
+        <title xml:lang="ru">Отношение кельвин/метр&#x207B;&#x00B9;</title>
+        <title xml:lang="sv">Förhållande reciprok meter till Kelvin</title>
+        <title xml:lang="zh_CN">倒数米-开尔文关系</title>
+        <names>r:m_to_K</names>
+        <value>planck*c/boltzmann</value>
+      </variable>
+      <variable>
+        <title>Inverse Meter - Kilogram Relationship</title>
+        <title xml:lang="es">Relación inverso de metro - kilogramo</title>
+        <title xml:lang="ru">Отношение килограмм/метр&#x207B;&#x00B9;</title>
+        <title xml:lang="sv">Förhållande reciprok meter till kilogram</title>
+        <title xml:lang="zh_CN">倒数米-千克关系</title>
+        <names>r:m_to_kg</names>
+        <value>planck/c</value>
+      </variable>
+      <variable>
+        <title>Joule - Hertz Relationship</title>
+        <title xml:lang="es">Relación julio - hercio</title>
+        <title xml:lang="ru">Отношение герц/джоуль</title>
+        <title xml:lang="sv">Förhållande Joule till Hertz</title>
+        <title xml:lang="zh_CN">焦耳-开尔文关系</title>
+        <names>r:J_to_Hz</names>
+        <value>1/planck</value>
+      </variable>
+      <variable>
+        <title>Joule - Inverse Meter Relationship</title>
+        <title xml:lang="es">Relación julio - inverso de metro</title>
+        <title xml:lang="ru">Отношение метр&#x207B;&#x00B9;/джоуль</title>
+        <title xml:lang="sv">Förhållande Joule till reciprok meter</title>
+        <title xml:lang="zh_CN">焦耳-倒数米关系</title>
+        <names>r:J_to_m</names>
+        <value>1/(planck*c)</value>
+      </variable>
+      <variable>
+        <title>Joule - Kelvin Relationship</title>
+        <title xml:lang="es">Relación julio - kelvin</title>
+        <title xml:lang="ru">Отношение кельвин/джоуль</title>
+        <title xml:lang="sv">Förhållande Joule till Kelvin</title>
+        <title xml:lang="zh_CN">焦耳-开尔文关系</title>
+        <names>r:J_to_K</names>
+        <value>1/boltzmann</value>
+      </variable>
+      <variable>
+        <title>Joule - Kilogram Relationship</title>
+        <title xml:lang="es">Relación julio - kilogramo</title>
+        <title xml:lang="ru">Отношение килограмм/джоуль</title>
+        <title xml:lang="sv">Förhållande Joule till kilogram</title>
+        <title xml:lang="zh_CN">焦耳-千克关系</title>
+        <names>r:J_to_kg</names>
+        <value>1/c^2</value>
+      </variable>
+      <variable>
+        <title>Kelvin - Hertz Relationship</title>
+        <title xml:lang="es">Relación kelvin - hercio</title>
+        <title xml:lang="ru">Отношение герц/кельвин</title>
+        <title xml:lang="sv">Förhållande Kelvin till Hertz</title>
+        <title xml:lang="zh_CN">开尔文-赫兹关系</title>
+        <names>r:K_to_Hz</names>
+        <value>boltzmann/planck</value>
+      </variable>
+      <variable>
+        <title>Kelvin - Inverse Meter Relationship</title>
+        <title xml:lang="es">Relación kelvin - inverso de metro</title>
+        <title xml:lang="ru">Отношение метр&#x207B;&#x00B9;/кельвин</title>
+        <title xml:lang="sv">Förhållande Kelvin till reciprok meter</title>
+        <title xml:lang="zh_CN">开尔文-倒数米关系</title>
+        <names>r:K_to_m</names>
+        <value>boltzmann/(planck*c)</value>
+      </variable>
+      <variable>
+        <title>Kelvin - Joule Relationship</title>
+        <title xml:lang="es">Relación kelvin - julio</title>
+        <title xml:lang="ru">Отношение джоуль/кельвин</title>
+        <title xml:lang="sv">Förhållande Kelvin till Joule</title>
+        <title xml:lang="zh_CN">开尔文-焦耳关系</title>
+        <names>r:K_to_J</names>
+        <value>boltzmann</value>
+      </variable>
+      <variable>
+        <title>Kelvin - Kilogram Relationship</title>
+        <title xml:lang="es">Relación kelvin - kilogramo</title>
+        <title xml:lang="ru">Отношение килограмм/кельвин</title>
+        <title xml:lang="sv">Förhållande Kelvin till kilogram</title>
+        <title xml:lang="zh_CN">开尔文-千克关系</title>
+        <names>r:K_to_kg</names>
+        <value>boltzmann/c^2</value>
+      </variable>
+      <variable>
+        <title>Kilogram - Hertz Relationship</title>
+        <title xml:lang="es">Relación kilogramo - </title>
+        <title xml:lang="ru">Отношение герц/килограмм</title>
+        <title xml:lang="sv">Förhållande kilogram till Hertz</title>
+        <title xml:lang="zh_CN">千克-赫兹关系</title>
+        <names>r:kg_to_Hz</names>
+        <value>c^2/planck</value>
+      </variable>
+      <variable>
+        <title>Kilogram - Inverse Meter Relationship</title>
+        <title xml:lang="es">Relación kilogramo - inverso de metro</title>
+        <title xml:lang="ru">Отношение метр&#x207B;&#x00B9;/килограмм</title>
+        <title xml:lang="sv">Förhållande kilogram till recriprok meter</title>
+        <title xml:lang="zh_CN">千克-倒数米关系</title>
+        <names>r:kg_to_m</names>
+        <value>c/planck</value>
+      </variable>
+      <variable>
+        <title>Kilogram - Joule Relationship</title>
+        <title xml:lang="es">Relación kilogramo - julio</title>
+        <title xml:lang="fr">Rapport Kilogramme - Joule</title>
+        <title xml:lang="ru">Отношение джоуль/килограмм</title>
+        <title xml:lang="sv">Förhållande kilogram till Joule</title>
+        <title xml:lang="zh_CN">千克-开尔文关系</title>
+        <names>r:kg_to_J</names>
+        <value>c^2</value>
+      </variable>
+      <variable>
+        <title>Kilogram - Kelvin Relationship</title>
+        <title xml:lang="es">Relación kilogramo - kelvin</title>
+        <title xml:lang="fr">Rapport Kilogramme - Kelvin</title>
+        <title xml:lang="ru">Отношение кельвин/килограмм</title>
+        <title xml:lang="sv">Förhållande kilogram till Kelvin</title>
+        <title xml:lang="zh_CN">千克-开尔文关系</title>
+        <names>r:kg_to_K</names>
+        <value>c^2/boltzmann</value>
+      </variable>
+    </category>
+  </category>
+  <category>
+    <title>Basic Constants</title>
+    <title xml:lang="es">Constantes básicas</title>
+    <title xml:lang="fr">Constantes basiques</title>
+    <title xml:lang="nl">Basisconstanten</title>
+    <title xml:lang="ru">Основные константы</title>
+    <title xml:lang="sv">Grundläggande konstanter</title>
+    <title xml:lang="zh_CN">基本常数</title>
+    <variable>
+      <title>Golden Ratio</title>
+      <title xml:lang="es">Número áureo</title>
+      <title xml:lang="fr">Nombre d'or</title>
+      <title xml:lang="nl">Gulden snede</title>
+      <title xml:lang="ru">Золотое сечение</title>
+      <title xml:lang="sv">Gyllene snittet</title>
+      <title xml:lang="zh_CN">黄金分割率</title>
+      <names>r:golden,au:&#x3C6;,aos:phi</names>
+      <value>(1+sqrt(5))/2</value>
+    </variable>
+    <variable>
+      <title>Omega Constant</title>
+      <title xml:lang="es">Constante omega</title>
+      <title xml:lang="fr">Constante oméga</title>
+      <title xml:lang="nl">Omega constante</title>
+      <title xml:lang="ru">Постоянная Омега (LambertW(1))</title>
+      <title xml:lang="sv">Omegakonstanten</title>
+      <title xml:lang="zh_CN">欧米加常数</title>
+      <names>r:omega</names>
+      <value>lambertw(1)</value>
+    </variable>
+    <variable>
+      <title>Pythagoras' Constant (sqrt 2)</title>
+      <title xml:lang="es">Constante de Pitágoras (sqrt 2)</title>
+      <title xml:lang="fr">Constante de Pythagore (sqrt 2)</title>
+      <title xml:lang="nl">Pythagoras constante (sqrt 2)</title>
+      <title xml:lang="ru">константа Пифагора (&#x221A;2)</title>
+      <title xml:lang="sv">Pythagoras konstant (sqrt 2)</title>
+      <title xml:lang="zh_CN">毕达哥拉斯常数(√2)</title>
+      <names>r:pythagoras</names>
+      <value>sqrt(2)</value>
+    </variable>
+    <variable>
+      <title>Apery's Constant</title>
+      <title xml:lang="es">Constante de Apéry</title>
+      <title xml:lang="fr">Constante d'Apéry</title>
+      <title xml:lang="nl">Apery's constante</title>
+      <title xml:lang="ru">Постоянная Апери</title>
+      <title xml:lang="sv">Aperys konstant</title>
+      <title xml:lang="zh_CN">阿培里常数</title>
+      <names>r:apery</names>
+      <value>zeta(3)</value>
+    </variable>
+    <variable>
+      <title>Tau (2pi)</title>
+      <title xml:lang="ru">Оборот (тау, &#x3c4;=2&#x3c0;)</title>
+      <title xml:lang="zh_CN">二倍圆周率(τ/2π)</title>
+      <names>au:&#x3C4;,r:tau</names>
+      <value>2*pi</value>
+    </variable>
+    <variable>
+      <title>Plastic Number</title>
+      <title xml:lang="es">Número plástico</title>
+      <title xml:lang="fr">Nombre plastique</title>
+      <title xml:lang="nl">Plastisch getal</title>
+      <title xml:lang="ru">Пластическое число</title>
+      <title xml:lang="sv">Plastnummer</title>
+      <title xml:lang="zh_CN">塑膠數</title>
+      <names>r:plastic,au:&#x3C1;,aos:rho</names>
+      <value>cbrt((9+sqrt(69))/18)+cbrt((9-sqrt(69))/18)</value>
+    </variable>
+    <builtin_variable name="e">
+      <title>Base of Natural Logarithms (e)</title>
+      <title xml:lang="es">Base de logaritmo natural (e)</title>
+      <title xml:lang="fr">La base des logarithmes naturels (e)</title>
+      <title xml:lang="nl">Grondtal natuurlijke logaritmen (e)</title>
+      <title xml:lang="ru">Основание натурального логарифма (e)</title>
+      <title xml:lang="sv">Basen för naturliga logaritmer (e)</title>
+      <title xml:lang="zh_CN">自然对数底数(e)</title>
+      <names>r:e</names>
+    </builtin_variable>
+    <builtin_variable name="pi">
+      <title>Archimedes' Constant (pi)</title>
+      <title xml:lang="es">Constante de Arquímedes (pi)</title>
+      <title xml:lang="fr">Constante d’Archimède (pi)</title>
+      <title xml:lang="nl">Archimede's constante (pi)</title>
+      <title xml:lang="ru">Постоянная Архимеда (&#x3c0;)</title>
+      <title xml:lang="sv">Arkimedes konstant (pi)</title>
+      <title xml:lang="zh_CN">圆周率(π)</title>
+      <names>au:&#x3C0;,r:pi</names>
+    </builtin_variable>
+    <builtin_variable name="euler">
+      <title>Euler's Constant</title>
+      <title xml:lang="es">Constante de Euler-Mascheroni</title>
+      <title xml:lang="fr">Constante d'Euler</title>
+      <title xml:lang="nl">Euler's constante</title>
+      <title xml:lang="ru">Постоянная Эйлера</title>
+      <title xml:lang="sv">Eulers konstant</title>
+      <title xml:lang="zh_CN">欧拉常数</title>
+      <names>au:&#x3B3;,r:euler</names>
+    </builtin_variable>
+    <builtin_variable name="catalan">
+      <title>Catalan's Constant</title>
+      <title xml:lang="es">Constante de Catalan</title>
+      <title xml:lang="fr">Constante de Catalan</title>
+      <title xml:lang="nl">Catalan's constante</title>
+      <title xml:lang="ru">Постоянная Каталана</title>
+      <title xml:lang="sv">Catalans konstant</title>
+      <title xml:lang="zh_CN">卡塔兰常数</title>
+      <names>r:catalan</names>
+    </builtin_variable>
+  </category>
+  <category>
+    <title>Special Numbers</title>
+    <title xml:lang="es">Números especiales</title>
+    <title xml:lang="fr">Nombres remarquables</title>
+    <title xml:lang="nl">Bijzondere getallen</title>
+    <title xml:lang="ru">Специальные числа</title>
+    <title xml:lang="sv">Speciella nummer</title>
+    <title xml:lang="zh_CN">特殊数字</title>
+    <builtin_variable name="i">
+      <title>Imaginary i (sqrt -1)</title>
+      <title xml:lang="es">i imaginaria (sqrt -1)</title>
+      <title xml:lang="fr">Nombre imaginaire i (sqrt -1)</title>
+      <title xml:lang="nl">Imaginaire i (sqrt -1)</title>
+      <title xml:lang="ru">Мнимая единица i (&#x221A;-1)</title>
+      <title xml:lang="sv">Imaginärt i (sqrt -1)</title>
+      <title xml:lang="zh_CN">虚数i(√-1)</title>
+      <names>r:i</names>
+    </builtin_variable>
+    <builtin_variable name="plus_infinity">
+      <title>Positive Infinity</title>
+      <title xml:lang="es">Infinito positivo</title>
+      <title xml:lang="fr">Infini positif</title>
+      <title xml:lang="nl">Positief oneindig</title>
+      <title xml:lang="ru">Положительная бесконечность</title>
+      <title xml:lang="sv">Positiv oändlighet</title>
+      <title xml:lang="zh_CN">正无穷(+∞)</title>
+      <names>a:&#x221E;,r:plus_infinity,r:infinity</names>
+      <names xml:lang="es">infinito,másinfinito</names>
+      <names xml:lang="fr">a:&#x221E;,plus_infini,infini</names>
+      <names xml:lang="nl">a:&#x221E;,oneindig</names>
+      <names xml:lang="ru">a:&#x221E;,plus_infinity,infinity,infty</names>
+      <names xml:lang="sv">a:&#x221E;,oändlighet</names>
+      <names xml:lang="zh_CN">a:&#x221E;,正无穷,plus_infinity,infinity</names>
+    </builtin_variable>
+    <builtin_variable name="minus_infinity">
+      <title>Negative Infinity</title>
+      <title xml:lang="es">Infinito negativo</title>
+      <title xml:lang="fr">Infini négatif</title>
+      <title xml:lang="nl">Negatief oneindig</title>
+      <title xml:lang="ru">Отрицательная бесконечность</title>
+      <title xml:lang="sv">Negativ oändlighet</title>
+      <title xml:lang="zh_CN">负无穷(-∞)</title>
+      <names>r:minus_infinity</names>
+      <names xml:lang="es">menosinfinito</names>
+      <names xml:lang="nl">min_oneindig</names>
+      <names xml:lang="ru">a:-&#x221E;,minus_infinity</names>
+      <names xml:lang="sv">minus_oändlighet</names>
+      <names xml:lang="zh_CN">负无穷</names>
+    </builtin_variable>
+    <builtin_variable name="undefined">
+      <title>Undefined</title>
+      <title xml:lang="es">Indefinido</title>
+      <title xml:lang="fr">Indéfini</title>
+      <title xml:lang="nl">Ongedefinieerd</title>
+      <title xml:lang="ru">Не определено</title>
+      <title xml:lang="sv">Odefinierad</title>
+      <title xml:lang="zh_CN">未定义(undefined)</title>
+      <names>r:undefined</names>
+      <names xml:lang="es">indefinido</names>
+      <names xml:lang="nl">ongedefinieerd</names>
+      <names xml:lang="ru">не_определено</names>
+      <names xml:lang="sv">odefinierad</names>
+      <names xml:lang="zh_CN">未定义</names>
+    </builtin_variable>
+    <variable>
+      <title>False</title>
+      <title xml:lang="es">Falso</title>
+      <title xml:lang="fr">Faux</title>
+      <title xml:lang="nl">Onwaar</title>
+      <title xml:lang="ru">Ложь</title>
+      <title xml:lang="sv">Falskt</title>
+      <title xml:lang="zh_CN">假(false)</title>
+      <names>r:false,r:no</names>
+      <names xml:lang="es">falso</names>
+      <names xml:lang="fr">faux,non</names>
+      <names xml:lang="nl">onwaar,nee</names>
+      <names xml:lang="ru">ложь,нет</names>
+      <names xml:lang="sv">falskt,nej</names>
+      <names xml:lang="zh_CN">假,否</names>
+      <value>0</value>
+    </variable>
+    <variable>
+      <title>True</title>
+      <title xml:lang="es">Verdadero</title>
+      <title xml:lang="fr">Vrai</title>
+      <title xml:lang="nl">Waar</title>
+      <title xml:lang="ru">Истина</title>
+      <title xml:lang="sv">Sant</title>
+      <title xml:lang="zh_CN">真(true)</title>
+      <names>r:true,r:yes</names>
+      <names xml:lang="es">verdadero</names>
+      <names xml:lang="fr">vrai,oui</names>
+      <names xml:lang="nl">waar,ja</names>
+      <names xml:lang="ru">истина,да</names>
+      <names xml:lang="sv">sant,ja</names>
+      <names xml:lang="zh_CN">真,是</names>
+      <value>1</value>
+    </variable>
+  </category>
+  <category>
+    <title>Utilities</title>
+    <title xml:lang="es">Utilidades</title>
+    <title xml:lang="fr">Utilitaires</title>
+    <title xml:lang="nl">Hulpmiddelen</title>
+    <title xml:lang="ru">Инструменты</title>
+    <title xml:lang="sv">Verktyg</title>
+    <title xml:lang="zh_CN">工具</title>
+    <builtin_variable name="precision">
+      <title>Precision</title>
+      <title xml:lang="es">Precisión</title>
+      <title xml:lang="fr">Précision</title>
+      <title xml:lang="ru">Точность</title>
+      <title xml:lang="zh_CN">精度</title>
+      <names>r:precision</names>
+      <names xml:lang="ru">точность</names>
+    </builtin_variable>
+    <builtin_variable name="uptime">
+      <title>System Uptime</title>
+      <title xml:lang="es">Tiempo de actividad del sistema</title>
+      <title xml:lang="fr">Durée de fonctionnement du système</title>
+      <title xml:lang="ru">Аптайм — время непрерывной работы вычислительной системы</title>
+      <title xml:lang="sv">Uptime för operativsystemet</title>
+      <title xml:lang="zh_CN">系统运行时间</title>
+      <names>r:uptime</names>
+      <names xml:lang="ru">аптайм</names>
+    </builtin_variable>
+  </category>
+  <category>
+    <title>Unknowns</title>
+    <title xml:lang="es">Incógnitas</title>
+    <title xml:lang="fr">Inconnues</title>
+    <title xml:lang="nl">Onbekenden</title>
+    <title xml:lang="ru">Неизвестные</title>
+    <title xml:lang="sv">Okända</title>
+    <title xml:lang="zh_CN">未知数</title>
+    <unknown>
+      <names>r:x</names>
+    </unknown>
+    <unknown>
+      <names>r:y</names>
+    </unknown>
+    <unknown>
+      <names>r:z</names>
+    </unknown>
+    <builtin_variable name="n">
+      <title>n (integer)</title>
+      <title xml:lang="es">n (entero)</title>
+      <title xml:lang="fr">n (entier)</title>
+      <title xml:lang="nl">n (geheel getal)</title>
+      <title xml:lang="ru">n (целое)</title>
+      <title xml:lang="sv">n (heltal)</title>
+      <title xml:lang="zh_CN">n(整数)</title>
+      <names>r:n</names>
+    </builtin_variable>
+  </category>
+  <category>
+    <title>Date &amp; Time</title>
+    <title xml:lang="es">Fecha y tiempo</title>
+    <title xml:lang="fr">Date &amp; heure</title>
+    <title xml:lang="nl">Datum &amp; Tijd</title>
+    <title xml:lang="ru">Дата и время</title>
+    <title xml:lang="sv">Datum &amp; Tid</title>
+    <title xml:lang="zh_CN">日期与时间</title>
+    <builtin_variable name="today">
+      <title>Today</title>
+      <title xml:lang="es">Hoy</title>
+      <title xml:lang="fr">Aujourd'hui</title>
+      <title xml:lang="nl">Vandaag</title>
+      <title xml:lang="ru">Сегодня</title>
+      <title xml:lang="sv">Idag</title>
+      <title xml:lang="zh_CN">今天</title>
+      <names>r:today</names>
+      <names xml:lang="es">hoy</names>
+      <names xml:lang="fr">aujourdhui</names>
+      <names xml:lang="nl">vandaag</names>
+      <names xml:lang="ru">сегодня</names>
+      <names xml:lang="sv">idag</names>
+      <names xml:lang="zh_CN">今天</names>
+    </builtin_variable>
+    <builtin_variable name="tomorrow">
+      <title>Tomorrow</title>
+      <title xml:lang="es">Mañana</title>
+      <title xml:lang="fr">Demain</title>
+      <title xml:lang="nl">Morgen</title>
+      <title xml:lang="ru">Завтра</title>
+      <title xml:lang="sv">Imorgon</title>
+      <title xml:lang="zh_CN">明天</title>
+      <names>r:tomorrow</names>
+      <names xml:lang="es">mañana</names>
+      <names xml:lang="fr">demain</names>
+      <names xml:lang="nl">morgen</names>
+      <names xml:lang="ru">завтра</names>
+      <names xml:lang="sv">imorgon</names>
+      <names xml:lang="zh_CN">明天</names>
+    </builtin_variable>
+    <builtin_variable name="yesterday">
+      <title>Yesterday</title>
+      <title xml:lang="es">Ayer</title>
+      <title xml:lang="fr">Hier</title>
+      <title xml:lang="nl">Gisteren</title>
+      <title xml:lang="ru">Вчера</title>
+      <title xml:lang="sv">Igår</title>
+      <title xml:lang="zh_CN">昨天</title>
+      <names>r:yesterday</names>
+      <names xml:lang="es">ayer</names>
+      <names xml:lang="fr">hier</names>
+      <names xml:lang="nl">gisteren</names>
+      <names xml:lang="ru">вчера</names>
+      <names xml:lang="sv">igår</names>
+      <names xml:lang="zh_CN">昨天</names>
+    </builtin_variable>
+    <builtin_variable name="now">
+      <title>Now (date and time)</title>
+      <title xml:lang="es">Ahora (fecha y tiempo)</title>
+      <title xml:lang="fr">Actuellement (date et heure)</title>
+      <title xml:lang="ru">Сейчас (дата и время)</title>
+      <title xml:lang="sv">Nu (datum och tid)</title>
+      <title xml:lang="zh_CN">现在</title>
+      <names>r:now</names>
+      <names xml:lang="es">ahora</names>
+      <names xml:lang="fr">actuel</names>
+      <names xml:lang="ru">сейчас</names>
+      <names xml:lang="sv">nu</names>
+      <names xml:lang="zh_CN">现在</names>
+    </builtin_variable>
+  </category>
+</QALCULATE>

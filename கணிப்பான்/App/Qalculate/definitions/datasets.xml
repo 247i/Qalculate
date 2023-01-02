@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QALCULATE version="2.8.3">
+  <category>
+    <title>Data Sets</title>
+    <title xml:lang="es">Conjuntos de datos</title>
+    <title xml:lang="fr">Ensembles de données</title>
+    <title xml:lang="nl">Gegevensverzamelingen</title>
+    <title xml:lang="ru">Наборы данных</title>
+    <title xml:lang="sv">Dataset</title>
+    <title xml:lang="zh_CN">数据集</title>
+    <dataset>
+      
+      <title>!datasets!Elements</title>
+      <title xml:lang="es">Elementos</title>
+      <title xml:lang="nl">Elementen</title>
+      <title xml:lang="ru">Элементы</title>
+      <title xml:lang="sv">Grundämnen</title>
+      <title xml:lang="zh_CN">元素</title>
+      <datafile>elements.xml</datafile>
+      <copyright>This data uses material from the Wikipedia, under the Creative Commons Attribution-ShareAlike License</copyright>
+      <names>r:atom</names>
+      <names xml:lang="es">átomo</names>
+      <names xml:lang="fr">atome</names>
+      <names xml:lang="nl">atoom</names>
+      <names xml:lang="ru">атом</names>
+      <object_argument>
+        
+        <title>!datasets!Element</title>
+        <title xml:lang="ru">Элемент</title>
+        <title xml:lang="sv">Element</title>
+        <title xml:lang="zh_CN">元素</title>
+      </object_argument>
+      <property>
+        <title>Symbol</title>
+        <title xml:lang="es">Símbolo</title>
+        <title xml:lang="fr">Symbole</title>
+        <title xml:lang="nl">Symbool</title>
+        <title xml:lang="ru">Символ</title>
+        <title xml:lang="zh_CN">符号</title>
+	<type>text</type>
+	<key>true</key>
+        <names>r:symbol</names>
+        <names xml:lang="es">símbolo</names>
+        <names xml:lang="fr">symbole</names>
+        <names xml:lang="nl">symbool</names>
+        <names xml:lang="ru">символ</names>
+      </property>
+      <property>
+        
+        <title>!datasets!Number</title>
+        <title xml:lang="es">Número</title>
+        <title xml:lang="fr">!datasets!Nombre</title>
+        <title xml:lang="nl">Getal</title>
+        <title xml:lang="ru">Номер</title>
+        <title xml:lang="sv">Nummer</title>
+        <title xml:lang="zh_CN">序数</title>
+	<type>number</type>
+	<key>true</key>
+	
+        <names>!datasets!r:number</names>
+        <names xml:lang="es">número</names>
+        <names xml:lang="fr">!datasets!nombre</names>
+        <names xml:lang="nl">getal</names>
+        <names xml:lang="ru">номер</names>
+        <names xml:lang="sv">nummer</names>
+      </property>
+      <property>
+        <title>Name</title>
+        <title xml:lang="es">Nombre</title>
+        <title xml:lang="fr">Nom</title>
+        <title xml:lang="nl">Naam</title>
+        <title xml:lang="ru">Имя</title>
+        <title xml:lang="sv">Namn</title>
+        <title xml:lang="zh_CN">名称</title>
+	<type>text</type>
+	<key>true</key>
+        <names>r:name</names>
+        <names xml:lang="es">nombre</names>
+        <names xml:lang="fr">nom</names>
+        <names xml:lang="nl">naam</names>
+        <names xml:lang="ru">имя</names>
+        <names xml:lang="sv">namn</names>
+      </property>
+      <property>
+        <title>Classification</title>
+        <title xml:lang="es">Clasificación</title>
+        <title xml:lang="nl">Klassificatie</title>
+        <title xml:lang="ru">Классификация</title>
+        <title xml:lang="sv">Klassificering</title>
+        <title xml:lang="zh_CN">类别</title>
+	<description>A number representing an element group:&#10;1 Alkali Metal&#10;2 Alkaline-Earth Metal&#10;3 Lanthanide&#10;4 Actinide&#10;5 Transition Metal&#10;6 Metal&#10;7 Metalloid&#10;8 Polyatomic Non-Metal&#10;9 Diatomic Non-Metal&#10;10 Noble Gas&#10;11 Unknown chemical properties</description>
+	<description xml:lang="ca">Un número que representa un grup d'elements:&#10;1 Metall alcalí&#10;2 Alcalinoterri&#10;3 Lantanoide&#10;4 Actinoide&#10;5 Metall de transició&#10;6 Metall&#10;7 Metal·loide&#10;8 Poliatòmic no metall&#10;9 Diatòmic no metall&#10;10 Gas noble&#10;11 Propietats químiques desconegudes</description>
+	<description xml:lang="es">El número representando un grupo de elementos:&#10;1 Metal alcalino&#10;2 Metal alcalinotérreo&#10;3 Lantánido&#10;4 Actínido&#10;5 Metal de transición&#10;6 Metal&#10;7 Semimetal&#10;8 No metal poliatómico&#10;9 No metal diatómico&#10;10 Gas Noble&#10;11 Propiedades químicas desconocidas</description>
+	<description xml:lang="fr">Un nombre représente un groupe d'éléments :&#10;1 Métal alcalin&#10;2 Métal alcalino-terreux&#10;3 Lanthanide&#10;4 Actinide&#10;5 Métal de transition&#10;6 Métal&#10;7 Métalloïde&#10;8 Polyatomique (Non-métal)&#10;9 Diatomique (Non-métal)&#10;10 Gaz Noble&#10;11 Propriétés chimiques inconnues</description>
+	<description xml:lang="ru">Число, обозначающее группу элементов:&#10;1 Щелочной металл&#10;2 Щелочноземельный металл&#10;3 Лантаноид&#10;4 Актиноид&#10;5 Переходный металл&#10;6 Металл&#10;7 Металлоид&#10;8 Многоатомный неметалл&#10;9 Двухатомный неметалл&#10;10 Благородный газ&#10;11 Неизвестные химические свойства</description>
+	<description xml:lang="sv">Ett nummer som representerar en elementgrupp:&#10;1 Alkalimetall&#10;2 Jordalkalimetall&#10;3 Lantanid&#10;4 Aktinid&#10;5 Övergångsmetall&#10;6 Metall&#10;7 Halvmetall&#10;8 Polyatomisk icke-metall&#10;9 Diatomisk icke-metall&#10;10 Ädelgas&#10;11 Okända kemiska egenskaper</description>
+	<description xml:lang="zh_CN">一个代表元素族的数字: &#10;1 碱金属&#10;2 碱土金属 &#10;3 镧系元素&#10;4 锕系元素 &#10;5 过渡金属元素&#10;6 金属&#10;7 半金属元素 &#10;8 多原子非金属 &#10;9 双原子非金属&#10;10 稀有气体&#10;11 未知化学性质</description>
+	<type>number</type>
+        <names>r:class</names>
+        <names xml:lang="es">clase</names>
+        <names xml:lang="fr">classe</names>
+        <names xml:lang="nl">klasse</names>
+        <names xml:lang="ru">class</names>
+        <names xml:lang="sv">klass</names>
+      </property>
+      <property>
+        <title>Atomic Mass</title>
+        <title xml:lang="es">Masa atómica</title>
+        <title xml:lang="fr">Masse atomique</title>
+        <title xml:lang="nl">Atommassa</title>
+        <title xml:lang="ru">Атомная масса</title>
+        <title xml:lang="sv">Atommassa</title>
+        <title xml:lang="zh_CN">原子量</title>
+        <description>The property uses standard atomic weight, when determined, or the mass number.</description>
+        <description xml:lang="ca">La propietat usa el pes estàndard atòmic, quan sigui determinat, o el nombre de massa.</description>
+        <description xml:lang="es">La propiedad usa peso atómico estándar, cuando determinado, o el número másico.</description>
+        <description xml:lang="fr">La propriété utilise le poids atomique standard, lorsqu'il est déterminé, ou le nombre de masse.</description>
+        <description xml:lang="ru">В свойстве используется стандартный атомный вес, если он определен, или массовое число.</description>
+        <description xml:lang="sv">Egenskapen använder standard atomvikt, när bestämd, eller masstalet.</description>
+        <description xml:lang="zh_CN">该属性使用确定的标准原子量或质量数。</description>
+	<type>number</type>
+	<unit>u</unit>
+	<approximate>true</approximate>
+        <names>r:mass,r:weight</names>
+        <names xml:lang="es">masa</names>
+        <names xml:lang="fr">masse,poids</names>
+        <names xml:lang="nl">massa</names>
+        <names xml:lang="ru">масса,вес</names>
+        <names xml:lang="sv">massa</names>
+      </property>
+      <property>
+        <title>Boiling Point</title>
+        <title xml:lang="es">Punto de ebullición</title>
+        <title xml:lang="fr">Point d'ébullition</title>
+        <title xml:lang="nl">Kookpunt</title>
+        <title xml:lang="ru">Точка кипения</title>
+        <title xml:lang="sv">Kokpunkt</title>
+        <title xml:lang="zh_CN">沸点</title>
+	<type>number</type>
+	<unit>K</unit>
+	<approximate>true</approximate>
+        <names>r:boiling</names>
+        <names xml:lang="es">hirviendo</names>
+        <names xml:lang="fr">ebullition</names>
+        <names xml:lang="nl">kokend</names>
+        <names xml:lang="ru">кипение</names>
+        <names xml:lang="sv">kokpunkt</names>
+      </property>
+      <property>
+        <title>Melting Point</title>
+        <title xml:lang="es">Punto de fusión</title>
+        <title xml:lang="fr">Point de fusion</title>
+        <title xml:lang="nl">Smeltpunt</title>
+        <title xml:lang="ru">Точка плавления</title>
+        <title xml:lang="sv">Smältpunkt</title>
+        <title xml:lang="zh_CN">熔点</title>
+	<type>number</type>
+	<unit>K</unit>
+	<approximate>true</approximate>
+        <names>r:melting</names>
+        <names xml:lang="es">fundiendo</names>
+        <names xml:lang="fr">fusion</names>
+        <names xml:lang="nl">smeltend</names>
+        <names xml:lang="ru">плавление</names>
+        <names xml:lang="sv">smältpunkt</names>
+      </property>
+      <property>
+        <title>Density</title>
+        <title xml:lang="es">Densidad</title>
+        <title xml:lang="fr">Densité</title>
+        <title xml:lang="nl">Dichtheid</title>
+        <title xml:lang="ru">Плотность</title>
+        <title xml:lang="sv">Densitet</title>
+        <title xml:lang="zh_CN">密度</title>
+	<description>Density at STP (gases) or near room temperature</description>
+	<description xml:lang="ca">Densitat a STP (gasos) o prop de la temperatura ambient</description>
+	<description xml:lang="es">Densidad a condiciones estándares (gases) o cerca de temperatura ambiente</description>
+	<description xml:lang="fr">Densité à STP (gaz) ou près de la température ambiante</description>
+	<description xml:lang="ru">Плотность при стандартных условиях (газы) или близкой к комнатной температуре</description>
+	<description xml:lang="sv">Densitet vid STP (gaser) eller nära rumstemperatur</description>
+	<description xml:lang="zh_CN">STP(气体)或接近室温时的密度</description>
+	<type>number</type>
+	<unit>g/cm^3</unit>
+	<approximate>true</approximate>
+        <names>r:density</names>
+        <names xml:lang="es">densidad</names>
+        <names xml:lang="fr">densite</names>
+        <names xml:lang="nl">dichtheid</names>
+        <names xml:lang="ru">плотность</names>
+        <names xml:lang="sv">densitet</names>
+      </property>
+      <property>
+        <title>X Position</title>
+        <title xml:lang="es">Posición X</title>
+        <title xml:lang="fr">Position en x</title>
+        <title xml:lang="nl">X Positie</title>
+        <title xml:lang="ru">Позиция X</title>
+        <title xml:lang="sv">X-position</title>
+        <title xml:lang="zh_CN">横坐标</title>
+	<type>number</type>
+	<hidden>true</hidden>
+        <names>r:x_pos</names>
+        <names xml:lang="fr">pos_y</names>
+        <names xml:lang="ru">x_поз</names>
+      </property>
+      <property>
+        <title>Y Position</title>
+        <title xml:lang="es">Posición Y</title>
+        <title xml:lang="fr">Position en y</title>
+        <title xml:lang="nl">Y Positie</title>
+        <title xml:lang="ru">Позиция Y</title>
+        <title xml:lang="sv">Y-position</title>
+        <title xml:lang="zh_CN">纵坐标</title>
+	<type>number</type>
+	<hidden>true</hidden>
+        <names>r:y_pos</names>
+        <names xml:lang="fr">pos_y</names>
+        <names xml:lang="ru">y_поз</names>
+      </property>
+    </dataset>
+    <dataset>
+      <title>Planets</title>
+      <title xml:lang="es">Planetas</title>
+      <title xml:lang="fr">Planètes</title>
+      <title xml:lang="nl">Planeten</title>
+      <title xml:lang="ru">Планеты</title>
+      <title xml:lang="sv">Planeter</title>
+      <title xml:lang="zh_CN">行星</title>
+      <datafile>planets.xml</datafile>
+      <copyright>This data uses material from the Wikipedia articles&#10;"Earth" (http://www.wikipedia.org/wiki/Earth),&#10;"Jupiter" (http://www.wikipedia.org/wiki/Jupiter),&#10;"Mars" (http://www.wikipedia.org/wiki/Mars),&#10;"Mercury (planet)" (http://www.wikipedia.org/wiki/Mercury_(planet)),&#10;"Neptune" (http://www.wikipedia.org/wiki/Neptune),&#10;"Pluto" (http://www.wikipedia.org/wiki/Pluto),&#10;"Saturn" (http://www.wikipedia.org/wiki/Saturn),&#10;"Uranus" (http://www.wikipedia.org/wiki/Uranus), and&#10;"Venus" (http://en.wikipedia.org/wiki/Venus), under Creative Commons Attribution-ShareAlike License</copyright>
+      <names>r:planet</names>
+      <names xml:lang="es">planeta</names>
+      <names xml:lang="fr">planete</names>
+      <names xml:lang="nl">planeet</names>
+      <names xml:lang="ru">планета</names>
+      <object_argument>
+        <title>Planet</title>
+        <title xml:lang="es">Planeta</title>
+        <title xml:lang="fr">Planète</title>
+        <title xml:lang="nl">Planeet</title>
+        <title xml:lang="ru">Планета</title>
+        <title xml:lang="zh_CN">行星</title>
+      </object_argument>
+      <property>
+        <title>Name</title>
+        <title xml:lang="es">Nombre</title>
+        <title xml:lang="fr">Nom</title>
+        <title xml:lang="nl">Naam</title>
+        <title xml:lang="ru">Имя</title>
+        <title xml:lang="sv">Namn</title>
+        <title xml:lang="zh_CN">名称</title>
+	<type>text</type>
+	<key>true</key>
+        <names>r:name</names>
+        <names xml:lang="es">nombre</names>
+        <names xml:lang="fr">nom</names>
+        <names xml:lang="nl">naam</names>
+        <names xml:lang="ru">имя</names>
+        <names xml:lang="sv">namn</names>
+      </property>
+      <property>
+        <title>Orbital Period (Year)</title>
+        <title xml:lang="es">Periodo orbital (año)</title>
+        <title xml:lang="fr">Période orbitale (Année)</title>
+        <title xml:lang="nl">Omloopperiode (Jaar)</title>
+        <title xml:lang="ru">Период обращения (год)</title>
+        <title xml:lang="sv">Omkretstid (år)</title>
+        <title xml:lang="zh_CN">轨道周期(年)</title>
+	<type>number</type>
+	<unit>d</unit>
+	<approximate>true</approximate>
+	
+        <names>!datasets!r:year</names>
+        <names xml:lang="es">año</names>
+        <names xml:lang="fr">!datasets!annee</names>
+        <names xml:lang="nl">jaar</names>
+        <names xml:lang="ru">год</names>
+        <names xml:lang="sv">år</names>
+      </property>
+      <property>
+        <title>Average Orbital Speed</title>
+        <title xml:lang="es">Velocidad orbital promedio</title>
+        <title xml:lang="fr">Vitesse orbitale moyenne</title>
+        <title xml:lang="nl">Gemiddelde baansnelheid</title>
+        <title xml:lang="ru">Средняя орбитальная скорость</title>
+        <title xml:lang="sv">Genomsnittlig kretsloppshastighet</title>
+        <title xml:lang="zh_CN">平均归到速度</title>
+	<type>number</type>
+	<unit>km/s</unit>
+	<approximate>true</approximate>
+        <names>r:speed</names>
+        <names xml:lang="es">velocidad</names>
+        <names xml:lang="fr">vitesse</names>
+        <names xml:lang="nl">snelheid</names>
+        <names xml:lang="ru">скорость</names>
+        <names xml:lang="sv">hastighet</names>
+      </property>
+      <property>
+        <title>Eccentricity</title>
+        <title xml:lang="es">Excentricidad</title>
+        <title xml:lang="fr">Excentricité</title>
+        <title xml:lang="nl">Excentriciteit</title>
+        <title xml:lang="ru">Эксцентриситет</title>
+        <title xml:lang="sv">Excentricitet</title>
+        <title xml:lang="zh_CN">偏心率</title>
+	<type>number</type>
+	<approximate>true</approximate>
+        <names>r:eccentricity</names>
+        <names xml:lang="es">excentricidad</names>
+        <names xml:lang="fr">excentricite</names>
+        <names xml:lang="nl">excentriciteit</names>
+        <names xml:lang="ru">эксцентриситет</names>
+        <names xml:lang="sv">excentricitet</names>
+      </property>
+      <property>
+        <title>Inclination (to ecliptic)</title>
+        <title xml:lang="es">Inclinación (a eclíptica)</title>
+        <title xml:lang="fr">Inclinaison (à l'écliptique)</title>
+        <title xml:lang="ru">Наклонение (к эклиптике)</title>
+        <title xml:lang="sv">Inklination (till eklitisk)</title>
+        <title xml:lang="zh_CN">倾角(至黄道)</title>
+	<type>number</type>
+	<approximate>true</approximate>
+        <names>r:inclination</names>
+        <names xml:lang="es">inclinación</names>
+        <names xml:lang="fr">inclinaison</names>
+        <names xml:lang="nl">inclinatie</names>
+        <names xml:lang="ru">наклонение</names>
+        <names xml:lang="sv">inklination</names>
+      </property>
+      <property>
+        <title>Number of Satellites</title>
+        <title xml:lang="es">Número de satélites</title>
+        <title xml:lang="fr">Nombre de satellites</title>
+        <title xml:lang="nl">Aantal satellieten</title>
+        <title xml:lang="ru">Количество спутников</title>
+        <title xml:lang="sv">Antal satelliter</title>
+        <title xml:lang="zh_CN">卫星个数</title>
+	<type>number</type>
+        <names>r:satellites</names>
+        <names xml:lang="es">satélites</names>
+        <names xml:lang="nl">satellieten</names>
+        <names xml:lang="ru">спутники</names>
+        <names xml:lang="sv">satelliter</names>
+      </property>
+      <property>
+        
+        <title>!datasets!Mass</title>
+        <title xml:lang="es">Masa</title>
+        <title xml:lang="fr">!datasets!Masse</title>
+        <title xml:lang="nl">Massa</title>
+        <title xml:lang="ru">Масса</title>
+        <title xml:lang="sv">Massa</title>
+        <title xml:lang="zh_CN">质量</title>
+	<type>number</type>
+	<unit>kg</unit>
+	<approximate>true</approximate>
+        <names>r:mass</names>
+        <names xml:lang="es">masa</names>
+        <names xml:lang="fr">masse</names>
+        <names xml:lang="nl">massa</names>
+        <names xml:lang="ru">масса</names>
+        <names xml:lang="sv">massa</names>
+      </property>
+      <property>
+        <title>Mean Density</title>
+        <title xml:lang="es">Densidad media</title>
+        <title xml:lang="fr">Densité moyenne</title>
+        <title xml:lang="nl">Gemiddelde dichtheid</title>
+        <title xml:lang="ru">Средняя плотность</title>
+        <title xml:lang="sv">Genomsnittlig densitet</title>
+        <title xml:lang="zh_CN">平均密度</title>
+	<type>number</type>
+	<unit>g/cm^3</unit>
+	<approximate>true</approximate>
+        <names>r:density</names>
+        <names xml:lang="es">densidad</names>
+        <names xml:lang="fr">densite</names>
+        <names xml:lang="nl">dichtheid</names>
+        <names xml:lang="ru">плотность</names>
+        <names xml:lang="sv">densitet</names>
+      </property>
+      <property>
+        <title>Surface Area</title>
+        <title xml:lang="es">Área</title>
+        <title xml:lang="fr">Superficie</title>
+        <title xml:lang="nl">Oppervlak (3D)</title>
+        <title xml:lang="ru">Площадь поверхности</title>
+        <title xml:lang="sv">Ytarea</title>
+        <title xml:lang="zh_CN">表面积</title>
+	<type>number</type>
+	<unit>km^2</unit>
+	<approximate>true</approximate>
+	
+        <names>!datasets!r:area</names>
+        <names xml:lang="es">área</names>
+        <names xml:lang="fr">!datasets!superficie</names>
+        <names xml:lang="nl">oppervlak</names>
+        <names xml:lang="ru">площадь</names>
+      </property>
+      <property>
+        <title>Equatorial Gravity</title>
+        <title xml:lang="es">Gravedad ecuatorial</title>
+        <title xml:lang="fr">Gravité équatoriale</title>
+        <title xml:lang="nl">Equatoriale zwaartekracht</title>
+        <title xml:lang="ru">Экваториальная гравитация</title>
+        <title xml:lang="sv">Ekvatoriell tyngdkraft</title>
+        <title xml:lang="zh_CN">赤道重力</title>
+	<type>number</type>
+	<unit>m/s^2</unit>
+	<approximate>true</approximate>
+        <names>r:gravity</names>
+        <names xml:lang="es">gravedad</names>
+        <names xml:lang="fr">gravite</names>
+        <names xml:lang="nl">zwaartekracht</names>
+        <names xml:lang="ru">гравитация</names>
+        <names xml:lang="sv">tyngdkraft</names>
+      </property>
+      <property>
+        <title>Mean Surface Temperature</title>
+        <title xml:lang="es">Temperatura superficial media</title>
+        <title xml:lang="fr">Température moyenne de surface</title>
+        <title xml:lang="nl">Gemiddelde oppervlaktetemperatuur</title>
+        <title xml:lang="ru">Средняя температура поверхности</title>
+        <title xml:lang="sv">Genomsnittlig yttemperatur</title>
+        <title xml:lang="zh_CN">平均表面温度</title>
+	<type>number</type>
+	<unit>K</unit>
+	<approximate>true</approximate>
+        <names>r:temperature</names>
+        <names xml:lang="es">temperatura</names>
+        <names xml:lang="nl">temperatuur</names>
+        <names xml:lang="ru">температура</names>
+        <names xml:lang="sv">temperatur</names>
+      </property>
+    </dataset>
+  </category>
+</QALCULATE>

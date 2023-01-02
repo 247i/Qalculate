@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QALCULATE version="0.9.4">
+  <object>
+    <name>Earth</name>
+    <name xml:lang="es">Tierra</name>
+    <name xml:lang="fr">Terre</name>
+    <name xml:lang="nl">Aarde</name>
+    <name xml:lang="ru">Земля</name>
+    <name xml:lang="sv">Jorden</name>
+    <name xml:lang="zh_CN">地球</name>
+    <year>365.256363004</year>
+    <speed>29.78</speed>
+    <eccentricity>0.0167086</eccentricity>
+    <inclination>0.00005</inclination>
+    <satellites>1</satellites>
+    <mass>5.97237E24</mass>
+    <density>5.514</density>
+    <area>510.072E6</area>
+    <gravity>9.807</gravity>
+    <temperature>288</temperature>
+  </object>
+  <object>
+    <name>Mars</name>
+    <name xml:lang="es">Marte</name>
+    <name xml:lang="ru">Марс</name>
+    <name xml:lang="zh_CN">火星</name>
+    <year>686.971</year>
+    <speed>24.007</speed>
+    <eccentricity>0.0934</eccentricity>
+    <inclination>1.850</inclination>
+    <satellites>2</satellites>
+    <mass>6.4171E23</mass>
+    <density>3.9335</density>
+    <area>1.44798500E8</area>
+    <gravity>3.72076</gravity>
+    <temperature>210</temperature>
+  </object>
+  <object>
+    
+    <name>!planets!Mercury</name>
+    <name xml:lang="es">Mercurio</name>
+    <name xml:lang="fr">!planetes!Mercure</name>
+    <name xml:lang="nl">Mercurius</name>
+    <name xml:lang="ru">Меркурий</name>
+    <name xml:lang="sv">Merkurius</name>
+    <name xml:lang="zh_CN">水星</name>
+    <year>87.969</year>
+    <speed>47.362</speed>
+    <eccentricity>0.205630</eccentricity>
+    <inclination>7.005</inclination>
+    <satellites>0</satellites>
+    <mass>3.3011E23</mass>
+    <density>5.427</density>
+    <area>7.48E7</area>
+    <gravity>3.7</gravity>
+    <temperature>340</temperature>
+  </object>
+  <object>
+    <name>Venus</name>
+    <name xml:lang="fr">Vénus</name>
+    <name xml:lang="ru">Венера</name>
+    <name xml:lang="zh_CN">金星</name>
+    <year>224.701</year>
+    <speed>35.02</speed>
+    <eccentricity>0.006772</eccentricity>
+    <inclination>3.39458</inclination>
+    <satellites>0</satellites>
+    <mass>4.8675E24</mass>
+    <density>5.243</density>
+    <area>4.6023E8</area>
+    <gravity>8.87</gravity>
+    <temperature>737</temperature>
+  </object>
+  <object>
+    <name>Jupiter</name>
+    <name xml:lang="es">Júpiter</name>
+    <name xml:lang="ru">Юпитер</name>
+    <name xml:lang="zh_CN">木星</name>
+    <year>4332.59</year>
+    <speed>13.07</speed>
+    <eccentricity>0.0489</eccentricity>
+    <inclination>1.303</inclination>
+    <satellites>79</satellites>
+    <mass>1.8982E27</mass>
+    <density>1.326</density>
+    <area>6.1419E10</area>
+    <gravity>24.79</gravity>
+    <temperature>165</temperature>
+  </object>
+  <object>
+    <name>Saturn</name>
+    <name xml:lang="es">Saturno</name>
+    <name xml:lang="fr">Saturne</name>
+    <name xml:lang="nl">Saturnus</name>
+    <name xml:lang="ru">Сатурн</name>
+    <name xml:lang="sv">Saturnus</name>
+    <name xml:lang="zh_CN">土星</name>
+    <year>10759.22</year>
+    <speed>9.68</speed>
+    <eccentricity>0.0565</eccentricity>
+    <inclination>2.485</inclination>
+    <satellites>62</satellites>
+    <mass>5.6834E26</mass>
+    <density>0.687</density>
+    <area>4.27E10</area>
+    <gravity>10.44</gravity>
+    <temperature>134</temperature>
+  </object>
+  <object>
+    <name>Neptune</name>
+    <name xml:lang="es">Neptuno</name>
+    <name xml:lang="nl">Neptunus</name>
+    <name xml:lang="ru">Нептун</name>
+    <name xml:lang="sv">Neptunus</name>
+    <name xml:lang="zh_CN">海王星</name>
+    <year>60182</year>
+    <speed>5.43</speed>
+    <eccentricity>0.009456</eccentricity>
+    <inclination>1.767975</inclination>
+    <satellites>14</satellites>
+    <mass>1.02413E26</mass>
+    <density>1.638</density>
+    <area>7.6183E9</area>
+    <gravity>11.15</gravity>
+    <temperature>72</temperature>
+  </object>
+  <object>
+    <name>Pluto</name>
+    <name xml:lang="es">Plutón</name>
+    <name xml:lang="fr">Pluton</name>
+    <name xml:lang="ru">Плутон</name>
+    <name xml:lang="zh_CN">冥王星</name>
+    <year>90560</year>
+    <speed>4.67</speed>
+    <eccentricity>0.2488</eccentricity>
+    <inclination>17.16</inclination>
+    <satellites>5</satellites>
+    <mass>1.303E22</mass>
+    <density>1.854+/-0.006</density>
+    <area>1.779E7</area>
+    <gravity>0.620</gravity>
+    <temperature>44</temperature>
+  </object>
+  <object>
+    <name>Uranus</name>
+    <name xml:lang="es">Urano</name>
+    <name xml:lang="ru">Уран</name>
+    <name xml:lang="zh_CN">天王星</name>
+    <year>30688.5</year>
+    <speed>6.80</speed>
+    <eccentricity>0.046381</eccentricity>
+    <inclination>0.773</inclination>
+    <satellites>27</satellites>
+    <mass>8.6810E25+/-0.0013E25</mass>
+    <density>1.27</density>
+    <area>8.1156E9</area>
+    <gravity>8.69</gravity>
+    <temperature>76</temperature>
+  </object>
+</QALCULATE>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QALCULATE version="3.19.0">
+  <prefix type="decimal">
+    <names>ar:y,r:yocto</names>
+    <names xml:lang="ru">aс:и,иокто</names>
+    <names xml:lang="sv">a:y,yokto</names>
+    <names xml:lang="zh_CN">幺</names>
+    <exponent>-24</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:z,r:zepto</names>
+    <names xml:lang="ru">aс:з,зепто</names>
+    <names xml:lang="zh_CN">仄</names>
+    <exponent>-21</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:a,r:atto</names>
+    <names xml:lang="ru">aс:а,атто</names>
+    <names xml:lang="zh_CN">阿</names>
+    <exponent>-18</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:f,r:femto</names>
+    <names xml:lang="ru">aс:ф,фемто</names>
+    <names xml:lang="zh_CN">飞</names>
+    <exponent>-15</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:p,r:pico</names>
+    <names xml:lang="ru">aс:п,пико</names>
+    <names xml:lang="sv">a:p,piko</names>
+    <names xml:lang="zh_CN">皮</names>
+    <exponent>-12</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:n,r:nano</names>
+    <names xml:lang="ru">aс:н,нано</names>
+    <names xml:lang="zh_CN">纳</names>
+    <exponent>-9</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>aur:&#x3BC;,auor:&#x0B5;,ar:u,r:micro</names>
+    <names xml:lang="ru">aс:мк,микро</names>
+    <names xml:lang="sv">au:&#x3BC;,auo:&#x0B5;,a:u,mikro</names>
+    <names xml:lang="zh_CN">微</names>
+    <exponent>-6</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:m,r:milli</names>
+    <names xml:lang="es">a:m,mili</names>
+    <names xml:lang="ru">aс:м,милли</names>
+    <names xml:lang="zh_CN">毫</names>
+    <exponent>-3</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:c,r:centi</names>
+    <names xml:lang="ru">aс:с,санти</names>
+    <names xml:lang="zh_CN">厘</names>
+    <exponent>-2</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:d,r:deci</names>
+    <names xml:lang="fr">a:d,déci</names>
+    <names xml:lang="ru">aс:д,деци</names>
+    <names xml:lang="zh_CN">分</names>
+    <exponent>-1</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:da,r:deca</names>
+    <names xml:lang="fr">a:da,déca</names>
+    <names xml:lang="ru">aс:да,дека</names>
+    <names xml:lang="sv">a:da,deka</names>
+    <names xml:lang="zh_CN">十</names>
+    <exponent>1</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:h,r:hecto</names>
+    <names xml:lang="ru">aс:г,гекто</names>
+    <names xml:lang="sv">a:h,hekto</names>
+    <names xml:lang="zh_CN">百</names>
+    <exponent>2</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:k,r:kilo</names>
+    <names xml:lang="ru">aс:к,кило</names>
+    <names xml:lang="zh_CN">千</names>
+    <exponent>3</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:M,r:mega</names>
+    <names xml:lang="fr">a:M,méga</names>
+    <names xml:lang="ru">aс:М,мега</names>
+    <names xml:lang="zh_CN">兆</names>
+    <exponent>6</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:G,r:giga</names>
+    <names xml:lang="ru">aс:Г,гига</names>
+    <names xml:lang="zh_CN">吉</names>
+    <exponent>9</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:T,r:tera</names>
+    <names xml:lang="fr">a:T,téra</names>
+    <names xml:lang="ru">aс:Т,тера</names>
+    <names xml:lang="zh_CN">太</names>
+    <exponent>12</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:P,r:peta</names>
+    <names xml:lang="fr">a:P,péta</names>
+    <names xml:lang="ru">aс:П,пета</names>
+    <names xml:lang="zh_CN">拍</names>
+    <exponent>15</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:E,r:exa</names>
+    <names xml:lang="ru">aс:Э,экса</names>
+    <names xml:lang="zh_CN">艾</names>
+    <exponent>18</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:Z,r:zetta</names>
+    <names xml:lang="ru">aс:З,зетта</names>
+    <names xml:lang="zh_CN">泽</names>
+    <exponent>21</exponent>
+  </prefix>
+  <prefix type="decimal">
+    <names>ar:Y,r:yotta</names>
+    <names xml:lang="ru">aс:И,иотта</names>
+    <names xml:lang="zh_CN">尧</names>
+    <exponent>24</exponent>
+  </prefix>
+  <prefix type="binary">
+    <names>ar:Ki,r:kibi</names>
+    <names xml:lang="ru">aс:Ки,киби</names>
+    <exponent>10</exponent>
+  </prefix>
+  <prefix type="binary">
+    <names>ar:Mi,r:mebi</names>
+    <names xml:lang="fr">a:Mi,mébi</names>
+    <names xml:lang="ru">aс:Ми,меби</names>
+    <exponent>20</exponent>
+  </prefix>
+  <prefix type="binary">
+    <names>ar:Gi,r:gibi</names>
+    <names xml:lang="ru">aс:Ги,гиби</names>
+    <exponent>30</exponent>
+  </prefix>
+  <prefix type="binary">
+    <names>ar:Ti,r:tebi</names>
+    <names xml:lang="fr">a:Ti,tébi</names>
+    <names xml:lang="ru">aс:Ти,теби</names>
+    <exponent>40</exponent>
+  </prefix>
+  <prefix type="binary">
+    <names>ar:Pi,r:pebi</names>
+    <names xml:lang="fr">a:Pi,pébi</names>
+    <names xml:lang="ru">aс:Пи,пеби</names>
+    <exponent>50</exponent>
+  </prefix>
+  <prefix type="binary">
+    <names>ar:Ei,r:exbi</names>
+    <names xml:lang="ru">ac:Эи,эксби</names>
+    <exponent>60</exponent>
+  </prefix>
+  <prefix type="binary">
+    <names>ar:Zi,r:zebi</names>
+    <names xml:lang="fr">a:Zi,zébi</names>
+    <names xml:lang="ru">ac:Зи,зеби</names>
+    <exponent>70</exponent>
+  </prefix>
+  <prefix type="binary">
+    <names>ar:Yi,r:yobi</names>
+    <names xml:lang="ru">ac:Йи,йоби</names>
+    <exponent>80</exponent>
+  </prefix>
+</QALCULATE>

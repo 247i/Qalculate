@@ -1,0 +1,2636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QALCULATE version="2.5.0">
+  <category>
+    <title>Currency</title>
+    <title xml:lang="es">Divisas</title>
+    <title xml:lang="fr">Devise</title>
+    <title xml:lang="nl">Valuta</title>
+    <title xml:lang="ru">Валюта</title>
+    <title xml:lang="sv">Valuta</title>
+    <title xml:lang="zh_CN">货币</title>
+    <builtin_unit name="EUR">
+      <title>European Euro</title>
+      <title xml:lang="es">Euro europeo</title>
+      <title xml:lang="fr">Euro</title>
+      <title xml:lang="nl">Europese euro</title>
+      <title xml:lang="ru">Европейский евро</title>
+      <title xml:lang="sv">Euro</title>
+      <title xml:lang="zh_CN">欧元</title>
+      <names>a-cr:EUR,au:&#x20AC;,euro,p:euros</names>
+      <names xml:lang="ru">a-c:EUR,au:&#x20AC;,евро</names>
+      <names xml:lang="sv">a-c:EUR,au:&#x20AC;,euro</names>
+      <names xml:lang="zh_CN">a-c:EUR,au:&#x20AC;,欧元,euro</names>
+      <countries>Andorra, Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Portugal, San Marino, Slovakia, Slovenia, Spain, Vatican City</countries>
+      <countries xml:lang="es">Andorra, Austria, Bélgica, Chipre, Estonia, Finlandia, Francia, Alemania, Grecia, Irlanda, Italia, Letonia, Lituania, Luxemburgo, Malta, Países Bajos, Portugal, San Marino, Eslovaquia, Eslovenia, España, Ciudad del Vaticano</countries>
+      <countries xml:lang="fr">Allemagne, Andorre, Autriche, Belgique, Chypre, Cité du Vatican, Espagne, Estonie, Finlande, France, Grèce, Irlande, Italie, Lettonie, Lituanie, Luxembourg, Malte, Pays-Bas, Portugal, Saint-Marin, Slovaquie, Slovénie</countries>
+      <countries xml:lang="ru">Австрия, Андорра,  Бельгия, Ватикан, Германия, Греция, Ирландия, Испания, Италия, Кипр, Латвия, Литва, Люксембург, Мальта, Нидерланды, Португалия, Сан-Марино, Словакия, Словения, Финляндия, Франция, Эстония</countries>
+      <countries xml:lang="sv">Andorra, Österrike, Belgien, Cypern, Estland, Finland, Frankrike, Tyskland, Grekland, Irland, Italien, Lettland, Litauen, Luxemburg, Malta, Nederländerna, Portugal, San Marina, Slovakien, Slovenien, Spanien, Vatikanstaten</countries>
+      <countries xml:lang="zh_CN">安道尔、奥地利、比利时、塞浦路斯、爱沙尼亚、芬兰、法国、德国、希腊、爱尔兰、意大利、拉脱维亚、立陶宛、卢森堡、马耳他、荷兰、葡萄牙、圣马力诺、斯洛伐克、斯洛文尼亚、西班牙、梵蒂冈城。</countries>
+    </builtin_unit>
+    <builtin_unit name="USD">
+      <title>U.S. Dollar</title>
+      <title xml:lang="es">Dólar estadounidense</title>
+      <title xml:lang="fr">Dollar des États-Unis</title>
+      <title xml:lang="nl">U.S. dollar</title>
+      <title xml:lang="ru">Доллар США</title>
+      <title xml:lang="sv">Amerikansk dollar</title>
+      <title xml:lang="zh_CN">美元</title>
+      <names>a:$,a-cr:USD,dollar,p:dollars</names>
+      <names xml:lang="ru">a:$,a-c:USD,доллар,p:долларов</names>
+      <names xml:lang="sv">a:$,a-c:USD,dollar</names>
+      <names xml:lang="zh_CN">a:$,a-c:USD,美元,dollar</names>
+      <countries>United States, East Timor, Ecuador, El Salvador, Micronesia, Marshall Islands, Palau, Zimbabwe</countries>
+      <countries xml:lang="es">Estados Unidos, Timor Oriental, Ecuador, El Salvador, Micronesia, Islas Marshall, Palaos, Zimbabue</countries>
+      <countries xml:lang="fr">États-Unis, Équateur, Micronésie, Îles Marshall, Palaos, Salvador, Timor oriental, Zimbabwe</countries>
+      <countries xml:lang="ru">Восточный Тимор, Зимбабве, Маршалловы Острова, Микронезия, Палау,Сальвадор, США, Эквадор,</countries>
+      <countries xml:lang="sv">USA, Östtimor, Ecuador, El Salvador, Mikronesien, Marskallöarna, Palau, Zimbabwe</countries>
+      <countries xml:lang="zh_CN">美国、东帝汶、厄瓜多尔、萨尔瓦多、密克罗尼西亚、马绍尔群岛、帕劳、津巴布韦</countries>
+    </builtin_unit>
+    <builtin_unit name="JPY">
+      <title>Japanese Yen</title>
+      <title xml:lang="es">Yen japonés</title>
+      <title xml:lang="fr">Yen japonais</title>
+      <title xml:lang="nl">Japanse yen</title>
+      <title xml:lang="ru">Японская иена</title>
+      <title xml:lang="sv">Japansk yen</title>
+      <title xml:lang="zh_CN">日元</title>
+      <names>a-cr:JPY,au:&#xA5;,yen</names>
+      <names xml:lang="ru">a-c:JPY,au:&#xA5;,иена,p:иен</names>
+      <names xml:lang="zh_CN">a-c:JPY,au:&#xA5;,日元,yen</names>
+      <countries>Japan</countries>
+      <countries xml:lang="es">Japón</countries>
+      <countries xml:lang="fr">Japon</countries>
+      <countries xml:lang="ru">Япония</countries>
+      <countries xml:lang="zh_CN">日本</countries>
+    </builtin_unit>
+    <builtin_unit name="DKK">
+      <title>Danish Krone</title>
+      <title xml:lang="es">Corona danesa</title>
+      <title xml:lang="fr">Couronne danoise</title>
+      <title xml:lang="nl">Deense kroon</title>
+      <title xml:lang="ru">Датская крона</title>
+      <title xml:lang="sv">Dansk krona</title>
+      <title xml:lang="zh_CN">丹麦克朗</title>
+      <names>a-cr:DKK</names>
+      <names xml:lang="ru">a-c:DKK</names>
+      <countries>Denmark</countries>
+      <countries xml:lang="es">Dinamarca</countries>
+      <countries xml:lang="fr">Danemark</countries>
+      <countries xml:lang="ru">Дания</countries>
+      <countries xml:lang="sv">Danmark</countries>
+      <countries xml:lang="zh_CN">丹麦</countries>
+    </builtin_unit>
+    <builtin_unit name="GBP">
+      <title>British Pound</title>
+      <title xml:lang="es">Libra esterlina</title>
+      <title xml:lang="fr">Livre britannique</title>
+      <title xml:lang="nl">Britse Pond</title>
+      <title xml:lang="ru">(Английский) Фунт стерлингов</title>
+      <title xml:lang="sv">Brittiskt pund</title>
+      <title xml:lang="zh_CN">英镑</title>
+      <names>a-cr:GBP,au:&#xA3;</names>
+      <names xml:lang="ru">a-c:GBP,au:&#xA3;,фунт</names>
+      <names xml:lang="zh_CN">a-c:GBP,au:&#xA3;,英镑</names>
+      <countries>United Kingdom</countries>
+      <countries xml:lang="es">Reino Unido</countries>
+      <countries xml:lang="fr">Royaume-Uni</countries>
+      <countries xml:lang="ru">Соединенное Королевство Великобритании и Северной Ирландии</countries>
+      <countries xml:lang="sv">Storbritannien</countries>
+      <countries xml:lang="zh_CN">英国</countries>
+    </builtin_unit>
+    <builtin_unit name="THB">
+      <title>Thai Baht</title>
+      <title xml:lang="es">Baht tailandés</title>
+      <title xml:lang="fr">Baht thaïlandais</title>
+      <title xml:lang="nl">Thailandse bat</title>
+      <title xml:lang="ru">Тайский бат</title>
+      <title xml:lang="sv">Thailändsk baht</title>
+      <title xml:lang="zh_CN">泰铢</title>
+      <names>a-cr:THB</names>
+      <names xml:lang="ru">a-c:THB,бат</names>
+      <countries>Thailand</countries>
+      <countries xml:lang="es">Tailandia</countries>
+      <countries xml:lang="fr">Thaïlande</countries>
+      <countries xml:lang="ru">Тайланд</countries>
+      <countries xml:lang="zh_CN">泰国</countries>
+    </builtin_unit>
+    <builtin_unit name="SEK">
+      <title>Swedish Krona</title>
+      <title xml:lang="es">Corona sueca</title>
+      <title xml:lang="fr">Couronne suédoise</title>
+      <title xml:lang="nl">Zweedse kroon</title>
+      <title xml:lang="ru">Шведская крона</title>
+      <title xml:lang="sv">Svensk krona</title>
+      <title xml:lang="zh_CN">瑞典克郎</title>
+      <names>a-cr:SEK</names>
+      <names xml:lang="ru">a-c:SEK</names>
+      <names xml:lang="sv">a:kr,a-c:SEK,krona,p:kronor</names>
+      <countries>Sweden</countries>
+      <countries xml:lang="es">Suecia</countries>
+      <countries xml:lang="fr">Suède</countries>
+      <countries xml:lang="ru">Швеция</countries>
+      <countries xml:lang="sv">Sverige</countries>
+      <countries xml:lang="zh_CN">瑞典</countries>
+    </builtin_unit>
+    <builtin_unit name="CHF">
+      <title>Swiss Franc</title>
+      <title xml:lang="es">Franco suizo</title>
+      <title xml:lang="fr">Franc suisse</title>
+      <title xml:lang="nl">Zwitserse franc</title>
+      <title xml:lang="ru">Швейцарский франк</title>
+      <title xml:lang="sv">Schweizerfranc</title>
+      <title xml:lang="zh_CN">瑞士法郎</title>
+      <names>a-cr:CHF</names>
+      <names xml:lang="ru">a-c:CHF</names>
+      <countries>Switzerland</countries>
+      <countries xml:lang="es">Suiza</countries>
+      <countries xml:lang="fr">Suisse</countries>
+      <countries xml:lang="ru">Швейцария</countries>
+      <countries xml:lang="sv">Schweiz</countries>
+      <countries xml:lang="zh_CN">瑞士</countries>
+    </builtin_unit>
+    <builtin_unit name="NOK">
+      <title>Norwegian Krone</title>
+      <title xml:lang="es">Corona noruega</title>
+      <title xml:lang="fr">Couronne norvégienne</title>
+      <title xml:lang="nl">Noorse kroon</title>
+      <title xml:lang="ru">Норвежская крона</title>
+      <title xml:lang="sv">Norsk krona</title>
+      <title xml:lang="zh_CN">挪威克朗</title>
+      <names>a-cr:NOK</names>
+      <names xml:lang="ru">a-c:NOK</names>
+      <countries>Norway</countries>
+      <countries xml:lang="es">Noruega</countries>
+      <countries xml:lang="fr">Norvège</countries>
+      <countries xml:lang="ru">Норвегия</countries>
+      <countries xml:lang="sv">Norge</countries>
+      <countries xml:lang="zh_CN">挪威</countries>
+    </builtin_unit>
+    <builtin_unit name="BGN">
+      <title>Bulgarian Lev</title>
+      <title xml:lang="es">Leva búlgara</title>
+      <title xml:lang="fr">Lev bulgare</title>
+      <title xml:lang="nl">Bulgaarse Lev</title>
+      <title xml:lang="ru">Болгарский лев</title>
+      <title xml:lang="sv">Bulgarisk lev</title>
+      <title xml:lang="zh_CN">保加利亚列弗</title>
+      <names>lev,a-cr:BGN</names>
+      <names xml:lang="ru">лев,a-c:BGN</names>
+      <countries>Bulgaria</countries>
+      <countries xml:lang="fr">Bulgarie</countries>
+      <countries xml:lang="ru">Болгария</countries>
+      <countries xml:lang="sv">Bulgarien</countries>
+      <countries xml:lang="zh_CN">保加利亚</countries>
+    </builtin_unit>
+    <builtin_unit name="RUB">
+      <title>Russian Ruble</title>
+      <title xml:lang="es">Rublo ruso</title>
+      <title xml:lang="fr">Rouble russe</title>
+      <title xml:lang="nl">Russische roebel</title>
+      <title xml:lang="ru">Российский рубль</title>
+      <title xml:lang="sv">Rysk rubel</title>
+      <title xml:lang="zh_CN">俄罗斯卢布</title>
+      <names>a-cr:RUB,au:&#x20BD;,ruble</names>
+      <names xml:lang="fr">a-c:RUB,au:&#x20BD;,rouble</names>
+      <names xml:lang="ru">a-c:RUB,au:&#x20BD;,рубль,p:рублей,p:рубля</names>
+      <names xml:lang="sv">a-c:RUB,au:&#x20BD;,rubel</names>
+      <names xml:lang="zh_CN">a-c:RUB,au:&#x20BD;,卢布,ruble</names>
+      <countries>Russia</countries>
+      <countries xml:lang="es">Rusia</countries>
+      <countries xml:lang="fr">Russie</countries>
+      <countries xml:lang="ru">Россия</countries>
+      <countries xml:lang="sv">Ryssland</countries>
+      <countries xml:lang="zh_CN">俄罗斯</countries>
+    </builtin_unit>
+    <builtin_unit name="PHP">
+      <title>Philippine Peso</title>
+      <title xml:lang="es">Peso filipino</title>
+      <title xml:lang="fr">Peso philippin</title>
+      <title xml:lang="nl">Filippijnse peso</title>
+      <title xml:lang="ru">Филиппинский песо</title>
+      <title xml:lang="sv">Filippinsk peso</title>
+      <title xml:lang="zh_CN">菲律宾比索</title>
+      <names>a-cr:PHP,au:&#x20B1;</names>
+      <names xml:lang="ru">a-c:PHP,au:&#x20B1;</names>
+      <countries>Philippines</countries>
+      <countries xml:lang="es">Filipinas</countries>
+      <countries xml:lang="ru">Филиппины</countries>
+      <countries xml:lang="sv">Filippinerna</countries>
+      <countries xml:lang="zh_CN">菲律宾</countries>
+    </builtin_unit>
+    <builtin_unit name="MYR">
+      <title>Malaysian Ringgit</title>
+      <title xml:lang="es">Ringgit malayo</title>
+      <title xml:lang="fr">Ringgit malais</title>
+      <title xml:lang="nl">Maleisische ringgit</title>
+      <title xml:lang="ru">Малайзийский ринггит</title>
+      <title xml:lang="sv">Malaysisk ringgit</title>
+      <title xml:lang="zh_CN">马来西亚林吉特</title>
+      <names>a-cr:MYR</names>
+      <names xml:lang="ru">a-c:MYR</names>
+      <countries>Malaysia</countries>
+      <countries xml:lang="es">Malasia</countries>
+      <countries xml:lang="fr">Malaisie</countries>
+      <countries xml:lang="ru">Малайзия</countries>
+      <countries xml:lang="zh_CN">马来西亚</countries>
+    </builtin_unit>
+    <builtin_unit name="HRK">
+      <title>Croatian Kuna</title>
+      <title xml:lang="es">Kuna croata</title>
+      <title xml:lang="fr">Kuna croate</title>
+      <title xml:lang="nl">Kroatische kuna</title>
+      <title xml:lang="ru">Хорватская куна</title>
+      <title xml:lang="sv">Kroatisk kuna</title>
+      <title xml:lang="zh_CN">克罗地亚库纳</title>
+      <names>a-cr:HRK</names>
+      <names xml:lang="ru">a-c:HRK</names>
+      <countries>Croatia</countries>
+      <countries xml:lang="es">Croacia</countries>
+      <countries xml:lang="fr">Croatie</countries>
+      <countries xml:lang="ru">Хорватия</countries>
+      <countries xml:lang="sv">Kroatien</countries>
+      <countries xml:lang="zh_CN">克罗地亚</countries>
+    </builtin_unit>
+    <builtin_unit name="CNY">
+      <title>Chinese Yuan Renminbi</title>
+      <title xml:lang="es">Yuan Renminbi chino</title>
+      <title xml:lang="fr">Yuan ou renminbi chinois</title>
+      <title xml:lang="ru">Китайский юань [жэньминьби]</title>
+      <title xml:lang="sv">Kinesisk yuan renminbi</title>
+      <title xml:lang="zh_CN">中国人民币</title>
+      <names>a-cr:CNY</names>
+      <names xml:lang="ru">a-c:CNY,юань</names>
+      <names xml:lang="zh_CN">a-c:CNY,人民币</names>
+      <countries>China</countries>
+      <countries xml:lang="fr">Chine</countries>
+      <countries xml:lang="ru">Китай</countries>
+      <countries xml:lang="sv">Kina</countries>
+      <countries xml:lang="zh_CN">中国</countries>
+    </builtin_unit>
+    <builtin_unit name="IDR">
+      <title>Indonesian Rupiah</title>
+      <title xml:lang="es">Rupia indonesia</title>
+      <title xml:lang="fr">Roupie indonésienne</title>
+      <title xml:lang="nl">Indonesische roepiah</title>
+      <title xml:lang="ru">Индонезийская рупия</title>
+      <title xml:lang="sv">Indonesisk rupiah</title>
+      <title xml:lang="zh_CN">印尼盾</title>
+      <names>a-cr:IDR,rupiah</names>
+      <names xml:lang="ru">a-c:IDR,рупия,p:рупий</names>
+      <countries>Indonesia</countries>
+      <countries xml:lang="fr">Indonésie</countries>
+      <countries xml:lang="ru">Индонезия</countries>
+      <countries xml:lang="sv">Indonesien</countries>
+      <countries xml:lang="zh_CN">印尼</countries>
+    </builtin_unit>
+    <builtin_unit name="CZK">
+      <title>Czech Koruna</title>
+      <title xml:lang="es">Corona checa</title>
+      <title xml:lang="fr">Couronne tchèque</title>
+      <title xml:lang="nl">Tsjechische kroon</title>
+      <title xml:lang="ru">Чешская крона</title>
+      <title xml:lang="sv">Tjeckisk koruna</title>
+      <title xml:lang="zh_CN">捷克克朗</title>
+      <names>a-cr:CZK,au-c:K&#x10D;</names>
+      <names xml:lang="ru">a-c:CZK,au-c:K&#x10D;</names>
+      <countries>Czech Republic</countries>
+      <countries xml:lang="es">República Checa</countries>
+      <countries xml:lang="fr">République tchèque</countries>
+      <countries xml:lang="ru">Республика Чехия</countries>
+      <countries xml:lang="sv">Tjeckien</countries>
+      <countries xml:lang="zh_CN">捷克共和国</countries>
+    </builtin_unit>
+     <builtin_unit name="HUF">
+      <title>Hungarian Forint</title>
+      <title xml:lang="es">Forinto húngaro</title>
+      <title xml:lang="fr">Forint hongrois</title>
+      <title xml:lang="nl">Hongaarse forint</title>
+      <title xml:lang="ru">Венгерский форинт</title>
+      <title xml:lang="sv">Ungersk forint</title>
+      <title xml:lang="zh_CN">匈牙利福林</title>
+      <names>forint,a-cr:HUF</names>
+      <names xml:lang="ru">форинт,a-c:HUF</names>
+      <countries>Hungary</countries>
+      <countries xml:lang="es">Hungría</countries>
+      <countries xml:lang="fr">Hongrie</countries>
+      <countries xml:lang="ru">Венгрия</countries>
+      <countries xml:lang="sv">Ungern</countries>
+      <countries xml:lang="zh_CN">匈牙利</countries>
+    </builtin_unit>
+    <builtin_unit name="PLN">
+      <title>Polish Zloty</title>
+      <title xml:lang="es">Esloti polaco</title>
+      <title xml:lang="fr">Zloty polonais</title>
+      <title xml:lang="nl">Poolse zloty</title>
+      <title xml:lang="ru">Польский злотый</title>
+      <title xml:lang="sv">Polsk zloty</title>
+      <title xml:lang="zh_CN">波兰兹罗提</title>
+      <names>a-cr:PLN,au:z&#x0142;,zloty</names>
+      <names xml:lang="ru">a-c:PLN,au:z&#x0142;,злотый,p:злотых</names>
+      <countries>Poland</countries>
+      <countries xml:lang="es">Polonia</countries>
+      <countries xml:lang="fr">Pologne</countries>
+      <countries xml:lang="ru">Польша</countries>
+      <countries xml:lang="sv">Polen</countries>
+      <countries xml:lang="zh_CN">波兰</countries>
+    </builtin_unit>
+    <builtin_unit name="RON">
+      <title>Romanian Leu</title>
+      <title xml:lang="es">Leu rumano</title>
+      <title xml:lang="fr">Leu roumain</title>
+      <title xml:lang="ru">Румынский лей</title>
+      <title xml:lang="sv">Rumänsk leu</title>
+      <title xml:lang="zh_CN">罗马尼亚列伊</title>
+      <names>a-cr:RON</names>
+      <names xml:lang="ru">a-c:RON</names>
+      <countries>Romania</countries>
+      <countries xml:lang="es">Rumania</countries>
+      <countries xml:lang="fr">Roumanie</countries>
+      <countries xml:lang="ru">Румыния</countries>
+      <countries xml:lang="sv">Rumänien</countries>
+      <countries xml:lang="zh_CN">罗马尼亚</countries>
+    </builtin_unit>
+    <builtin_unit name="TRY">
+      <title>Turkish New Lira</title>
+      <title xml:lang="es">Nueva Lira turca</title>
+      <title xml:lang="fr">Nouvelle livre turque</title>
+      <title xml:lang="nl">Nieuwe Turkse lire</title>
+      <title xml:lang="ru">Турецкая (новая) лира</title>
+      <title xml:lang="sv">Turkisk ny lira</title>
+      <title xml:lang="zh_CN">土耳其新里拉</title>
+      <names>a-cr:TRY,au:&#x20BA;</names>
+      <names xml:lang="ru">a-c:TRY,au:&#x20BA;</names>
+      <countries>Turkey</countries>
+      <countries xml:lang="es">Turquía</countries>
+      <countries xml:lang="fr">Turquie</countries>
+      <countries xml:lang="ru">Турция</countries>
+      <countries xml:lang="sv">Turkiet</countries>
+      <countries xml:lang="zh_CN">土耳其</countries>
+    </builtin_unit>
+    <builtin_unit name="AUD">
+      <title>Australian Dollar</title>
+      <title xml:lang="es">Dólar australiano</title>
+      <title xml:lang="fr">Dollar australien</title>
+      <title xml:lang="nl">Australische dollar</title>
+      <title xml:lang="ru">Австралийский доллар</title>
+      <title xml:lang="sv">Australiensisk dollar</title>
+      <title xml:lang="zh_CN">澳大利亚元</title>
+      <names>a-cr:AUD</names>
+      <names xml:lang="ru">a-c:AUD</names>
+      <countries>Australia</countries>
+      <countries xml:lang="fr">Australie</countries>
+      <countries xml:lang="ru">Австралия</countries>
+      <countries xml:lang="sv">Australien</countries>
+      <countries xml:lang="zh_CN">澳大利亚</countries>
+    </builtin_unit>
+    <builtin_unit name="CAD">
+      <title>Canadian Dollar</title>
+      <title xml:lang="es">Dólar canadiense</title>
+      <title xml:lang="fr">Dollar canadien</title>
+      <title xml:lang="nl">Canadese dollar</title>
+      <title xml:lang="ru">Канадский доллар</title>
+      <title xml:lang="sv">Kanadensisk dollar</title>
+      <title xml:lang="zh_CN">加拿大元</title>
+      <names>a-cr:CAD</names>
+      <names xml:lang="ru">a-c:CAD</names>
+      <countries>Canada</countries>
+      <countries xml:lang="es">Canadá</countries>
+      <countries xml:lang="ru">Канада</countries>
+      <countries xml:lang="sv">Kanada</countries>
+      <countries xml:lang="zh_CN">加拿大</countries>
+    </builtin_unit>
+    <builtin_unit name="HKD">
+      <title>Hong Kong Dollar</title>
+      <title xml:lang="es">Dólar hongkonés</title>
+      <title xml:lang="fr">Dollar de Hong Kong</title>
+      <title xml:lang="nl">Hongkong dollar</title>
+      <title xml:lang="ru">Гонконгский доллар</title>
+      <title xml:lang="sv">Hongkongdollar</title>
+      <title xml:lang="zh_CN">港币</title>
+      <names>a-cr:HKD</names>
+      <names xml:lang="ru">a-c:HKD</names>
+      <names xml:lang="zh_CN">a-c:HKD,港币</names>
+    </builtin_unit>
+    <builtin_unit name="NZD">
+      <title>New Zealand Dollar</title>
+      <title xml:lang="es">Dólar neozelandés</title>
+      <title xml:lang="fr">Dollar néo-zélandais</title>
+      <title xml:lang="nl">Nieuwzeelandse dollar</title>
+      <title xml:lang="ru">Новозеландский доллар</title>
+      <title xml:lang="sv">Nya Zeeländsk dollar</title>
+      <title xml:lang="zh_CN">新西兰元</title>
+      <names>a-cr:NZD</names>
+      <names xml:lang="ru">a-c:NZD</names>
+      <countries>New Zealand</countries>
+      <countries xml:lang="es">Nueva Zelanda</countries>
+      <countries xml:lang="fr">Nouvelle-Zélande</countries>
+      <countries xml:lang="ru">Новая Зеландия</countries>
+      <countries xml:lang="sv">Nya Zeeland</countries>
+      <countries xml:lang="zh_CN">新西兰</countries>
+    </builtin_unit>
+    <builtin_unit name="SGD">
+      <title>Singapore Dollar</title>
+      <title xml:lang="es">Dólar singapurense</title>
+      <title xml:lang="fr">Dollar de Singapour</title>
+      <title xml:lang="nl">Singapore dollar</title>
+      <title xml:lang="ru">Сингапурский доллар</title>
+      <title xml:lang="sv">Singaporiansk dollar</title>
+      <title xml:lang="zh_CN">新加坡元</title>
+      <names>a-cr:SGD</names>
+      <names xml:lang="ru">a-c:SGD</names>
+      <countries>Singapore</countries>
+      <countries xml:lang="es">Singapur</countries>
+      <countries xml:lang="fr">Singapour</countries>
+      <countries xml:lang="ru">Сингапур</countries>
+      <countries xml:lang="zh_CN">新加坡</countries>
+    </builtin_unit>
+    <builtin_unit name="KRW">
+      <title>South Korean Won</title>
+      <title xml:lang="es">Won surcoreano</title>
+      <title xml:lang="fr">Won sud-corréen</title>
+      <title xml:lang="nl">Zuid-Koreaanse won</title>
+      <title xml:lang="ru">Южнокорейская вона</title>
+      <title xml:lang="sv">Sydkoreansk won</title>
+      <title xml:lang="zh_CN">韩元</title>
+      <names>a-cr:KRW,au:&#x20A9;,won</names>
+      <names xml:lang="ru">a-c:KRW,au:&#x20A9;,вона,p:вон</names>
+      <countries>South Korea</countries>
+      <countries xml:lang="es">Corea del Sur</countries>
+      <countries xml:lang="fr">Corée du Sud</countries>
+      <countries xml:lang="ru">Южная Корея</countries>
+      <countries xml:lang="sv">Sydkorea</countries>
+      <countries xml:lang="zh_CN">南韩</countries>
+    </builtin_unit>
+    <builtin_unit name="ZAR">
+      <title>South African Rand</title>
+      <title xml:lang="es">Rand sudafricano</title>
+      <title xml:lang="fr">Rand sud-africain</title>
+      <title xml:lang="nl">Zuid-Afrikaanse rand</title>
+      <title xml:lang="ru">Южноафриканский рэнд</title>
+      <title xml:lang="sv">Sydafrikansk rand</title>
+      <title xml:lang="zh_CN">南非兰特</title>
+      <names>a-cr:ZAR</names>
+      <names xml:lang="ru">a-c:ZAR</names>
+      <countries>South Africa</countries>
+      <countries xml:lang="es">Sudáfrica</countries>
+      <countries xml:lang="fr">Afrique du Sud</countries>
+      <countries xml:lang="ru">Южно-Африканская Республика (ЮАР)</countries>
+      <countries xml:lang="sv">Sydafrika</countries>
+      <countries xml:lang="zh_CN">南非</countries>
+    </builtin_unit>
+    <builtin_unit name="INR">
+      <title>Indian Rupee</title>
+      <title xml:lang="es">Rupia india</title>
+      <title xml:lang="fr">Roupie indienne</title>
+      <title xml:lang="ru">Индийская рупия</title>
+      <title xml:lang="sv">Indisk rupie</title>
+      <title xml:lang="zh_CN">印度卢比</title>
+      <names>a-cr:INR,au:&#x20B9;,rupee</names>
+      <names xml:lang="ru">a-c:INR,au:&#x20B9;,рупия,p:рупий</names>
+      <names xml:lang="sv">a-c:INR,au:&#x20B9;,rupie,p:rupier</names>
+      <countries>India</countries>
+      <countries xml:lang="fr">Inde</countries>
+      <countries xml:lang="ru">Индия</countries>
+      <countries xml:lang="sv">Indien</countries>
+      <countries xml:lang="zh_CN">印度</countries>
+    </builtin_unit>
+    <builtin_unit name="ILS">
+      <title>Israeli New Sheqel</title>
+      <title xml:lang="es">Nuevo séquel israelí</title>
+      <title xml:lang="fr">Shekel israélien</title>
+      <title xml:lang="ru">Новый (израильский) шекель</title>
+      <title xml:lang="sv">Israelisk sheqel</title>
+      <title xml:lang="zh_CN">以色列新谢克尔</title>
+      <names>a-cr:ILS,au:&#x20AA;,sheqel</names>
+      <names xml:lang="ru">a-c:ILS,au:&#x20AA;,шекель,p:шекелей</names>
+      <countries>Israel</countries>
+      <countries xml:lang="fr">Israël</countries>
+      <countries xml:lang="ru">Израиль</countries>
+      <countries xml:lang="zh_CN">以色列</countries>
+    </builtin_unit>
+    <builtin_unit name="MXN">
+      <title>Mexican Peso</title>
+      <title xml:lang="es">Peso mexicano</title>
+      <title xml:lang="fr">Peso mexicain</title>
+      <title xml:lang="ru">Мексиканское песо</title>
+      <title xml:lang="sv">Mexikansk peso</title>
+      <title xml:lang="zh_CN">墨西哥比索</title>
+      <names>a-cr:MXN</names>
+      <names xml:lang="ru">a-c:MXN</names>
+      <countries>Mexico</countries>
+      <countries xml:lang="es">México</countries>
+      <countries xml:lang="fr">Mexique</countries>
+      <countries xml:lang="ru">Мексика</countries>
+      <countries xml:lang="sv">Mexiko</countries>
+      <countries xml:lang="zh_CN">墨西哥</countries>
+    </builtin_unit>
+    <builtin_unit name="BRL">
+      <title>Brazilian Real</title>
+      <title xml:lang="es">Real brasileño</title>
+      <title xml:lang="fr">Réal brésilien</title>
+      <title xml:lang="ru">Бразильский реал</title>
+      <title xml:lang="sv">Brasiliansk real</title>
+      <title xml:lang="zh_CN">巴西雷亚尔</title>
+      <names>a-cr:BRL</names>
+      <names xml:lang="ru">a-c:BRL</names>
+      <countries>Brazil</countries>
+      <countries xml:lang="es">Brasil</countries>
+      <countries xml:lang="fr">Brésil</countries>
+      <countries xml:lang="ru">Бразилия</countries>
+      <countries xml:lang="sv">Brasilien</countries>
+      <countries xml:lang="zh_CN">巴西</countries>
+    </builtin_unit>
+    <builtin_unit name="ISK">
+      <title>Icelandic Krónur</title>
+      <title xml:lang="es">Corona islandesa</title>
+      <title xml:lang="fr">Couronne islandaise</title>
+      <title xml:lang="ru">Исландская крона</title>
+      <title xml:lang="sv">Isländsk krona</title>
+      <title xml:lang="zh_CN">冰岛克朗</title>
+      <names>a-cr:ISK</names>
+      <names xml:lang="ru">a-c:ISK</names>
+      <countries>Iceland</countries>
+      <countries xml:lang="es">Islandia</countries>
+      <countries xml:lang="fr">Islande</countries>
+      <countries xml:lang="ru">Исландия</countries>
+      <countries xml:lang="sv">Island</countries>
+      <countries xml:lang="zh_CN">冰岛</countries>
+    </builtin_unit>
+    <builtin_unit name="BTC">
+      <title>Bitcoin</title>
+      <title xml:lang="ru">Биткойн</title>
+      <title xml:lang="zh_CN">比特币</title>
+      <names>a-cr:BTC,au:&#x20BF;,a:XBT,bitcoin,p:bitcoins</names>
+      <names xml:lang="ru">a-c:BTC,au:&#x20BF;,a:XBT,биткойн,p:биткойнов,p:биткойна</names>
+      <names xml:lang="zh_CN">a-c:BTC,au:&#x20BF;,a:XBT,比特币,bitcoin,p:bitcoins</names>
+    </builtin_unit>
+    <builtin_unit name="KES">
+      <title>Kenya Shilling</title>
+      <title xml:lang="es">Chelín keniano</title>
+      <title xml:lang="fr">Shilling kényan</title>
+      <title xml:lang="ru">Кенийский шиллинг</title>
+      <title xml:lang="sv">Kenyansk schilling</title>
+      <title xml:lang="zh_CN">肯尼亚先令</title>
+      <names>a-cr:KES</names>
+      <names xml:lang="ru">a-c:KES</names>
+      <countries>Kenya</countries>
+      <countries xml:lang="es">Kenia</countries>
+      <countries xml:lang="ru">Кения</countries>
+      <countries xml:lang="zh_CN">肯尼亚</countries>
+    </builtin_unit>
+    <builtin_unit name="AFN">
+      <title>Afghan Afghani</title>
+      <title xml:lang="es">Afgani afgano</title>
+      <title xml:lang="fr">Afghani afghan</title>
+      <title xml:lang="ru">Афганский афгани</title>
+      <title xml:lang="sv">Afghansk afghani</title>
+      <title xml:lang="zh_CN">阿富汗阿富汗尼</title>
+      <names>a-cr:AFN,aio:&#x060B;</names>
+      <names xml:lang="ru">a-c:AFN,aio:&#x060B;афгани</names>
+      <countries>Afghanistan</countries>
+      <countries xml:lang="es">Afganistán</countries>
+      <countries xml:lang="ru">Афганистан</countries>
+      <countries xml:lang="zh_CN">阿富汗</countries>
+    </builtin_unit>
+    <builtin_unit name="ALL">
+      <title>Albanian Lek</title>
+      <title xml:lang="es">Lek albanés</title>
+      <title xml:lang="fr">Lek albanais</title>
+      <title xml:lang="ru">Албанский лек</title>
+      <title xml:lang="sv">Albanisk lek</title>
+      <title xml:lang="zh_CN">阿尔巴尼亚列克</title>
+      <names>a-cr:ALL</names>
+      <names xml:lang="ru">a-c:ALL</names>
+      <countries>Albania</countries>
+      <countries xml:lang="fr">Albanie</countries>
+      <countries xml:lang="ru">Албания</countries>
+      <countries xml:lang="sv">Albanien</countries>
+      <countries xml:lang="zh_CN">阿尔巴尼亚</countries>
+    </builtin_unit>
+    <builtin_unit name="DZD">
+      <title>Algerian Dinar</title>
+      <title xml:lang="es">Dinar argelino</title>
+      <title xml:lang="fr">Dinar algérien</title>
+      <title xml:lang="ru">Алжирский динар</title>
+      <title xml:lang="sv">Algerisk dinar</title>
+      <title xml:lang="zh_CN">阿尔及利亚第纳尔</title>
+      <names>a-cr:DZD</names>
+      <names xml:lang="ru">a-c:DZD</names>
+      <countries>Algeria</countries>
+      <countries xml:lang="es">Argelia</countries>
+      <countries xml:lang="fr">Algérie</countries>
+      <countries xml:lang="ru">Алжир</countries>
+      <countries xml:lang="sv">Algeriet</countries>
+      <countries xml:lang="zh_CN">阿尔及利亚</countries>
+    </builtin_unit>
+    <builtin_unit name="AOA">
+      <title>Angolan Kwanza</title>
+      <title xml:lang="es">Kwanza angoleño</title>
+      <title xml:lang="fr">Kwanza angolais</title>
+      <title xml:lang="ru">Ангольская кванза</title>
+      <title xml:lang="sv">Angolsk kwanza</title>
+      <title xml:lang="zh_CN">安哥拉宽扎</title>
+      <names>a-cr:AOA</names>
+      <names xml:lang="ru">a-c:AOA,кванза</names>
+      <countries>Angola</countries>
+      <countries xml:lang="ru">Ангола</countries>
+      <countries xml:lang="zh_CN">安哥拉</countries>
+    </builtin_unit>
+    <builtin_unit name="XCD">
+      <title>Eastern Caribbean Dollar</title>
+      <title xml:lang="es">Dólar del Caribe Oriental</title>
+      <title xml:lang="fr">Dollar des Caraïbes orientales</title>
+      <title xml:lang="ru">Восточно-карибский доллар</title>
+      <title xml:lang="sv">Östkaribisk dollar</title>
+      <title xml:lang="zh_CN">东加勒比元</title>
+      <names>a-cr:XCD</names>
+      <names xml:lang="ru">a-c:XCD</names>
+      <countries>Antigua and Barbuda, Dominica, Grenada, Montserrat, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Anguilla</countries>
+      <countries xml:lang="es">Antigua y Barbuda, Dominica, Granada, Montserrat, San Cristóbal y Nieves, Santa Lucía, San Vicente y las Granadinas, Anguila</countries>
+      <countries xml:lang="fr">Anguilla, Antigua-et-Barbuda, Dominique, Grenade, Montserrat, Saint-Christophe-et-Niévès, Sainte-Lucie, Saint-Vincent-et-les-Grenadines</countries>
+      <countries xml:lang="ru">Ангилья, Антигуа и Барбуда, Гренада, Доминика, Монтсеррат, Сент-Люсия,Сент-Винсент и Гренадины, Сент-Китс и Невис,</countries>
+      <countries xml:lang="sv">Antigua och Barbuda, Dominica, Grenada, Montserrat, Saint Kitts och Nevis, Saint Lucia, Saint Vincent och Grenadinerna, Anguilla</countries>
+      <countries xml:lang="zh_CN">安提瓜和巴布达、多米尼克、格林纳达、蒙特塞拉特、圣基茨和尼维斯、圣卢西亚、圣文森特和格林纳丁斯、安圭拉</countries>
+    </builtin_unit>
+    <builtin_unit name="ARS">
+      <title>Argentine Peso</title>
+      <title xml:lang="es">Peso argentino</title>
+      <title xml:lang="fr">Peso argentin</title>
+      <title xml:lang="ru">Аргентинское песо</title>
+      <title xml:lang="sv">Argentinsk peso</title>
+      <title xml:lang="zh_CN">阿根廷比索</title>
+      <names>a-cr:ARS</names>
+      <names xml:lang="ru">a-c:ARS</names>
+      <countries>Argentina</countries>
+      <countries xml:lang="fr">Argentine</countries>
+      <countries xml:lang="ru">Аргентина</countries>
+      <countries xml:lang="zh_CN">阿根廷</countries>
+    </builtin_unit>
+    <builtin_unit name="AMD">
+      <title>Armenian Dram</title>
+      <title xml:lang="es">Dram armenio</title>
+      <title xml:lang="fr">Dram arménien</title>
+      <title xml:lang="ru">Армянский драм</title>
+      <title xml:lang="sv">Armenisk dram</title>
+      <title xml:lang="zh_CN">亚美尼亚德拉姆</title>
+      <names>a-cr:AMD,au:&#x058F;</names>
+      <names xml:lang="ru">a-c:AMD,au:&#x058F;</names>
+      <countries>Armenia</countries>
+      <countries xml:lang="fr">Arménie</countries>
+      <countries xml:lang="ru">Армения</countries>
+      <countries xml:lang="sv">Armenien</countries>
+      <countries xml:lang="zh_CN">亚美尼亚</countries>
+    </builtin_unit>
+    <builtin_unit name="AWG">
+      <title>Aruban Florin</title>
+      <title xml:lang="es">Florín arubeño</title>
+      <title xml:lang="fr">Florin arubais</title>
+      <title xml:lang="ru">Арубанский Флорин</title>
+      <title xml:lang="sv">Arubisk florin</title>
+      <title xml:lang="zh_CN">阿鲁巴福林</title>
+      <names>a-cr:AWG</names>
+      <names xml:lang="ru">a-c:AWG</names>
+      <countries>Aruba</countries>
+      <countries xml:lang="ru">Аруба</countries>
+      <countries xml:lang="zh_CN">阿鲁巴岛</countries>
+    </builtin_unit>
+    <builtin_unit name="ANG">
+      <title>Netherlands Antillean Guilder</title>
+      <title xml:lang="es">Florín antillano neerlandés</title>
+      <title xml:lang="fr">Florin des Antilles néerlandaises</title>
+      <title xml:lang="ru">Нидерландский антильский гульден</title>
+      <title xml:lang="sv">Antillergulden</title>
+      <title xml:lang="zh_CN">荷兰安的列斯盾</title>
+      <names>a-cr:ANG</names>
+      <names xml:lang="ru">a-c:ANG</names>
+      <countries>Curaçao, Sint Maarten</countries>
+      <countries xml:lang="es">Curazao, San Martín (Países Bajos)</countries>
+      <countries xml:lang="fr">Curaçao, Saint-Martin</countries>
+      <countries xml:lang="ru">Кюрасао, Синт-Мартен</countries>
+      <countries xml:lang="zh_CN">库拉索岛，圣马丁</countries>
+    </builtin_unit>
+    <builtin_unit name="AZN">
+      <title>Azerbaijani Manat</title>
+      <title xml:lang="es">Manat azerbaiyano</title>
+      <title xml:lang="fr">Manat azerbaïdjanais</title>
+      <title xml:lang="ru">Азербайджанский манат</title>
+      <title xml:lang="sv">Azerbajdzjansk manat</title>
+      <title xml:lang="zh_CN">阿塞拜疆马纳特</title>
+      <names>a-cr:AZN,au:&#x20BC;</names>
+      <names xml:lang="ru">a-c:AZN,au:&#x20BC;, манат</names>
+      <countries>Azerbaijan</countries>
+      <countries xml:lang="es">Azerbaiyán</countries>
+      <countries xml:lang="fr">Azerbaïdjan</countries>
+      <countries xml:lang="ru">Азербайджан</countries>
+      <countries xml:lang="sv">Azerbajdzjan</countries>
+      <countries xml:lang="zh_CN">阿塞拜疆</countries>
+    </builtin_unit>
+    <builtin_unit name="BSD">
+      <title>Bahamian Dollar</title>
+      <title xml:lang="es">Dólar bahameño</title>
+      <title xml:lang="fr">Dollar bahaméen</title>
+      <title xml:lang="ru">Багамский доллар</title>
+      <title xml:lang="sv">Bahamask dollar</title>
+      <title xml:lang="zh_CN">巴哈马元</title>
+      <names>a-cr:BSD</names>
+      <names xml:lang="ru">a-c:BSD</names>
+      <countries>Bahamas</countries>
+      <countries xml:lang="ru">Багамы</countries>
+      <countries xml:lang="zh_CN">巴哈马</countries>
+    </builtin_unit>
+    <builtin_unit name="BHD">
+      <title>Bahraini Dinar</title>
+      <title xml:lang="es">Dinar bareiní</title>
+      <title xml:lang="fr">Dinar bahreïni</title>
+      <title xml:lang="ru">Бахрейнский динар</title>
+      <title xml:lang="sv">Bahrainsk dinar</title>
+      <title xml:lang="zh_CN">巴林第纳尔</title>
+      <names>a-cr:BHD</names>
+      <names xml:lang="ru">a-c:BHD</names>
+      <countries>Bahrain</countries>
+      <countries xml:lang="es">Baréin</countries>
+      <countries xml:lang="fr">Bahreïn</countries>
+      <countries xml:lang="ru">Бахрейн</countries>
+      <countries xml:lang="zh_CN">巴林</countries>
+    </builtin_unit>
+    <builtin_unit name="BDT">
+      <title>Bangladeshi Taka</title>
+      <title xml:lang="es">Taka bangladesí</title>
+      <title xml:lang="fr">Taka bangladais</title>
+      <title xml:lang="ru">Бангладешская така</title>
+      <title xml:lang="sv">Bangladeshisk taka</title>
+      <title xml:lang="zh_CN">孟加拉国塔卡</title>
+      <names>a-cr:BDT,au:&#x09F3;</names>
+      <names xml:lang="ru">a-c:BDT,au:&#x09F3;</names>
+      <countries>Bangladesh</countries>
+      <countries xml:lang="es">Bangladés</countries>
+      <countries xml:lang="ru">Бангладеш</countries>
+      <countries xml:lang="zh_CN">孟加拉国</countries>
+    </builtin_unit>
+    <builtin_unit name="BBD">
+      <title>Barbadian Dollar</title>
+      <title xml:lang="es">Dólar barbadense</title>
+      <title xml:lang="fr">Dollar de la Barbade</title>
+      <title xml:lang="ru">Барбадосский доллар</title>
+      <title xml:lang="sv">Barbadisk dollar</title>
+      <title xml:lang="zh_CN">巴巴多斯元</title>
+      <names>a-cr:BBD</names>
+      <names xml:lang="ru">a-c:BBD</names>
+      <countries>Barbados</countries>
+      <countries xml:lang="fr">Barbade</countries>
+      <countries xml:lang="ru">Барбадос</countries>
+      <countries xml:lang="zh_CN">巴巴多斯</countries>
+    </builtin_unit>
+    <builtin_unit name="BYN">
+      <title>Belarusian Ruble</title>
+      <title xml:lang="es">Rublo bielorruso</title>
+      <title xml:lang="fr">Rouble biélorusse</title>
+      <title xml:lang="ru">Белорусский рубль</title>
+      <title xml:lang="sv">Belarusisk rubel</title>
+      <title xml:lang="zh_CN">白俄罗斯卢布</title>
+      <names>a-cr:BYN</names>
+      <names xml:lang="ru">a-c:BYN</names>
+      <countries>Belarus</countries>
+      <countries xml:lang="es">Bielorrusia</countries>
+      <countries xml:lang="fr">Biélorussie</countries>
+      <countries xml:lang="ru">Беларусь</countries>
+      <countries xml:lang="sv">Belarus, Vitryssland</countries>
+      <countries xml:lang="zh_CN">白俄罗斯</countries>
+    </builtin_unit>
+    <builtin_unit name="BYR">
+      <title>Belarusian Ruble p. (obsolete)</title>
+      <title xml:lang="es">Segundo Rublo bielorruso (obsoleto)</title>
+      <title xml:lang="fr">Rouble biélorusse p. (obsolète)</title>
+      <title xml:lang="ru">Белорусский рубль р. (устар.)</title>
+      <title xml:lang="sv">Belarusisk rubel p. (obsolet)</title>
+      <title xml:lang="zh_CN">白俄罗斯卢布p.(过时)</title>
+      <names>a-cr:BYR</names>
+      <names xml:lang="ru">a-c:BYR</names>
+    </builtin_unit>
+    <builtin_unit name="BZD">
+      <title>Belize Dollar</title>
+      <title xml:lang="es">Dólar beliceño</title>
+      <title xml:lang="fr">Dollar bélizien</title>
+      <title xml:lang="ru">Белизский доллар</title>
+      <title xml:lang="sv">Belizisk dollar</title>
+      <title xml:lang="zh_CN">伯利兹元</title>
+      <names>a-cr:BZD</names>
+      <names xml:lang="ru">a-c:BZD</names>
+      <countries>Belize</countries>
+      <countries xml:lang="es">Belice</countries>
+      <countries xml:lang="ru">Белиз</countries>
+      <countries xml:lang="zh_CN">伯利兹</countries>
+    </builtin_unit>
+    <builtin_unit name="XOF">
+      <title>West African CFA Franc</title>
+      <title xml:lang="es">Franco CFA de África Occidental</title>
+      <title xml:lang="fr">Franc CFA</title>
+      <title xml:lang="ru">Франк КФА, африканский франк</title>
+      <title xml:lang="sv">Västafrikansk CFA franc</title>
+      <title xml:lang="zh_CN">西非金融共同体法郎</title>
+      <names>a-cr:XOF,a:CFA</names>
+      <names xml:lang="ru">a-c:XOF,a:CFA</names>
+      <countries>Benin, Burkina Faso, Guinea-Bissau, Ivory Coast, Mali, Niger, Senegal, Togo</countries>
+      <countries xml:lang="es">Benín, Burkina Faso, Guinea-Bisáu, Costa de Marfil, Malí, Níger, Senegal, Togo</countries>
+      <countries xml:lang="fr">Bénin, Burkina Faso, Côte d'Ivoire, Guinée-Bissau, Mali, Niger, Sénégal, Togo</countries>
+      <countries xml:lang="ru">Бенин, Буркина-Фасо, Гвинея-Бисау, Кот-д'Ивуар, Мали, Нигер, Сенегал, Того</countries>
+      <countries xml:lang="sv">Benin, Burkina Faso, Guinea-Bissau, Elfenbenskusten, Mali, Niger, Senegal, Togo</countries>
+      <countries xml:lang="zh_CN">贝宁、布基纳法索、几内亚比绍、科特迪瓦、马里、尼日尔、塞内加尔、多哥</countries>
+    </builtin_unit>
+    <builtin_unit name="BMD">
+      <title>Bermudian Dollar</title>
+      <title xml:lang="es">Dólar bermudeño</title>
+      <title xml:lang="fr">Dollar bermudien</title>
+      <title xml:lang="ru">Бермудский доллар</title>
+      <title xml:lang="sv">Bermudisk dollar</title>
+      <title xml:lang="zh_CN">百慕大元</title>
+      <names>a-cr:BMD</names>
+      <names xml:lang="ru">a-c:BMD</names>
+      <countries>Bermuda</countries>
+      <countries xml:lang="es">Bermudas</countries>
+      <countries xml:lang="fr">Bermudes</countries>
+      <countries xml:lang="ru">Бермуды</countries>
+      <countries xml:lang="zh_CN">百慕大</countries>
+    </builtin_unit>
+    <builtin_unit name="BOB">
+      <title>Bolivian Boliviano Bs</title>
+      <title xml:lang="es">Boliviano boliviano</title>
+      <title xml:lang="fr">Bolíviano bolivien</title>
+      <title xml:lang="ru">Боливийский боливиано</title>
+      <title xml:lang="sv">Bolviansk boliviano Bs</title>
+      <title xml:lang="zh_CN">玻利维亚玻利维亚诺</title>
+      <names>a-cr:BOB</names>
+      <names xml:lang="ru">a-c:BOB,a:Bs</names>
+      <countries>Bolivia</countries>
+      <countries xml:lang="fr">Bolivie</countries>
+      <countries xml:lang="ru">Боливия</countries>
+      <countries xml:lang="zh_CN">玻利维亚</countries>
+    </builtin_unit>
+    <builtin_unit name="BAM">
+      <title>Bosnia and Herzegovina Convertible Mark</title>
+      <title xml:lang="es">Marco convertible bosnioherzegovino</title>
+      <title xml:lang="fr">Mark convertible de Bosnie-Herzégovine</title>
+      <title xml:lang="ru">Конвертируемая марка Боснии и Герцеговины</title>
+      <title xml:lang="sv">Bosnisk och hercegovinsk konvertibil mark</title>
+      <title xml:lang="zh_CN">波斯尼亚和黑塞哥维那可兑换商标</title>
+      <names>a-cr:BAM</names>
+      <names xml:lang="ru">a-c:BAM</names>
+      <countries>Bosnia and Herzegovina</countries>
+      <countries xml:lang="es">Bosnia y Herzegovina</countries>
+      <countries xml:lang="fr">Bosnie-Herzégovine</countries>
+      <countries xml:lang="ru">Босния и Герцеговина</countries>
+      <countries xml:lang="sv">Bosnien och Hercegovina</countries>
+      <countries xml:lang="zh_CN">波斯尼亚和黑塞哥维那</countries>
+    </builtin_unit>
+    <builtin_unit name="BWP">
+      <title>Botswana Pula</title>
+      <title xml:lang="es">Pula botsuano</title>
+      <title xml:lang="fr">Pula du Botswana</title>
+      <title xml:lang="ru">Ботсванская пула</title>
+      <title xml:lang="sv">Botswansk pula</title>
+      <title xml:lang="zh_CN">博茨瓦纳普拉</title>
+      <names>a-cr:BWP</names>
+      <names xml:lang="ru">a-c:BWP</names>
+      <countries>Botswana</countries>
+      <countries xml:lang="es">Botsuana</countries>
+      <countries xml:lang="ru">Ботсвана</countries>
+      <countries xml:lang="zh_CN">博茨瓦纳</countries>
+    </builtin_unit>
+    <builtin_unit name="BND">
+      <title>Brunei Dollar</title>
+      <title xml:lang="es">Dólar bruneano</title>
+      <title xml:lang="fr">Dollar du Brunei</title>
+      <title xml:lang="ru">Брунейский доллар</title>
+      <title xml:lang="sv">Bruneisk dollar</title>
+      <title xml:lang="zh_CN">文莱元</title>
+      <names>a-cr:BND</names>
+      <names xml:lang="ru">a-c:BND</names>
+      <countries>Brunei</countries>
+      <countries xml:lang="es">Brunéi</countries>
+      <countries xml:lang="ru">Бруней</countries>
+      <countries xml:lang="zh_CN">文莱</countries>
+    </builtin_unit>
+    <builtin_unit name="BIF">
+      <title>Burundian Franc</title>
+      <title xml:lang="es">Franco burundés</title>
+      <title xml:lang="fr">Franc burundais</title>
+      <title xml:lang="ru">Бурундийский франк</title>
+      <title xml:lang="sv">Burundisk franc</title>
+      <title xml:lang="zh_CN">布隆迪法郎</title>
+      <names>a-cr:BIF</names>
+      <names xml:lang="ru">a-c:BIF</names>
+      <countries>Burundi</countries>
+      <countries xml:lang="ru">Бурунди</countries>
+      <countries xml:lang="zh_CN">布隆迪</countries>
+    </builtin_unit>
+    <builtin_unit name="KHR">
+      <title>Cambodian Riel</title>
+      <title xml:lang="es">Riel camboyano</title>
+      <title xml:lang="fr">Riel cambodgien</title>
+      <title xml:lang="ru">Камбоджийский риель</title>
+      <title xml:lang="sv">Kambodjansk riel</title>
+      <title xml:lang="zh_CN">柬埔寨瑞尔</title>
+      <names>a-cr:KHR,aiu:&#x17DB;</names>
+      <names xml:lang="ru">a-c:KHR,aiu:&#x17DB;</names>
+      <countries>Cambodia</countries>
+      <countries xml:lang="es">Camboya</countries>
+      <countries xml:lang="fr">Cambodge</countries>
+      <countries xml:lang="ru">Камбоджа</countries>
+      <countries xml:lang="sv">Kambodja</countries>
+      <countries xml:lang="zh_CN">柬埔寨</countries>
+    </builtin_unit>
+    <builtin_unit name="XAF">
+      <title>Central African CFA Franc</title>
+      <title xml:lang="es">Franco CFA de África Central</title>
+      <title xml:lang="fr">Franc CFA d’Afrique centrale</title>
+      <title xml:lang="ru">Франк КФА BEAC, центральноафриканский франк</title>
+      <title xml:lang="sv">Centralafrikansk CFA franc</title>
+      <title xml:lang="zh_CN">中非金融共同体法郎</title>
+      <names>a-cr:XAF,a:FCFA</names>
+      <names xml:lang="ru">a-c:XAF,a:FCFA</names>
+      <countries>Cameroon, Central African Republic, Chad, Republic of the Congo, Equatorial Guinea, Gabon</countries>
+      <countries xml:lang="es">Camerún, República Centroafricana, Chad, República del Congo, Guinea Ecuatorial, Gabón</countries>
+      <countries xml:lang="fr">Cameroun, Gabon, Guinée équatoriale, République centrafricaine, République du Congo, Tchad</countries>
+      <countries xml:lang="ru">Камерун, Центральноафриканская Республика, Чад, Республика Конго, Экваториальная Гвинея, Габон</countries>
+      <countries xml:lang="sv">Kamerun, Centralafrikanska republiken, Tchad, Kongo-Brazzaville, Ekvatorialguinea, Gabon</countries>
+      <countries xml:lang="zh_CN">喀麦隆、中非共和国、乍得、刚果共和国、赤道几内亚、加蓬</countries>
+    </builtin_unit>
+    <builtin_unit name="CVE">
+      <title>Cape Verdean Escudo</title>
+      <title xml:lang="es">Escudo caboverdiano</title>
+      <title xml:lang="fr">Escudo cap-verdien</title>
+      <title xml:lang="ru">Эскудо Кабо-Верде</title>
+      <title xml:lang="sv">Kapverdisk escudo</title>
+      <title xml:lang="zh_CN">佛得角盾</title>
+      <names>a-cr:CVE</names>
+      <names xml:lang="ru">a-c:CVE,a:Esc</names>
+      <countries>Cape Verde</countries>
+      <countries xml:lang="es">Cabo Verde</countries>
+      <countries xml:lang="fr">Cap-Vert</countries>
+      <countries xml:lang="ru">Кабо-Верде</countries>
+      <countries xml:lang="sv">Kap Verde</countries>
+      <countries xml:lang="zh_CN">佛得角</countries>
+    </builtin_unit>
+    <builtin_unit name="KYD">
+      <title>Cayman Islands Dollar</title>
+      <title xml:lang="es">Dólar caimanés</title>
+      <title xml:lang="fr">Dollar des îles Caïmans</title>
+      <title xml:lang="ru">Доллар Каймановых островов</title>
+      <title xml:lang="sv">Caymansk dollar</title>
+      <title xml:lang="zh_CN">开曼群岛元</title>
+      <names>a-cr:KYD</names>
+      <names xml:lang="ru">a-c:KYD</names>
+      <countries>Cayman Islands</countries>
+      <countries xml:lang="es">Islas Caimán</countries>
+      <countries xml:lang="fr">Îles Caïmans</countries>
+      <countries xml:lang="ru">Острова Кайман</countries>
+      <countries xml:lang="sv">Caymanöarna</countries>
+      <countries xml:lang="zh_CN">开曼群岛</countries>
+    </builtin_unit>
+    <builtin_unit name="CLP">
+      <title>Chilean Peso</title>
+      <title xml:lang="es">Peso chileno</title>
+      <title xml:lang="fr">Peso chilien</title>
+      <title xml:lang="ru">Чилийское песо</title>
+      <title xml:lang="sv">Chilensk pesos</title>
+      <title xml:lang="zh_CN">智利比索</title>
+      <names>a-cr:CLP</names>
+      <names xml:lang="ru">a-c:CLP</names>
+      <countries>Chile</countries>
+      <countries xml:lang="fr">Chili</countries>
+      <countries xml:lang="ru">Чили</countries>
+      <countries xml:lang="zh_CN">智利</countries>
+    </builtin_unit>
+    <builtin_unit name="COP">
+      <title>Colombian Peso</title>
+      <title xml:lang="es">Peso colombiano</title>
+      <title xml:lang="fr">Peso colombien</title>
+      <title xml:lang="ru">Колумбийское песо</title>
+      <title xml:lang="sv">Colombianska peso</title>
+      <title xml:lang="zh_CN">哥伦比亚比索</title>
+      <names>a-cr:COP</names>
+      <names xml:lang="ru">a-c:COP</names>
+      <countries>Colombia</countries>
+      <countries xml:lang="fr">Colombie</countries>
+      <countries xml:lang="ru">Колумбия</countries>
+      <countries xml:lang="zh_CN">哥伦比亚</countries>
+    </builtin_unit>
+    <builtin_unit name="KMF">
+      <title>Comorian Franc</title>
+      <title xml:lang="es">Franco comorano</title>
+      <title xml:lang="fr">Franc comorien</title>
+      <title xml:lang="ru">Коморский франк</title>
+      <title xml:lang="sv">Komorisk franc</title>
+      <title xml:lang="zh_CN">科摩罗法郎</title>
+      <names>a-cr:KMF</names>
+      <names xml:lang="ru">a-c:KMF</names>
+      <countries>Comoros</countries>
+      <countries xml:lang="es">Comoras</countries>
+      <countries xml:lang="fr">Comores</countries>
+      <countries xml:lang="ru">Коморские острова</countries>
+      <countries xml:lang="sv">Komorerna</countries>
+      <countries xml:lang="zh_CN">科摩罗</countries>
+    </builtin_unit>
+    <builtin_unit name="CDF">
+      <title>Democratic Republic of the Congo (Congolese Franc)</title>
+      <title xml:lang="es">Franco congoleño</title>
+      <title xml:lang="fr">Franc congolais</title>
+      <title xml:lang="ru">Конголезский франк (Демократическая Республика Конго)</title>
+      <title xml:lang="sv">Kongolesisk franc</title>
+      <title xml:lang="zh_CN">刚果民主共和国(刚果法郎)</title>
+      <names>a-cr:CDF</names>
+      <names xml:lang="ru">a-c:CDF</names>
+      <countries>Democratic Republic of the Congo</countries>
+      <countries xml:lang="es">República Democrática del Congo</countries>
+      <countries xml:lang="fr">République démocratique du Congo</countries>
+      <countries xml:lang="ru">Демократическая Республика Конго</countries>
+      <countries xml:lang="sv">Kongo-Kinshasa</countries>
+      <countries xml:lang="zh_CN">刚果民主共和国</countries>
+    </builtin_unit>
+    <builtin_unit name="CRC">
+      <title>Costa Rican colón</title>
+      <title xml:lang="es">Colón costarricense</title>
+      <title xml:lang="fr">Colon costaricain</title>
+      <title xml:lang="ru">Коста-риканский колон</title>
+      <title xml:lang="sv">Costaricansk colón</title>
+      <title xml:lang="zh_CN">哥斯达黎加科朗</title>
+      <names>a-cr:CRC</names>
+      <names xml:lang="ru">a-c:CRC</names>
+      <countries>Costa Rica</countries>
+      <countries xml:lang="ru">Коста-Рика</countries>
+      <countries xml:lang="zh_CN">哥斯达黎加</countries>
+    </builtin_unit>
+    <builtin_unit name="CUP">
+      <title>Cuban Peso</title>
+      <title xml:lang="es">Peso cubano</title>
+      <title xml:lang="fr">Peso cubain</title>
+      <title xml:lang="ru">Кубинское песо</title>
+      <title xml:lang="sv">Kubansk peso</title>
+      <title xml:lang="zh_CN">古巴比索</title>
+      <names>acr:CUP</names>
+      <names xml:lang="ru">ac:CUP</names>
+      <countries>Cuba</countries>
+      <countries xml:lang="ru">Куба</countries>
+      <countries xml:lang="sv">Kuba</countries>
+      <countries xml:lang="zh_CN">古巴</countries>
+    </builtin_unit>
+    <builtin_unit name="DJF">
+      <title>Djiboutian Franc</title>
+      <title xml:lang="es">Franco yibutiano</title>
+      <title xml:lang="fr">Franc de Djibouti</title>
+      <title xml:lang="ru">Джибутийский франк</title>
+      <title xml:lang="sv">Djiboutisk franc</title>
+      <title xml:lang="zh_CN">吉布提法郎</title>
+      <names>a-cr:DJF</names>
+      <names xml:lang="ru">a-c:DJF</names>
+      <countries>Djibouti</countries>
+      <countries xml:lang="es">Yibuti</countries>
+      <countries xml:lang="ru">Джибути</countries>
+      <countries xml:lang="zh_CN">吉布地</countries>
+    </builtin_unit>
+    <builtin_unit name="DOP">
+      <title>Dominican Peso</title>
+      <title xml:lang="es">Peso dominicano</title>
+      <title xml:lang="fr">Peso dominicain</title>
+      <title xml:lang="ru">Доминиканский песо</title>
+      <title xml:lang="sv">Dominikansk peso</title>
+      <title xml:lang="zh_CN">多米尼加比索</title>
+      <names>a-cr:DOP</names>
+      <names xml:lang="ru">a-c:DOP</names>
+      <countries>Dominican Republic</countries>
+      <countries xml:lang="es">República dominicana</countries>
+      <countries xml:lang="fr">République dominicaine</countries>
+      <countries xml:lang="ru">Доминиканская Республика (Доминикана)</countries>
+      <countries xml:lang="sv">Dominikanska republiken</countries>
+      <countries xml:lang="zh_CN">多明尼加共和国</countries>
+    </builtin_unit>
+    <builtin_unit name="EGP">
+      <title>Egyptian Pound</title>
+      <title xml:lang="es">Libra egipcia</title>
+      <title xml:lang="fr">Livre égyptienne</title>
+      <title xml:lang="ru">Египетский фунт</title>
+      <title xml:lang="sv">Egyptiskt pund</title>
+      <title xml:lang="zh_CN">埃及镑</title>
+      <names>a-cr:EGP</names>
+      <names xml:lang="ru">a-c:EGP</names>
+      <countries>Egypt</countries>
+      <countries xml:lang="es">Egipto</countries>
+      <countries xml:lang="fr">Égypte</countries>
+      <countries xml:lang="ru">Египет</countries>
+      <countries xml:lang="sv">Egypten</countries>
+      <countries xml:lang="zh_CN">埃及</countries>
+    </builtin_unit>
+    <builtin_unit name="SVC">
+      <title>El Salvadoran Colon (obsolete)</title>
+      <title xml:lang="es">Colón salvadoreño</title>
+      <title xml:lang="fr">Colon salvadorien (obsolète)</title>
+      <title xml:lang="ru">Эль-Сальвадорский Колон (устар.)</title>
+      <title xml:lang="sv">Salvadoransk colon (obsolet)</title>
+      <title xml:lang="zh_CN">萨尔瓦多科隆(过时)</title>
+      <names>a-cr:SVC</names>
+      <names xml:lang="ru">a-c:SVC</names>
+    </builtin_unit>
+    <builtin_unit name="ERN">
+      <title>Eritrean Nafka</title>
+      <title xml:lang="es">Nakfa eritreo</title>
+      <title xml:lang="fr">Nakfa érythréen</title>
+      <title xml:lang="ru">Эритрейская накфа</title>
+      <title xml:lang="sv">Eritreansk nafka</title>
+      <title xml:lang="zh_CN">厄立特里亚纳克法</title>
+      <names>a-cr:ERN</names>
+      <names xml:lang="ru">a-c:ERN</names>
+      <countries>Eritrea</countries>
+      <countries xml:lang="fr">Érythrée</countries>
+      <countries xml:lang="ru">Эритрея</countries>
+      <countries xml:lang="zh_CN">厄立特里亚</countries>
+    </builtin_unit>
+    <builtin_unit name="ETB">
+      <title>Ethiopian Birr</title>
+      <title xml:lang="es">Birr etíope</title>
+      <title xml:lang="fr">Birr éthiopien</title>
+      <title xml:lang="ru">Эфиопский быр</title>
+      <title xml:lang="sv">Etiopisk birr</title>
+      <title xml:lang="zh_CN">埃塞俄比亚比尔</title>
+      <names>a-cr:ETB</names>
+      <names xml:lang="ru">a-c:ETB,быр</names>
+      <countries>Ethiopia</countries>
+      <countries xml:lang="es">Etiopía</countries>
+      <countries xml:lang="fr">Éthiopie</countries>
+      <countries xml:lang="ru">Эфиопия</countries>
+      <countries xml:lang="sv">Etiopien</countries>
+      <countries xml:lang="zh_CN">埃塞俄比亚</countries>
+    </builtin_unit>
+    <builtin_unit name="FKP">
+      <title>Falkland Islands Pound</title>
+      <title xml:lang="es">Libra malvinense</title>
+      <title xml:lang="fr">Livre des Îles Malouines</title>
+      <title xml:lang="ru">Фунт Фолклендских островов</title>
+      <title xml:lang="sv">Falklandspund</title>
+      <title xml:lang="zh_CN">福克兰群岛磅</title>
+      <names>a-cr:FKP</names>
+      <names xml:lang="ru">a-c:FKP</names>
+      <countries>Falkland Islands</countries>
+      <countries xml:lang="es">Islas Malvinas</countries>
+      <countries xml:lang="fr">Îles Falkland</countries>
+      <countries xml:lang="ru">Фолклендские острова</countries>
+      <countries xml:lang="sv">Falklandsöarna</countries>
+      <countries xml:lang="zh_CN">福克兰群岛</countries>
+    </builtin_unit>
+    <builtin_unit name="FJD">
+      <title>Fijian Dollar</title>
+      <title xml:lang="es">Dólar fiyiano</title>
+      <title xml:lang="fr">Dollar de Fidji</title>
+      <title xml:lang="ru">Доллар Фиджи</title>
+      <title xml:lang="sv">Fijidollar</title>
+      <title xml:lang="zh_CN">斐济元</title>
+      <names>a-cr:FJD</names>
+      <names xml:lang="ru">a-c:FJD</names>
+      <countries>Fiji</countries>
+      <countries xml:lang="es">Fiyi</countries>
+      <countries xml:lang="fr">Fidji</countries>
+      <countries xml:lang="ru">Фиджи</countries>
+      <countries xml:lang="zh_CN">斐济</countries>
+    </builtin_unit>
+    <builtin_unit name="XPF">
+      <title>CFP franc</title>
+      <title xml:lang="es">Franco CFP</title>
+      <title xml:lang="fr">Franc CFP</title>
+      <title xml:lang="ru">Тихоокеанский франк (франк КФП)</title>
+      <title xml:lang="sv">CFP-franc</title>
+      <title xml:lang="zh_CN">CFP法郎</title>
+      <names>a-cr:XPF</names>
+      <names xml:lang="ru">a-c:XPF</names>
+      <countries>French Polynesia, New Caledonia, Wallis and Futuna</countries>
+      <countries xml:lang="es">Polinesia Francesa, Nueva Caledonia, Wallis y Futuna</countries>
+      <countries xml:lang="fr">Nouvelle-Calédonie, Polynésie française, Wallis et Futuna</countries>
+      <countries xml:lang="ru">Новая Каледония, Уоллис и Футуна, Французская Полинезия</countries>
+      <countries xml:lang="sv">Franska Polynesien, Nya Kaledonien, Wallis och Futuna</countries>
+      <countries xml:lang="zh_CN">法属玻里尼西亚、新喀里多尼亚、瓦利斯和富图纳群岛</countries>
+    </builtin_unit>
+    <builtin_unit name="GMD">
+      <title>Gambian Dalasi</title>
+      <title xml:lang="es">Dalasi gambiano</title>
+      <title xml:lang="fr">Dalasi gambien</title>
+      <title xml:lang="ru">Гамбийский даласи</title>
+      <title xml:lang="sv">Gambisk dalasi</title>
+      <title xml:lang="zh_CN">冈比亚达拉斯</title>
+      <names>a-cr:GMD</names>
+      <names xml:lang="ru">a-c:GMD</names>
+      <countries>Gambia</countries>
+      <countries xml:lang="fr">Gambie</countries>
+      <countries xml:lang="ru">Гамбия</countries>
+      <countries xml:lang="zh_CN">冈比亚</countries>
+    </builtin_unit>
+    <builtin_unit name="GEL">
+      <title>Georgian Lari</title>
+      <title xml:lang="es">Lari georgiano</title>
+      <title xml:lang="fr">Lari géorgien</title>
+      <title xml:lang="ru">Грузинский лари</title>
+      <title xml:lang="sv">Georgisk lari</title>
+      <title xml:lang="zh_CN">格鲁吉亚拉里</title>
+      <names>a-cr:GEL,au:&#x20BE;</names>
+      <names xml:lang="ru">a-c:GEL,au:&#x20BE;,лари</names>
+      <countries>Georgia</countries>
+      <countries xml:lang="fr">Géorgie</countries>
+      <countries xml:lang="ru">Грузия</countries>
+      <countries xml:lang="sv">Georgien</countries>
+      <countries xml:lang="zh_CN">格鲁吉亚</countries>
+    </builtin_unit>
+    <builtin_unit name="GHS">
+      <title>Ghanaian Cedi</title>
+      <title xml:lang="es">Cedi ghanés</title>
+      <title xml:lang="fr">Cédi ghanéen</title>
+      <title xml:lang="ru">Ганский седи</title>
+      <title xml:lang="sv">Ghanesisk cedi</title>
+      <title xml:lang="zh_CN">加纳塞迪</title>
+      <names>a-cr:GHS,au:&#x20B5;</names>
+      <names xml:lang="ru">a-c:GHS,au:&#x20B5;</names>
+      <countries>Ghana</countries>
+      <countries xml:lang="ru">Гана</countries>
+      <countries xml:lang="zh_CN">加纳</countries>
+    </builtin_unit>
+    <builtin_unit name="GIP">
+      <title>Gibraltar Pound</title>
+      <title xml:lang="es">Libra gibraltareña</title>
+      <title xml:lang="fr">Livre de Gibraltar</title>
+      <title xml:lang="ru">Гибралтарский фунт</title>
+      <title xml:lang="sv">Gibraltarpund</title>
+      <title xml:lang="zh_CN">直布罗陀磅</title>
+      <names>a-cr:GIP</names>
+      <names xml:lang="ru">a-c:GIP</names>
+      <countries>Gibraltar</countries>
+      <countries xml:lang="ru">Гибралтар</countries>
+      <countries xml:lang="zh_CN">直布罗陀</countries>
+    </builtin_unit>
+    <builtin_unit name="GTQ">
+      <title>Guatemalan Quetzal</title>
+      <title xml:lang="es">Guatemalan quetzal</title>
+      <title xml:lang="fr">Quetzal guatémaltèque</title>
+      <title xml:lang="ru">Гватемальский кетсаль</title>
+      <title xml:lang="sv">Guatemalansk quetzal</title>
+      <title xml:lang="zh_CN">危地马拉格查尔</title>
+      <names>a-cr:GTQ</names>
+      <names xml:lang="ru">a-c:GTQ</names>
+      <countries>Guatemala</countries>
+      <countries xml:lang="ru">Гватемала</countries>
+      <countries xml:lang="zh_CN">危地马拉</countries>
+    </builtin_unit>
+    <builtin_unit name="GGP">
+      <title>Guernsey Pound</title>
+      <title xml:lang="es">Libra de Guernsey</title>
+      <title xml:lang="fr">Livre de Guernesey</title>
+      <title xml:lang="ru">Гернсийский фунт</title>
+      <title xml:lang="sv">Guernseypund</title>
+      <title xml:lang="zh_CN">根西岛磅</title>
+      <names>a-cr:GGP</names>
+      <names xml:lang="ru">a-c:GGP</names>
+      <countries>Guernsey</countries>
+      <countries xml:lang="fr">Guernesey</countries>
+      <countries xml:lang="ru">Гернси</countries>
+      <countries xml:lang="zh_CN">根西岛</countries>
+    </builtin_unit>
+    <builtin_unit name="GNF">
+      <title>Guinean Franc</title>
+      <title xml:lang="es">Franco guineano</title>
+      <title xml:lang="fr">Franc guinéen</title>
+      <title xml:lang="ru">Гвинейский франк</title>
+      <title xml:lang="sv">Guinesisk franc</title>
+      <title xml:lang="zh_CN">几内亚法郎</title>
+      <names>a-cr:GNF</names>
+      <names xml:lang="ru">a-c:GNF</names>
+      <countries>Guinea</countries>
+      <countries xml:lang="fr">Guinée</countries>
+      <countries xml:lang="ru">Гвинея</countries>
+      <countries xml:lang="zh_CN">几内亚</countries>
+    </builtin_unit>
+    <builtin_unit name="GYD">
+      <title>Guyanese Dollar</title>
+      <title xml:lang="es">Dólar guyanés</title>
+      <title xml:lang="fr">Dollar guyanien</title>
+      <title xml:lang="ru">Гайанский доллар</title>
+      <title xml:lang="sv">Guyansk dollar</title>
+      <title xml:lang="zh_CN">圭亚那元</title>
+      <names>a-cr:GYD</names>
+      <names xml:lang="ru">a-c:GYD</names>
+      <countries>Guyana</countries>
+      <countries xml:lang="ru">Гайана</countries>
+      <countries xml:lang="zh_CN">圭亚那</countries>
+    </builtin_unit>
+    <builtin_unit name="HTG">
+      <title>Haitian Gourde</title>
+      <title xml:lang="es">Gourde haitiano</title>
+      <title xml:lang="fr">Gourde haïtienne</title>
+      <title xml:lang="ru">Гаитянский гурд</title>
+      <title xml:lang="sv">Haitisk gourde</title>
+      <title xml:lang="zh_CN">海地古德</title>
+      <names>a-cr:HTG</names>
+      <names xml:lang="ru">a-c:HTG</names>
+      <countries>Haiti</countries>
+      <countries xml:lang="es">Haití</countries>
+      <countries xml:lang="fr">Haïti</countries>
+      <countries xml:lang="ru">Гаити</countries>
+      <countries xml:lang="zh_CN">海地</countries>
+    </builtin_unit>
+    <builtin_unit name="HNL">
+      <title>Honduran Lempira</title>
+      <title xml:lang="es">Lempira Hondureño</title>
+      <title xml:lang="fr">Lempira hondurien</title>
+      <title xml:lang="ru">Гондурасская лемпира</title>
+      <title xml:lang="sv">Honduransk lempira</title>
+      <title xml:lang="zh_CN">洪都拉斯伦皮拉</title>
+      <names>a-cr:HNL</names>
+      <names xml:lang="ru">a-c:HNL</names>
+      <countries>Honduras</countries>
+      <countries xml:lang="ru">Гондурас</countries>
+      <countries xml:lang="zh_CN">洪都拉斯</countries>
+    </builtin_unit>
+    <builtin_unit name="IRR">
+      <title>Iranian Rial</title>
+      <title xml:lang="es">Rial iraní</title>
+      <title xml:lang="fr">Rial iranien</title>
+      <title xml:lang="ru">Иранский риал</title>
+      <title xml:lang="sv">Iransk rial</title>
+      <title xml:lang="zh_CN">伊朗里亚尔</title>
+      <names>a-cr:IRR,aio:&#xFDFC;</names>
+      <names xml:lang="ru">a-c:IRR,aio:&#xFDFC;</names>
+      <countries>Iran</countries>
+      <countries xml:lang="es">Irán</countries>
+      <countries xml:lang="ru">Иран</countries>
+      <countries xml:lang="zh_CN">伊朗</countries>
+    </builtin_unit>
+    <builtin_unit name="IQD">
+      <title>Iraqi Dinar</title>
+      <title xml:lang="es">Dinar iraquí</title>
+      <title xml:lang="fr">Dinar irakien</title>
+      <title xml:lang="ru">Иракский динар</title>
+      <title xml:lang="sv">Irakisk dinar</title>
+      <title xml:lang="zh_CN">伊拉克第纳尔</title>
+      <names>a-cr:IQD</names>
+      <names xml:lang="ru">a-c:IQD</names>
+      <countries>Iraq</countries>
+      <countries xml:lang="es">Irak</countries>
+      <countries xml:lang="fr">Irak</countries>
+      <countries xml:lang="ru">Ирак</countries>
+      <countries xml:lang="zh_CN">伊拉克</countries>
+    </builtin_unit>
+    <builtin_unit name="JMD">
+      <title>Jamaican Dollar</title>
+      <title xml:lang="es">Dólar jamaiquino</title>
+      <title xml:lang="fr">Dollar jamaïcain</title>
+      <title xml:lang="ru">Ямайский доллар</title>
+      <title xml:lang="sv">Jamaicansk dollar</title>
+      <title xml:lang="zh_CN">牙买加元</title>
+      <names>a-cr:JMD</names>
+      <names xml:lang="ru">a-c:JMD</names>
+      <countries>Jamaica</countries>
+      <countries xml:lang="fr">Jamaïque</countries>
+      <countries xml:lang="ru">Ямайка</countries>
+      <countries xml:lang="zh_CN">牙买加</countries>
+    </builtin_unit>
+    <builtin_unit name="JOD">
+      <title>Jordanian Dinar</title>
+      <title xml:lang="es">Dinar jordano</title>
+      <title xml:lang="fr">Dinar jordanien</title>
+      <title xml:lang="ru">Иорданский динар</title>
+      <title xml:lang="sv">Jordansk dinar</title>
+      <title xml:lang="zh_CN">约旦第纳尔</title>
+      <names>a-cr:JOD</names>
+      <names xml:lang="ru">a-c:JOD</names>
+      <countries>Jordan</countries>
+      <countries xml:lang="es">Jordania</countries>
+      <countries xml:lang="fr">Jordanie</countries>
+      <countries xml:lang="ru">Иордания</countries>
+      <countries xml:lang="sv">Jordanien</countries>
+      <countries xml:lang="zh_CN">约旦</countries>
+    </builtin_unit>
+    <builtin_unit name="KZT">
+      <title>Kazakhstani Tenge</title>
+      <title xml:lang="es">Tenge kazajo</title>
+      <title xml:lang="fr">Tenge kazakh</title>
+      <title xml:lang="ru">Казахстанский тенге</title>
+      <title xml:lang="sv">Kazakstansk tenge</title>
+      <title xml:lang="zh_CN">哈萨克斯坦坚戈</title>
+      <names>a-cr:KZT,au:&#x20B8;</names>
+      <names xml:lang="ru">a-c:KZT,au:&#x20B8;</names>
+      <countries>Kazakhstan</countries>
+      <countries xml:lang="es">Kazajistán</countries>
+      <countries xml:lang="ru">Казахстан</countries>
+      <countries xml:lang="sv">Kazakstan</countries>
+      <countries xml:lang="zh_CN">哈萨克斯坦</countries>
+    </builtin_unit>
+    <builtin_unit name="KPW">
+      <title>North Korean Won</title>
+      <title xml:lang="es">Won norcoreano</title>
+      <title xml:lang="fr">Won nord-coréen</title>
+      <title xml:lang="ru">Северокорейская вона</title>
+      <title xml:lang="sv">Nordkoreansk won</title>
+      <title xml:lang="zh_CN">朝鲜元</title>
+      <names>a-cr:KPW</names>
+      <names xml:lang="ru">a-c:KPW</names>
+      <countries>North Korea</countries>
+      <countries xml:lang="es">Corea del Norte</countries>
+      <countries xml:lang="fr">Corée du Nord</countries>
+      <countries xml:lang="ru">КНДР</countries>
+      <countries xml:lang="sv">Nordkorea</countries>
+      <countries xml:lang="zh_CN">北朝鲜</countries>
+    </builtin_unit>
+    <builtin_unit name="KWD">
+      <title>Kuwaiti Dinar</title>
+      <title xml:lang="es">Dinar kuwaití</title>
+      <title xml:lang="fr">Dinar koweïtien</title>
+      <title xml:lang="ru">Кувейтский динар</title>
+      <title xml:lang="sv">Kuwaitisk dinar</title>
+      <title xml:lang="zh_CN">科威特第纳尔</title>
+      <names>a-cr:KWD</names>
+      <names xml:lang="ru">a-c:KWD</names>
+      <countries>Kuwait</countries>
+      <countries xml:lang="fr">Koweït</countries>
+      <countries xml:lang="ru">Кувейт</countries>
+      <countries xml:lang="zh_CN">科威特</countries>
+    </builtin_unit>
+    <builtin_unit name="KGS">
+      <title>Kyrgyzstani Som</title>
+      <title xml:lang="es">Som kirguís</title>
+      <title xml:lang="fr">Som du Kirghizistan</title>
+      <title xml:lang="ru">Киргизский сом</title>
+      <title xml:lang="sv">Kirgizistansk som</title>
+      <title xml:lang="zh_CN">吉尔吉斯斯坦索姆</title>
+      <names>acr:KGS</names>
+      <names xml:lang="ru">a-c:KGS,au:&#x20c0;</names>
+      <countries>Kyrgyzstan</countries>
+      <countries xml:lang="es">Kirguistán</countries>
+      <countries xml:lang="ru">Киргизия</countries>
+      <countries xml:lang="sv">Kirgizistan</countries>
+      <countries xml:lang="zh_CN">吉尔吉斯斯坦</countries>
+    </builtin_unit>
+    <builtin_unit name="LAK">
+      <title>Lao Kip</title>
+      <title xml:lang="es">Kip laosiano</title>
+      <title xml:lang="fr">Kip laotien</title>
+      <title xml:lang="ru">Лаосский кип</title>
+      <title xml:lang="sv">Laotisk kip</title>
+      <title xml:lang="zh_CN">老挝基普</title>
+      <names>a-cr:LAK,au:&#x20AD;</names>
+      <names xml:lang="ru">a-c:LAK,au:&#x20AD;</names>
+      <countries>Laos</countries>
+      <countries xml:lang="ru">Лаос</countries>
+      <countries xml:lang="zh_CN">老挝</countries>
+    </builtin_unit>
+    <builtin_unit name="LBP">
+      <title>Lebanese Pound</title>
+      <title xml:lang="es">Libra libanesa</title>
+      <title xml:lang="fr">Livre libanaise</title>
+      <title xml:lang="ru">Ливанский фунт</title>
+      <title xml:lang="sv">Libanesiskt pund</title>
+      <title xml:lang="zh_CN">黎巴嫩镑</title>
+      <names>a-cr:LBP</names>
+      <names xml:lang="ru">a-c:LBP</names>
+      <countries>Lebanon</countries>
+      <countries xml:lang="es">Líbano</countries>
+      <countries xml:lang="fr">Liban</countries>
+      <countries xml:lang="ru">Ливан</countries>
+      <countries xml:lang="sv">Libanon</countries>
+      <countries xml:lang="zh_CN">黎巴嫩</countries>
+    </builtin_unit>
+    <builtin_unit name="LSL">
+      <title>Lesotho Loti</title>
+      <title xml:lang="es">Loti lesotense</title>
+      <title xml:lang="fr">Loti du Lesotho</title>
+      <title xml:lang="ru">Лоти Лесото</title>
+      <title xml:lang="sv">Lesothisk loti</title>
+      <title xml:lang="zh_CN">莱索托洛蒂</title>
+      <names>a-cr:LSL</names>
+      <names xml:lang="ru">a-c:LSL</names>
+      <countries>Lesotho</countries>
+      <countries xml:lang="es">Lesoto</countries>
+      <countries xml:lang="ru">Лесото</countries>
+      <countries xml:lang="zh_CN">莱索托</countries>
+    </builtin_unit>
+    <builtin_unit name="LRD">
+      <title>Liberian Dollar</title>
+      <title xml:lang="es">Dólar liberiano</title>
+      <title xml:lang="fr">Dollar libérien</title>
+      <title xml:lang="ru">Либерийский доллар</title>
+      <title xml:lang="sv">Liberiansk dollar</title>
+      <title xml:lang="zh_CN">利比里亚元</title>
+      <names>a-cr:LRD</names>
+      <names xml:lang="ru">a-c:LRD</names>
+      <countries>Liberia</countries>
+      <countries xml:lang="ru">Либерия</countries>
+      <countries xml:lang="zh_CN">利比里亚</countries>
+    </builtin_unit>
+    <builtin_unit name="LYD">
+      <title>Libyan Dinar</title>
+      <title xml:lang="es">Dinar libio</title>
+      <title xml:lang="fr">Dinar libyen</title>
+      <title xml:lang="ru">Ливийский динар</title>
+      <title xml:lang="sv">Libysk dinar</title>
+      <title xml:lang="zh_CN">利比亚第纳尔</title>
+      <names>a-cr:LYD</names>
+      <names xml:lang="ru">a-c:LYD</names>
+      <countries>Libya</countries>
+      <countries xml:lang="es">Libia</countries>
+      <countries xml:lang="fr">Libye</countries>
+      <countries xml:lang="ru">Ливия</countries>
+      <countries xml:lang="sv">Libyen</countries>
+      <countries xml:lang="zh_CN">利比亚</countries>
+    </builtin_unit>
+    <builtin_unit name="MOP">
+      <title>Macanese Pataca</title>
+      <title xml:lang="es">Pataca macaense</title>
+      <title xml:lang="fr">Pataca de Macao</title>
+      <title xml:lang="ru">Патака Макао</title>
+      <title xml:lang="sv">Macaosk pataca</title>
+      <title xml:lang="zh_CN">澳门币</title>
+      <names>a-cr:MOP</names>
+      <names xml:lang="ru">a-c:MOP</names>
+      <names xml:lang="zh_CN">a-c:MOP,澳门币</names>
+      <countries>Macau</countries>
+      <countries xml:lang="es">Macao</countries>
+      <countries xml:lang="fr">Macao</countries>
+      <countries xml:lang="ru">Макао</countries>
+      <countries xml:lang="sv">Macao</countries>
+      <countries xml:lang="zh_CN">澳门</countries>
+    </builtin_unit>
+    <builtin_unit name="MKD">
+      <title>Macedonian Denar</title>
+      <title xml:lang="es">Denar normacedonio</title>
+      <title xml:lang="fr">Dinar macédonien</title>
+      <title xml:lang="ru">Македонский динар</title>
+      <title xml:lang="sv">Makedonisk denar</title>
+      <title xml:lang="zh_CN">马其顿代纳尔</title>
+      <names>a-cr:MKD</names>
+      <names xml:lang="ru">a-c:MKD</names>
+      <countries>Macedonia</countries>
+      <countries xml:lang="es">Macedonia del Norte</countries>
+      <countries xml:lang="fr">Macédoine</countries>
+      <countries xml:lang="ru">Македония</countries>
+      <countries xml:lang="sv">Makedonien</countries>
+      <countries xml:lang="zh_CN">马其顿</countries>
+    </builtin_unit>
+    <builtin_unit name="MGA">
+      <title>Malagasy Ariary</title>
+      <title xml:lang="es">Ariary malgache</title>
+      <title xml:lang="fr">Ariary malgache</title>
+      <title xml:lang="ru">Малагасийский ариари</title>
+      <title xml:lang="sv">Madagaskisk ariary</title>
+      <title xml:lang="zh_CN">马达加斯加阿里亚里</title>
+      <names>a-cr:MGA</names>
+      <countries>Madagascar</countries>
+      <countries xml:lang="ru">Мадагаскар</countries>
+      <countries xml:lang="sv">Madagaskar</countries>
+      <countries xml:lang="zh_CN">马达加斯加</countries>
+    </builtin_unit>
+    <builtin_unit name="MWK">
+      <title>Malawian Kwacha</title>
+      <title xml:lang="es">Kwacha malauí</title>
+      <title xml:lang="fr">Kwacha malawien</title>
+      <title xml:lang="ru">Малавийская квача</title>
+      <title xml:lang="sv">Malawisk kwacha</title>
+      <title xml:lang="zh_CN">马拉维克瓦查</title>
+      <names>a-cr:MWK</names>
+      <names xml:lang="ru">a-c:MWK</names>
+      <countries>Malawi</countries>
+      <countries xml:lang="es">Malaui</countries>
+      <countries xml:lang="ru">Малави</countries>
+      <countries xml:lang="zh_CN">马拉维</countries>
+    </builtin_unit>
+    <builtin_unit name="MVR">
+      <title>Maldivian Rufiyaa</title>
+      <title xml:lang="es">Rupia maldiva</title>
+      <title xml:lang="fr">Rufiyaa maldivien</title>
+      <title xml:lang="ru">Мальдивская руфия</title>
+      <title xml:lang="sv">Maldivisk rufiyaa</title>
+      <title xml:lang="zh_CN">马尔代夫拉菲亚</title>
+      <names>a-cr:MVR</names>
+      <names xml:lang="ru">a-c:MVR</names>
+      <countries>Maldives</countries>
+      <countries xml:lang="es">Maldivas</countries>
+      <countries xml:lang="ru">Мальдивы</countries>
+      <countries xml:lang="sv">Maldiverna</countries>
+      <countries xml:lang="zh_CN">马尔代夫</countries>
+    </builtin_unit>
+    <builtin_unit name="MRO">
+      <title>Mauritanian Ouguiya (obsolete)</title>
+      <title xml:lang="es">Uguiya mauritana (obsoleta)</title>
+      <title xml:lang="fr">Ouguiya mauritanien (obsolète)</title>
+      <title xml:lang="ru">Мавританская угия (устар.)</title>
+      <title xml:lang="sv">Mauretansk ouguiya (obsolet)</title>
+      <title xml:lang="zh_CN">毛里塔尼亚乌吉亚(过时)</title>
+      <names>a-cr:MRO</names>
+      <names xml:lang="ru">a-c:MRO</names>
+    </builtin_unit>
+    <builtin_unit name="MUR">
+      <title>Mauritian Rupee</title>
+      <title xml:lang="es">Rupia mauriciana</title>
+      <title xml:lang="fr">Roupie mauricienne</title>
+      <title xml:lang="ru">Маврикийская рупия</title>
+      <title xml:lang="sv">Mauritisk rupie</title>
+      <title xml:lang="zh_CN">毛里求斯卢比</title>
+      <names>a-cr:MUR</names>
+      <names xml:lang="ru">a-c:MUR</names>
+      <countries>Mauritius</countries>
+      <countries xml:lang="es">Mauricio</countries>
+      <countries xml:lang="fr">Maurice</countries>
+      <countries xml:lang="ru">Маврикий</countries>
+      <countries xml:lang="zh_CN">毛里求斯</countries>
+    </builtin_unit>
+    <builtin_unit name="MDL">
+      <title>Moldovan Leu</title>
+      <title xml:lang="es">Leu moldavo</title>
+      <title xml:lang="fr">Leu moldave</title>
+      <title xml:lang="ru">Молдавский лей</title>
+      <title xml:lang="sv">Moldavisk leu</title>
+      <title xml:lang="zh_CN">摩尔多瓦列伊</title>
+      <names>a-cr:MDL</names>
+      <names xml:lang="ru">a-c:MDL</names>
+      <countries>Moldova</countries>
+      <countries xml:lang="es">Moldavia</countries>
+      <countries xml:lang="fr">Moldavie</countries>
+      <countries xml:lang="ru">Молдавия</countries>
+      <countries xml:lang="sv">Moldavien</countries>
+      <countries xml:lang="zh_CN">摩尔达维亚</countries>
+    </builtin_unit>
+    <builtin_unit name="MNT">
+      <title>Mongolian Tögrög</title>
+      <title xml:lang="es">Tugrik mongol</title>
+      <title xml:lang="fr">Tugrik mongol</title>
+      <title xml:lang="ru">Монгольский тугрик</title>
+      <title xml:lang="sv">Mongolsk tögrög</title>
+      <title xml:lang="zh_CN">蒙古图格里克</title>
+      <names>a-cr:MNT,au:&#x20AE;</names>
+      <names xml:lang="ru">a-c:MNT,au:&#x20AE;,тугрик,p:тугриков,p:тугрика</names>
+      <countries>Mongolia</countries>
+      <countries xml:lang="fr">Mongolie</countries>
+      <countries xml:lang="ru">Монголия</countries>
+      <countries xml:lang="sv">Mongoliet</countries>
+      <countries xml:lang="zh_CN">蒙古</countries>
+    </builtin_unit>
+    <builtin_unit name="MAD">
+      <title>Moroccan Dirham</title>
+      <title xml:lang="es">Dírham marroquí</title>
+      <title xml:lang="fr">Dirham marocain</title>
+      <title xml:lang="ru">Марокканский дирхам</title>
+      <title xml:lang="sv">Marockansk dirham</title>
+      <title xml:lang="zh_CN">摩洛哥迪拉姆</title>
+      <names>a-cr:MAD</names>
+      <names xml:lang="ru">a-c:MAD</names>
+      <countries>Morocco</countries>
+      <countries xml:lang="es">Marruecos</countries>
+      <countries xml:lang="fr">Maroc</countries>
+      <countries xml:lang="ru">Марокко</countries>
+      <countries xml:lang="sv">Marocko</countries>
+      <countries xml:lang="zh_CN">摩洛哥</countries>
+    </builtin_unit>
+    <builtin_unit name="MZN">
+      <title>Mozambican Metical</title>
+      <title xml:lang="es">Metical mozambiqueño</title>
+      <title xml:lang="fr">Metical mozambicain</title>
+      <title xml:lang="ru">Мозамбикский метикал</title>
+      <title xml:lang="sv">Moçambikansk metical</title>
+      <title xml:lang="zh_CN">莫桑比克梅蒂卡尔</title>
+      <names>a-cr:MZN</names>
+      <names xml:lang="ru">a-c:MZN</names>
+      <countries>Mozambique</countries>
+      <countries xml:lang="ru">Мозамбик</countries>
+      <countries xml:lang="sv">Moçambique</countries>
+      <countries xml:lang="zh_CN">莫桑比克</countries>
+    </builtin_unit>
+    <builtin_unit name="MMK">
+      <title>Myanmar (Burmese Kyat)</title>
+      <title xml:lang="es">Kyat birmano (myanma)</title>
+      <title xml:lang="fr">Kyat du Myanmar</title>
+      <title xml:lang="ru">Мьянманский (бирманский) кьят</title>
+      <title xml:lang="sv">Myanmarisk kyat</title>
+      <title xml:lang="zh_CN">缅甸(缅元)</title>
+      <names>a-cr:MMK</names>
+      <names xml:lang="ru">a-c:MMK</names>
+      <countries>Myanmar</countries>
+      <countries xml:lang="es">Birmania (Myanmar)</countries>
+      <countries xml:lang="ru">Мьянма</countries>
+      <countries xml:lang="zh_CN">缅甸</countries>
+    </builtin_unit>
+    <builtin_unit name="NAD">
+      <title>Namibian Dollar</title>
+      <title xml:lang="es">Dólar namibio</title>
+      <title xml:lang="fr">Dollar namibien</title>
+      <title xml:lang="ru">Намибийский доллар</title>
+      <title xml:lang="sv">Namibisk dollar</title>
+      <title xml:lang="zh_CN">纳米比亚元</title>
+      <names>a-cr:NAD</names>
+      <names xml:lang="ru">a-c:NAD</names>
+      <countries>Namibia</countries>
+      <countries xml:lang="fr">Namibie</countries>
+      <countries xml:lang="ru">Намибия</countries>
+      <countries xml:lang="sv">Namibien</countries>
+      <countries xml:lang="zh_CN">纳米比亚</countries>
+    </builtin_unit>
+    <builtin_unit name="NPR">
+      <title>Nepalese Rupee</title>
+      <title xml:lang="es">Rupia nepalí</title>
+      <title xml:lang="fr">Roupie népalaise</title>
+      <title xml:lang="ru">Непальская рупия</title>
+      <title xml:lang="sv">Nepalesisk rupie</title>
+      <title xml:lang="zh_CN">尼泊尔卢比</title>
+      <names>a-cr:NPR</names>
+      <names xml:lang="ru">a-c:NPR</names>
+      <countries>Nepal</countries>
+      <countries xml:lang="fr">Népal</countries>
+      <countries xml:lang="ru">Непал</countries>
+      <countries xml:lang="zh_CN">尼泊尔</countries>
+    </builtin_unit>
+    <builtin_unit name="NIO">
+      <title>Nicaraguan Córdoba</title>
+      <title xml:lang="es">Córdoba nicaragüense</title>
+      <title xml:lang="fr">Cordoba nicaraguayen</title>
+      <title xml:lang="ru">Никарагуанская кордоба</title>
+      <title xml:lang="sv">Nicaragiska córdoba</title>
+      <title xml:lang="zh_CN">尼加拉瓜科多巴</title>
+      <names>a-cr:NIO</names>
+      <names xml:lang="ru">a-c:NIO</names>
+      <countries>Nicaragua</countries>
+      <countries xml:lang="ru">Никарагуа</countries>
+      <countries xml:lang="zh_CN">尼加拉瓜</countries>
+    </builtin_unit>
+    <builtin_unit name="NGN">
+      <title>Nigerian Naira</title>
+      <title xml:lang="es">Naira nigerina</title>
+      <title xml:lang="fr">Naira nigérian</title>
+      <title xml:lang="ru">Нигерийская найра</title>
+      <title xml:lang="sv">Nigeriansk naira</title>
+      <title xml:lang="zh_CN">尼日利亚奈拉</title>
+      <names>a-cr:NGN,au:&#x20A6;</names>
+      <names xml:lang="ru">a-c:NGN,au:&#x20A6;,найра,p:найр</names>
+      <countries>Nigeria</countries>
+      <countries xml:lang="fr">Nigéria</countries>
+      <countries xml:lang="ru">Нигерия</countries>
+      <countries xml:lang="zh_CN">奈及利亚</countries>
+    </builtin_unit>
+    <builtin_unit name="OMR">
+      <title>Omani Rial</title>
+      <title xml:lang="es">Rial omaní</title>
+      <title xml:lang="fr">Rial omanais</title>
+      <title xml:lang="ru">Оманский риал</title>
+      <title xml:lang="sv">Omansk rial</title>
+      <title xml:lang="zh_CN">阿曼里亚尔</title>
+      <names>a-cr:OMR</names>
+      <names xml:lang="ru">a-c:OMR</names>
+      <countries>Oman</countries>
+      <countries xml:lang="es">Omán</countries>
+      <countries xml:lang="ru">Оман</countries>
+      <countries xml:lang="zh_CN">阿曼</countries>
+    </builtin_unit>
+    <builtin_unit name="PKR">
+      <title>Pakistani Rupee</title>
+      <title xml:lang="es">Rupia pakistaní</title>
+      <title xml:lang="fr">Roupie pakistanaise</title>
+      <title xml:lang="ru">Пакистанская рупия</title>
+      <title xml:lang="sv">Pakistansk rupie</title>
+      <title xml:lang="zh_CN">巴基斯坦卢比</title>
+      <names>a-cr:PKR</names>
+      <names xml:lang="ru">a-c:PKR</names>
+      <countries>Pakistan</countries>
+      <countries xml:lang="es">Pakistán</countries>
+      <countries xml:lang="ru">Пакистан</countries>
+      <countries xml:lang="zh_CN">巴基斯坦</countries>
+    </builtin_unit>
+    <builtin_unit name="PAB">
+      <title>Panamaian Balboa</title>
+      <title xml:lang="es">Balboa panameña</title>
+      <title xml:lang="fr">Balboa panaméen</title>
+      <title xml:lang="ru">Панамский бальбоа</title>
+      <title xml:lang="sv">Panamansk balboa</title>
+      <title xml:lang="zh_CN">巴拿马巴波亚</title>
+      <names>a-cr:PAB</names>
+      <names xml:lang="ru">a-c:PAB</names>
+      <countries>Panama</countries>
+      <countries xml:lang="es">Panamá</countries>
+      <countries xml:lang="ru">Панама</countries>
+      <countries xml:lang="zh_CN">巴拿马</countries>
+    </builtin_unit>
+    <builtin_unit name="PGK">
+      <title>Papua New Guinean Kina</title>
+      <title xml:lang="es">Kina papú neoguineana</title>
+      <title xml:lang="fr">Kina de Papouasie-Nouvelle-Guinée</title>
+      <title xml:lang="ru">Кина Папуа-Новой Гвинеи</title>
+      <title xml:lang="sv">Papua Nya Guineansk kina</title>
+      <title xml:lang="zh_CN">巴布亚新几内亚基那</title>
+      <names>a-cr:PGK</names>
+      <names xml:lang="ru">a-c:PGK</names>
+      <countries>Papua New Guinea</countries>
+      <countries xml:lang="es">Papúa Nueva Guinea</countries>
+      <countries xml:lang="fr">Papouasie-Nouvelle-Guinée</countries>
+      <countries xml:lang="ru">Папуа-Новая Гвинея</countries>
+      <countries xml:lang="sv">Papua Nya Guinea</countries>
+      <countries xml:lang="zh_CN">巴布亚新几内亚</countries>
+    </builtin_unit>
+    <builtin_unit name="PYG">
+      <title>Paraguayan Guaraní</title>
+      <title xml:lang="es">Guaraní paraguayo</title>
+      <title xml:lang="fr">Guarani paraguayen</title>
+      <title xml:lang="ru">Парагвайский гуарани</title>
+      <title xml:lang="sv">Paraguaysk guarani</title>
+      <title xml:lang="zh_CN">巴拉圭瓜拉尼</title>
+      <names>a-cr:PYG,au:&#x20B2;</names>
+      <names xml:lang="ru">a-c:PYG,au:&#x20B2;</names>
+      <countries>Paraguay</countries>
+      <countries xml:lang="ru">Парагвай</countries>
+      <countries xml:lang="zh_CN">巴拉圭</countries>
+    </builtin_unit>
+    <builtin_unit name="PEN">
+      <title>Peruvian Sol</title>
+      <title xml:lang="es">Sol peruano</title>
+      <title xml:lang="fr">Sol péruvien</title>
+      <title xml:lang="ru">Перуанский соль</title>
+      <title xml:lang="sv">Peruviansk sol</title>
+      <title xml:lang="zh_CN">秘鲁索尔</title>
+      <names>a-cr:PEN</names>
+      <names xml:lang="ru">a-c:PEN</names>
+      <countries>Peru</countries>
+      <countries xml:lang="es">Perú</countries>
+      <countries xml:lang="fr">Pérou</countries>
+      <countries xml:lang="ru">Перу</countries>
+      <countries xml:lang="zh_CN">秘鲁</countries>
+    </builtin_unit>
+    <builtin_unit name="QAR">
+      <title>Qatari Riyal</title>
+      <title xml:lang="es">Riyal catarí</title>
+      <title xml:lang="fr">Rial qatari</title>
+      <title xml:lang="ru">Катарский риалы</title>
+      <title xml:lang="sv">Qatarisk rial</title>
+      <title xml:lang="zh_CN">卡塔尔里亚尔</title>
+      <names>a-cr:QAR</names>
+      <names xml:lang="ru">a-c:QAR</names>
+      <countries>Qatar</countries>
+      <countries xml:lang="es">Catar</countries>
+      <countries xml:lang="ru">Катар</countries>
+      <countries xml:lang="zh_CN">卡塔尔</countries>
+    </builtin_unit>
+    <builtin_unit name="RWF">
+      <title>Rwandan Franc</title>
+      <title xml:lang="es">Franco ruandés</title>
+      <title xml:lang="fr">Franc rwandais</title>
+      <title xml:lang="ru">Руандийский франк</title>
+      <title xml:lang="sv">Rwandisk franc</title>
+      <title xml:lang="zh_CN">卢旺达法郎</title>
+      <names>a-cr:RWF</names>
+      <names xml:lang="ru">a-c:RWF</names>
+      <countries>Rwanda</countries>
+      <countries xml:lang="es">Ruanda</countries>
+      <countries xml:lang="ru">Руанда</countries>
+      <countries xml:lang="zh_CN">卢旺达</countries>
+    </builtin_unit>
+    <builtin_unit name="STD">
+      <title>São Tomé and Príncipe Dobra</title>
+      <title xml:lang="es">Dobra santotomense</title>
+      <title xml:lang="fr">Dobra são-tomense</title>
+      <title xml:lang="ru">Добра Сан-Томе и Принсипи</title>
+      <title xml:lang="sv">São Tomé och Príncipe-dobra</title>
+      <title xml:lang="zh_CN">圣多美和普林西比多布拉</title>
+      <names>a-cr:STD</names>
+      <names xml:lang="ru">a-c:STD</names>
+      <countries>Sao Tome and Principe</countries>
+      <countries xml:lang="es">Santo Tomé y Príncipe</countries>
+      <countries xml:lang="fr">Sao Tomé-et-Principe</countries>
+      <countries xml:lang="ru">Сан-Томе и Принсипи</countries>
+      <countries xml:lang="sv">São Tomé och Príncipe</countries>
+      <countries xml:lang="zh_CN">圣多美和普林西比</countries>
+    </builtin_unit>
+    <builtin_unit name="SAR">
+      <title>Saudi Riyal</title>
+      <title xml:lang="es">Riyal saudí</title>
+      <title xml:lang="fr">Rial saoudien</title>
+      <title xml:lang="ru">Саудовский риял</title>
+      <title xml:lang="sv">Saudiarabisk rial</title>
+      <title xml:lang="zh_CN">沙特里亚尔</title>
+      <names>a-cr:SAR</names>
+      <names xml:lang="ru">a-c:SAR</names>
+      <countries>Saudi Arabia</countries>
+      <countries xml:lang="es">Arabia Saudita</countries>
+      <countries xml:lang="fr">Arabie saoudite</countries>
+      <countries xml:lang="ru">Саудовская Аравия</countries>
+      <countries xml:lang="sv">Saudiarabien</countries>
+      <countries xml:lang="zh_CN">沙特阿拉伯</countries>
+    </builtin_unit>
+    <builtin_unit name="RSD">
+      <title>Serbian Dinar</title>
+      <title xml:lang="es">Dinar serbio</title>
+      <title xml:lang="fr">Dinar serbe</title>
+      <title xml:lang="ru">Сербский динар</title>
+      <title xml:lang="sv">Serbisk dinar</title>
+      <title xml:lang="zh_CN">塞尔维亚第纳尔</title>
+      <names>a-cr:RSD</names>
+      <names xml:lang="ru">a-c:RSD</names>
+      <countries>Serbia</countries>
+      <countries xml:lang="fr">Serbie</countries>
+      <countries xml:lang="ru">Сербия</countries>
+      <countries xml:lang="sv">Serbien</countries>
+      <countries xml:lang="zh_CN">塞尔维亚</countries>
+    </builtin_unit>
+    <builtin_unit name="SCR">
+      <title>Seychellois Rupee</title>
+      <title xml:lang="es">Rupia seychelense</title>
+      <title xml:lang="fr">Roupie seychelloise</title>
+      <title xml:lang="ru">Сейшельская рупия</title>
+      <title xml:lang="sv">Seychellisk rupie</title>
+      <title xml:lang="zh_CN">塞舌尔卢比</title>
+      <names>a-cr:SCR</names>
+      <names xml:lang="ru">a-c:SCR</names>
+      <countries>Seychelles</countries>
+      <countries xml:lang="ru">Сейшельские Острова</countries>
+      <countries xml:lang="sv">Seychellerna</countries>
+      <countries xml:lang="zh_CN">塞舌尔</countries>
+    </builtin_unit>
+    <builtin_unit name="SLL">
+      <title>Sierra Leonean Leone</title>
+      <title xml:lang="es">Leone sierraleonés</title>
+      <title xml:lang="fr">Leone de Sierra Leone</title>
+      <title xml:lang="ru">Леоне Сьерра-Леоне</title>
+      <title xml:lang="sv">Sierra Leonsk leone</title>
+      <title xml:lang="zh_CN">塞拉利昂利昂</title>
+      <names>a-cr:SLL</names>
+      <names xml:lang="ru">a-c:SLL,Le</names>
+      <countries>Sierra Leone</countries>
+      <countries xml:lang="es">Sierra Leona</countries>
+      <countries xml:lang="ru">Сьерра-Леоне</countries>
+      <countries xml:lang="zh_CN">塞拉利昂</countries>
+    </builtin_unit>
+    <builtin_unit name="SBD">
+      <title>Solomon Islands Dollar</title>
+      <title xml:lang="es">Dólar Salomonense</title>
+      <title xml:lang="fr">Dollar des îles Salomon</title>
+      <title xml:lang="ru">Доллар Соломоновых Островов</title>
+      <title xml:lang="sv">Salomondollar</title>
+      <title xml:lang="zh_CN">所罗门群岛元</title>
+      <names>a-cr:SBD</names>
+      <names xml:lang="ru">a-c:SBD</names>
+      <countries>Solomon Islands</countries>
+      <countries xml:lang="es">Islas Salomón</countries>
+      <countries xml:lang="fr">Salomon</countries>
+      <countries xml:lang="ru">Соломоновы Острова</countries>
+      <countries xml:lang="sv">Salomonöarna</countries>
+      <countries xml:lang="zh_CN">所罗门群岛</countries>
+    </builtin_unit>
+    <builtin_unit name="SOS">
+      <title>Somali Shilling</title>
+      <title xml:lang="es">Chelín somalí</title>
+      <title xml:lang="fr">Shilling somalien</title>
+      <title xml:lang="ru">Сомалийский шиллинг</title>
+      <title xml:lang="sv">Somalisk schilling</title>
+      <title xml:lang="zh_CN">索马里先令</title>
+      <names>a-cr:SOS</names>
+      <names xml:lang="ru">a-c:SOS</names>
+      <countries>Somalia</countries>
+      <countries xml:lang="fr">Somalie</countries>
+      <countries xml:lang="ru">Сомали</countries>
+      <countries xml:lang="zh_CN">索马里</countries>
+    </builtin_unit>
+    <builtin_unit name="LKR">
+      <title>Sri Lankan Rupee</title>
+      <title xml:lang="es">Rupia esrilanqués</title>
+      <title xml:lang="fr">Roupie sri lankaise</title>
+      <title xml:lang="ru">Шри-ланкийская рупия</title>
+      <title xml:lang="sv">Lankesisk rupee</title>
+      <title xml:lang="zh_CN">斯里兰卡卢比</title>
+      <names>a-cr:LKR,au:&#x0BF9;</names>
+      <names xml:lang="ru">a-c:LKR,au:&#x0BF9;</names>
+      <countries>Sri Lanka</countries>
+      <countries xml:lang="ru">Шри-Ланка</countries>
+      <countries xml:lang="zh_CN">斯里兰卡</countries>
+    </builtin_unit>
+    <builtin_unit name="SDG">
+      <title>Sudanese Pound</title>
+      <title xml:lang="es">Libra sudanésa</title>
+      <title xml:lang="fr">Livre soudanaise</title>
+      <title xml:lang="ru">Суданский фунт</title>
+      <title xml:lang="sv">Sudanesiskt pund</title>
+      <title xml:lang="zh_CN">苏丹镑</title>
+      <names>a-cr:SDG</names>
+      <names xml:lang="ru">a-c:SDG</names>
+      <countries>Sudan</countries>
+      <countries xml:lang="es">Sudán</countries>
+      <countries xml:lang="fr">Soudan</countries>
+      <countries xml:lang="ru">Судан</countries>
+      <countries xml:lang="zh_CN">苏丹</countries>
+    </builtin_unit>
+    <builtin_unit name="SRD">
+      <title>Surinamese Dollar</title>
+      <title xml:lang="es">Dólar surinamés</title>
+      <title xml:lang="fr">Dollar du Surinam</title>
+      <title xml:lang="ru">Суринамский доллар</title>
+      <title xml:lang="sv">Surinamesisk dollar</title>
+      <title xml:lang="zh_CN">苏里南元</title>
+      <names>a-cr:SRD</names>
+      <names xml:lang="ru">a-c:SRD</names>
+      <countries>Suriname</countries>
+      <countries xml:lang="es">Surinam</countries>
+      <countries xml:lang="fr">Surinam</countries>
+      <countries xml:lang="ru">Суринам</countries>
+      <countries xml:lang="sv">Surinam</countries>
+      <countries xml:lang="zh_CN">苏里南</countries>
+    </builtin_unit>
+    <builtin_unit name="SZL">
+      <title>Swazi Lilangeni</title>
+      <title xml:lang="es">Lilangeni suazi</title>
+      <title xml:lang="fr">Lilangeni du Swaziland</title>
+      <title xml:lang="ru">Лилангени Эсватини</title>
+      <title xml:lang="sv">Swaziland-lilangeni</title>
+      <title xml:lang="zh_CN">斯威士兰尼</title>
+      <names>a-cr:SZL</names>
+      <names xml:lang="ru">a-c:SZL</names>
+      <countries>Swaziland</countries>
+      <countries xml:lang="es">Suazilandia</countries>
+      <countries xml:lang="ru">Эсватини (Свазиленд до 2018 года)</countries>
+      <countries xml:lang="zh_CN">斯威士兰</countries>
+    </builtin_unit>
+    <builtin_unit name="SYP">
+      <title>Syrian Pound</title>
+      <title xml:lang="es">Libra siria</title>
+      <title xml:lang="fr">Livre syrienne</title>
+      <title xml:lang="ru">Сирийский фунт</title>
+      <title xml:lang="sv">Syriskt pund</title>
+      <title xml:lang="zh_CN">叙利亚镑</title>
+      <names>a-cr:SYP</names>
+      <names xml:lang="ru">a-c:SYP</names>
+      <countries>Syria</countries>
+      <countries xml:lang="es">Siria</countries>
+      <countries xml:lang="fr">Syrie</countries>
+      <countries xml:lang="ru">Сирия</countries>
+      <countries xml:lang="sv">Syrien</countries>
+      <countries xml:lang="zh_CN">叙利亚</countries>
+    </builtin_unit>
+    <builtin_unit name="TWD">
+      <title>New Taiwan Dollar</title>
+      <title xml:lang="es">Nuevo dólar taiwanés</title>
+      <title xml:lang="fr">Nouveau dollar de Taïwan</title>
+      <title xml:lang="ru">Новый тайваньский доллар</title>
+      <title xml:lang="sv">Taiwanesisk dollar</title>
+      <title xml:lang="zh_CN">新台币</title>
+      <names>a-cr:TWD</names>
+      <names xml:lang="ru">a-c:TWD,NT$</names>
+      <names xml:lang="zh_CN">a-c:TWD,新台币</names>
+      <countries>Taiwan</countries>
+      <countries xml:lang="es">Taiwán</countries>
+      <countries xml:lang="fr">Taïwan</countries>
+      <countries xml:lang="ru">Тайвань</countries>
+    </builtin_unit>
+    <builtin_unit name="TJS">
+      <title>Tajikistani Somoni</title>
+      <title xml:lang="es">Somoni tayiko</title>
+      <title xml:lang="fr">Somoni tadjik</title>
+      <title xml:lang="ru">Сомони Таджикистана</title>
+      <title xml:lang="sv">Tajikisk somoni</title>
+      <title xml:lang="zh_CN">塔吉克斯坦索莫尼</title>
+      <names>a-cr:TJS</names>
+      <names xml:lang="ru">a-c:TJS,сом.,смн.</names>
+      <countries>Tajikistan</countries>
+      <countries xml:lang="es">Tayikistán</countries>
+      <countries xml:lang="fr">Tadjikistan</countries>
+      <countries xml:lang="ru">Таджикистан</countries>
+      <countries xml:lang="zh_CN">塔吉克斯坦</countries>
+    </builtin_unit>
+    <builtin_unit name="TZS">
+      <title>Tanzanian Shilling</title>
+      <title xml:lang="es">Chelín tanzano</title>
+      <title xml:lang="fr">Shilling tanzanien</title>
+      <title xml:lang="ru">Танзанийский шиллинг</title>
+      <title xml:lang="sv">Tanzanisk shilling</title>
+      <title xml:lang="zh_CN">坦桑尼亚先令</title>
+      <names>a-cr:TZS</names>
+      <names xml:lang="ru">a-c:TZS</names>
+      <countries>Tanzania</countries>
+      <countries xml:lang="fr">Tanzanie</countries>
+      <countries xml:lang="ru">Танзания</countries>
+      <countries xml:lang="zh_CN">坦桑尼亚</countries>
+    </builtin_unit>
+    <builtin_unit name="TOP">
+      <title>Tongan Paʻanga</title>
+      <title xml:lang="es">Paʻanga tongana</title>
+      <title xml:lang="fr">Pa’anga de Tonga</title>
+      <title xml:lang="ru">Тонганский Паанга</title>
+      <title xml:lang="sv">Tongansk paʻanga</title>
+      <title xml:lang="zh_CN">汤加帕安加</title>
+      <names>a-cr:TOP</names>
+      <names xml:lang="ru">a-c:TOP</names>
+      <countries>Tonga</countries>
+      <countries xml:lang="ru">Тонга</countries>
+      <countries xml:lang="zh_CN">汤加</countries>
+    </builtin_unit>
+    <builtin_unit name="TTD">
+      <title>Trinidad and Tobago dollar</title>
+      <title xml:lang="es">Dólar trinitense</title>
+      <title xml:lang="fr">Dollar de Trinidad</title>
+      <title xml:lang="ru">Доллар Тринидада и Тобаго</title>
+      <title xml:lang="sv">Trinidaddollar</title>
+      <title xml:lang="zh_CN">特立尼达和多巴哥元</title>
+      <names>a-cr:TTD</names>
+      <names xml:lang="ru">a-c:TTD</names>
+      <countries>Trinidad and Tobago</countries>
+      <countries xml:lang="es">Trinidad y Tobago</countries>
+      <countries xml:lang="fr">Trinidad, Tobago</countries>
+      <countries xml:lang="ru">Тринидад и Тобаго</countries>
+      <countries xml:lang="sv">Trinidad och Tobago</countries>
+      <countries xml:lang="zh_CN">特立尼达和多巴哥</countries>
+    </builtin_unit>
+    <builtin_unit name="TND">
+      <title>Tunisian Dinar</title>
+      <title xml:lang="es">Dólar tunecino</title>
+      <title xml:lang="fr">Dinar tunisien</title>
+      <title xml:lang="ru">Тунисский динар</title>
+      <title xml:lang="sv">Tunisisk dinar</title>
+      <title xml:lang="zh_CN">突尼斯第纳尔</title>
+      <names>a-cr:TND</names>
+      <names xml:lang="ru">a-c:TND</names>
+      <countries>Tunisia</countries>
+      <countries xml:lang="es">Túnez</countries>
+      <countries xml:lang="fr">Tunisie</countries>
+      <countries xml:lang="ru">Тунис</countries>
+      <countries xml:lang="sv">Tunisien</countries>
+      <countries xml:lang="zh_CN">突尼斯</countries>
+    </builtin_unit>
+    <builtin_unit name="TMT">
+      <title>Turkmenistan Manat</title>
+      <title xml:lang="es">Manat turcomano</title>
+      <title xml:lang="fr">Manat turkmène</title>
+      <title xml:lang="ru">Туркменский манат</title>
+      <title xml:lang="sv">Turkmenistansk manat</title>
+      <title xml:lang="zh_CN">土库曼斯坦马纳特</title>
+      <names>a-cr:TMT</names>
+      <names xml:lang="ru">a-c:TMT,манат</names>
+      <countries>Turkmenistan</countries>
+      <countries xml:lang="es">Turkmenistán</countries>
+      <countries xml:lang="fr">Turkménistan</countries>
+      <countries xml:lang="ru">Туркменистан</countries>
+      <countries xml:lang="zh_CN">土库曼斯坦</countries>
+    </builtin_unit>
+    <builtin_unit name="UGX">
+      <title>Ugandan Shilling</title>
+      <title xml:lang="es">Chelín ugandés</title>
+      <title xml:lang="fr">Shilling ougandais</title>
+      <title xml:lang="ru">Угандийский шиллинг</title>
+      <title xml:lang="sv">Ugandisk shilling</title>
+      <title xml:lang="zh_CN">乌干达先令</title>
+      <names>a-cr:UGX</names>
+      <names xml:lang="ru">a-c:UGX</names>
+      <countries>Uganda</countries>
+      <countries xml:lang="fr">Ouganda</countries>
+      <countries xml:lang="ru">Уганда</countries>
+      <countries xml:lang="zh_CN">乌干达</countries>
+    </builtin_unit>
+    <builtin_unit name="UAH">
+      <title>Ukrainian Hryvnia</title>
+      <title xml:lang="es">Grivna ucraniana</title>
+      <title xml:lang="fr">Hryvnia ukrainienne</title>
+      <title xml:lang="ru">Украинская гривна</title>
+      <title xml:lang="sv">Ukrainsk hryvnia</title>
+      <title xml:lang="zh_CN">乌克兰格里夫纳</title>
+      <names>a-cr:UAH,au:&#x20B4;</names>
+      <countries>Ukraine</countries>
+      <countries xml:lang="es">Ucrania</countries>
+      <countries xml:lang="ru">Украина</countries>
+      <countries xml:lang="sv">Ukraina</countries>
+      <countries xml:lang="zh_CN">乌克兰</countries>
+    </builtin_unit>
+    <builtin_unit name="AED">
+      <title>United Arab Emirates Dirham</title>
+      <title xml:lang="es">Dírham emiratí</title>
+      <title xml:lang="fr">Dirham des Émirats arabes unis</title>
+      <title xml:lang="ru">Дирхам ОАЭ</title>
+      <title xml:lang="sv">Emiratisk dirham</title>
+      <title xml:lang="zh_CN">阿拉伯联合酋长国迪拉姆</title>
+      <names>a-cr:AED</names>
+      <names xml:lang="ru">a-c:AED</names>
+      <countries>United Arab Emirates</countries>
+      <countries xml:lang="es">Emiratos Árabes Unidos</countries>
+      <countries xml:lang="fr">Émirats arabes unis</countries>
+      <countries xml:lang="ru">Объединённые Арабские Эмираты</countries>
+      <countries xml:lang="sv">Förenade Arabemiraten</countries>
+      <countries xml:lang="zh_CN">阿拉伯联合酋长国</countries>
+    </builtin_unit>
+    <builtin_unit name="UYU">
+      <title>Uruguayan Peso</title>
+      <title xml:lang="es">Peso uruguayo</title>
+      <title xml:lang="fr">Peso uruguayen</title>
+      <title xml:lang="ru">Уругвайское песо</title>
+      <title xml:lang="sv">Uruguayansk peso</title>
+      <title xml:lang="zh_CN">乌拉圭比索</title>
+      <names>a-cr:UYU</names>
+      <names xml:lang="ru">a-c:UYU</names>
+      <countries>Uruguay</countries>
+      <countries xml:lang="ru">Уругвай</countries>
+      <countries xml:lang="zh_CN">乌拉圭</countries>
+    </builtin_unit>
+    <builtin_unit name="UZS">
+      <title>Uzbekistan Soʻm</title>
+      <title xml:lang="es">Som uzbeko</title>
+      <title xml:lang="fr">Som ouzbek</title>
+      <title xml:lang="ru">Узбекский сум</title>
+      <title xml:lang="sv">Uzbekistansk som</title>
+      <title xml:lang="zh_CN">乌兹别克斯坦索姆</title>
+      <names>a-cr:UZS</names>
+      <names xml:lang="ru">a-c:UZS</names>
+      <countries>Uzbekistan</countries>
+      <countries xml:lang="es">Uzbekistán</countries>
+      <countries xml:lang="fr">Ouzbékistan</countries>
+      <countries xml:lang="ru">Узбекистан</countries>
+      <countries xml:lang="zh_CN">乌兹别克斯坦</countries>
+    </builtin_unit>
+    <builtin_unit name="VUV">
+      <title>Vanuatu Vatu</title>
+      <title xml:lang="es">Vatu vanuatuense</title>
+      <title xml:lang="fr">Vatu vanuatais</title>
+      <title xml:lang="ru">Вануату Вату</title>
+      <title xml:lang="sv">Vanuatisk vatu</title>
+      <title xml:lang="zh_CN">瓦努阿图瓦图</title>
+      <names>a-cr:VUV</names>
+      <names xml:lang="ru">a-c:VUV</names>
+      <countries>Vanuatu</countries>
+      <countries xml:lang="ru">Вануату</countries>
+      <countries xml:lang="zh_CN">瓦努阿图</countries>
+    </builtin_unit>
+    <builtin_unit name="VEF">
+      <title>Venezuelan Bolívar (obsolete)</title>
+      <title xml:lang="es">Bolívar venezolano (obsoleto)</title>
+      <title xml:lang="fr">Bolivar vénézuélien (obsolète)</title>
+      <title xml:lang="ru">Венесуэльский боливар (устар.)</title>
+      <title xml:lang="sv">Venezuelansk bolívar (obsolet)</title>
+      <title xml:lang="zh_CN">委内瑞拉玻利瓦尔(过时)</title>
+      <names>a-cr:VEF</names>
+      <names xml:lang="ru">a-c:VEF</names>
+    </builtin_unit>
+    <builtin_unit name="VND">
+      <title>Vietnamese Đồng</title>
+      <title xml:lang="es">Đồng vietnamita</title>
+      <title xml:lang="fr">Dong vietnamien</title>
+      <title xml:lang="ru">Вьетнамский донг</title>
+      <title xml:lang="sv">Vietnamesisk đồng</title>
+      <title xml:lang="zh_CN">越南盾</title>
+      <names>a-cr:VND,au:&#x20AB;</names>
+      <names xml:lang="ru">a-c:VND,au:&#x20AB;</names>
+      <countries>Vietnam</countries>
+      <countries xml:lang="ru">Вьетнам</countries>
+      <countries xml:lang="zh_CN">越南</countries>
+    </builtin_unit>
+    <builtin_unit name="YER">
+      <title>Yemeni Rial</title>
+      <title xml:lang="es">Rial yemení</title>
+      <title xml:lang="fr">Rial yéménite</title>
+      <title xml:lang="ru">Йеменский риал</title>
+      <title xml:lang="sv">Jemenitisk rial</title>
+      <title xml:lang="zh_CN">也门里亚尔</title>
+      <names>a-cr:YER</names>
+      <countries>Yemen</countries>
+      <countries xml:lang="fr">Yémen</countries>
+      <countries xml:lang="ru">Йемен</countries>
+      <countries xml:lang="sv">Jemen</countries>
+      <countries xml:lang="zh_CN">也门</countries>
+    </builtin_unit>
+    <builtin_unit name="ZMK">
+      <title>Zambian Kwacha (obsolete)</title>
+      <title xml:lang="es">Kwacha zambiano (obsoleto)</title>
+      <title xml:lang="fr">Kwacha zambien (obsolète)</title>
+      <title xml:lang="ru">Замбийская квача (устар.)</title>
+      <title xml:lang="sv">Zambisk kwacha (obsolet)</title>
+      <title xml:lang="zh_CN">赞比亚克瓦查(过时)</title>
+      <names>a-cr:ZMK</names>
+    </builtin_unit>
+    <unit type="alias">
+      <title>Euro Cent</title>
+      <title xml:lang="es">Céntimo de Euro</title>
+      <title xml:lang="fr">Centime d'euro</title>
+      <title xml:lang="nl">Eurocent</title>
+      <title xml:lang="ru">Евроцент</title>
+      <title xml:lang="sv">Eurocent</title>
+      <title xml:lang="zh_CN">欧分</title>
+      <names>r:eurocent,p:eurocents</names>
+      <names xml:lang="fr">centeuro,p:centseuro</names>
+      <names xml:lang="nl">eurocent,p:eurocenten</names>
+      <names xml:lang="ru">евроцент,p:евроценты</names>
+      <names xml:lang="sv">eurocent</names>
+      <names xml:lang="zh_CN">欧分</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/100</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Cent (USD)</title>
+      <title xml:lang="es">Centavo (USD)</title>
+      <title xml:lang="ru">Цент (Доллар США)</title>
+      <title xml:lang="zh_CN">美分</title>
+      <names>au:&#xA2;,r:cent,p:cents</names>
+      <names xml:lang="nl">au:&#xA2;,cent,p:centen</names>
+      <names xml:lang="ru">au:&#xA2;,цент,p:центы</names>
+      <names xml:lang="sv">au:&#xA2;,cent</names>
+      <names xml:lang="zh_CN">&#xA2;au:&#xA2;,美分,cent</names>
+      <base>
+        <unit>USD</unit>
+        <relation>1/100</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Belgian Franc (obsolete)</title>
+      <title xml:lang="es">Franco belga (obsoleto)</title>
+      <title xml:lang="fr">Franc belge (obsolète)</title>
+      <title xml:lang="nl">Belgische frank (verouderd)</title>
+      <title xml:lang="ru">Бельгийский франк (устар.)</title>
+      <title xml:lang="sv">Belgisk franc (obsolet)</title>
+      <title xml:lang="zh_CN">比利时法郎(过时)</title>
+      <names>a-cr:BEF</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/40.3399</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Greek Drachma (obsolete)</title>
+      <title xml:lang="es">Dracma griega (obsoleta)</title>
+      <title xml:lang="fr">Drachme grecque (obsolète</title>
+      <title xml:lang="nl">Griekse drachme (verouderd)</title>
+      <title xml:lang="ru">Греческая драхма (устар.)</title>
+      <title xml:lang="sv">Grekisk drachma (obsolet)</title>
+      <title xml:lang="zh_CN">希腊德拉克马(过时)</title>
+      <names>a-cr:GRD,au:&#x20AF;</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/340.750</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>French Franc (obsolete)</title>
+      <title xml:lang="fr">Franc français (obsolète)</title>
+      <title xml:lang="nl">Franse franc (verouderd)</title>
+      <title xml:lang="ru">Французский франк (устар.)</title>
+      <title xml:lang="sv">Fransk franc (obsolet)</title>
+      <title xml:lang="zh_CN">法国法郎(过时)</title>
+      <names>a-cr:FRF,au:&#x20A3;</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/6.55957</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Italian Lira (obsolete)</title>
+      <title xml:lang="es">Lira italiana (obsoleta)</title>
+      <title xml:lang="fr">Lire italienne (obsolète)</title>
+      <title xml:lang="nl">Italiaanse lire (verouderd)</title>
+      <title xml:lang="ru">Итальянская лира (устар.)</title>
+      <title xml:lang="sv">Italiensk lira (obsolet)</title>
+      <title xml:lang="zh_CN">意大利里拉(过时)</title>
+      <names>a-cr:ITL</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/1936.27</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Dutch Guilder (obsolete)</title>
+      <title xml:lang="es">Florín neerlandés (obsoleto)</title>
+      <title xml:lang="fr">Florin néerlandais (obsolète)</title>
+      <title xml:lang="nl">Nederlandse gulden (verouderd)</title>
+      <title xml:lang="ru">Голландский гульден (устар.)</title>
+      <title xml:lang="sv">Nederländsk gulden (obsolet)</title>
+      <title xml:lang="zh_CN">荷兰盾(过时)</title>
+      <names>a-cr:NLG</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/2.20371</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Portuguese Escudo (obsolete)</title>
+      <title xml:lang="es">Escudo portugués (obsoleto)</title>
+      <title xml:lang="fr">Escudo portugais (obsolète)</title>
+      <title xml:lang="nl">Portugese escudo (verouderd)</title>
+      <title xml:lang="ru">Португальский эскудо (устар.)</title>
+      <title xml:lang="sv">Portugisisk escudo (obsolet)</title>
+      <title xml:lang="zh_CN">葡萄牙埃斯库多(过时)</title>
+      <names>a-cr:PTE</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/200.482</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Deutsche Mark (obsolete)</title>
+      <title xml:lang="es">Marco alemán (obsoleto)</title>
+      <title xml:lang="fr">Deutsche Mark (obsolète)</title>
+      <title xml:lang="nl">Duitse mark (verouderd)</title>
+      <title xml:lang="ru">Немецкая марка (устар.)</title>
+      <title xml:lang="sv">Tysk mark (obsolet)</title>
+      <title xml:lang="zh_CN">德国马克(过时)</title>
+      <names>a-cr:DEM</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/1.95583</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Spanish Peseta (obsolete)</title>
+      <title xml:lang="es">Peseta española (obsoleta)</title>
+      <title xml:lang="fr">Peseta espagnole (obsolète)</title>
+      <title xml:lang="nl">Spaanse peseta (verouderd)</title>
+      <title xml:lang="ru">Испанская песета (устар.)</title>
+      <title xml:lang="sv">Spansk peseta (obsolet)</title>
+      <title xml:lang="zh_CN">西班牙比塞塔(过时)</title>
+      <names>a-cr:ESP,au:&#x20A7;</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/166.386</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Irish Pound (obsolete)</title>
+      <title xml:lang="es">Libra irlandesa</title>
+      <title xml:lang="fr">Livre irlandaise (obsolète)</title>
+      <title xml:lang="nl">Ierse pond (verouderd)</title>
+      <title xml:lang="ru">Ирландский фунт (устар.)</title>
+      <title xml:lang="sv">Irländskt pund (obsolet)</title>
+      <title xml:lang="zh_CN">爱尔兰镑(过时)</title>
+      <names>a-cr:IEP</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/0.787564</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Luxembourg Franc (obsolete)</title>
+      <title xml:lang="fr">Franc luxembourgeois (obsolète)</title>
+      <title xml:lang="nl">Luxemburgse frank (verouderd)</title>
+      <title xml:lang="ru">Люксембургский франк (устар.)</title>
+      <title xml:lang="sv">Luxemburgfranc (obsolet)</title>
+      <title xml:lang="zh_CN">卢森堡法郎(过时)</title>
+      <names>a-cr:LUF</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/40.3399</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Austrian Schilling (obsolete)</title>
+      <title xml:lang="es">Chelín austriaco (obsoleto)</title>
+      <title xml:lang="fr">Shilling autrichien (obsolète)</title>
+      <title xml:lang="nl">Oostenrijkse schilling (verouderd)</title>
+      <title xml:lang="ru">Австрийский шиллинг (устар.)</title>
+      <title xml:lang="sv">Österrikisk schilling (obsolet)</title>
+      <title xml:lang="zh_CN">奥地利先令(过时)</title>
+      <names>a-cr:ATS</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/13.7603</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Finnish Markka (obsolete)</title>
+      <title xml:lang="es">Marco finlandés (obsoleto)</title>
+      <title xml:lang="fr">Markka finnois (obsolète)</title>
+      <title xml:lang="nl">Finse mark (verouderd)</title>
+      <title xml:lang="ru">Финляндская марка (устар.)</title>
+      <title xml:lang="sv">Finsk mark (obsolet)</title>
+      <title xml:lang="zh_CN">芬兰马克(过时)</title>
+      <names>a-cr:FIM</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/5.94573</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Slovenian Tolar (obsolete)</title>
+      <title xml:lang="es">Tólar esloveno</title>
+      <title xml:lang="fr">Tolar slovène (obsolète)</title>
+      <title xml:lang="nl">Sloveense tolar (verouderd)</title>
+      <title xml:lang="ru">Словенский толар (устар.)</title>
+      <title xml:lang="sv">Slovensk tolar (obsolet)</title>
+      <title xml:lang="zh_CN">斯洛文尼亚托拉尔(过时)</title>
+      <names>a-cr:SIT</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/239.640</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Cypriot Pound (obsolete)</title>
+      <title xml:lang="es">Libra chipriota (obsoleta)</title>
+      <title xml:lang="fr">Livre chypriote (obsolète)</title>
+      <title xml:lang="nl">Cypriotische pond (verouderd)</title>
+      <title xml:lang="ru">Кипрский фунт (устар.)</title>
+      <title xml:lang="sv">Cypriotiskt pund (obsolet)</title>
+      <title xml:lang="zh_CN">塞浦路斯镑(过时)</title>
+      <names>a-cr:CYP</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/0.585274</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Estonian Kroon (obsolete)</title>
+      <title xml:lang="es">Corona estonia (obsoleta)</title>
+      <title xml:lang="fr">Kroon estonienne (obsolète)</title>
+      <title xml:lang="nl">Estlandse kroon (verouderd)</title>
+      <title xml:lang="ru">Эстонская крона (устар.)</title>
+      <title xml:lang="sv">Estonisk kroon (obsolet)</title>
+      <title xml:lang="zh_CN">爱沙尼亚克鲁恩(过时)</title>
+      <names>a-cr:EEK</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/15.6466</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Slovak Koruna (obsolete)</title>
+      <title xml:lang="es">Corona eslovaca (obsoleta)</title>
+      <title xml:lang="fr">Couronne slovaque (obsolète)</title>
+      <title xml:lang="nl">Slowaakse kroon (verouderd)</title>
+      <title xml:lang="ru">Словацкая крона (устар.)</title>
+      <title xml:lang="sv">Slovakisk koruna (obsolet)</title>
+      <title xml:lang="zh_CN">斯洛伐克克朗(过时)</title>
+      <names>a-cr:SKK</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/30.1260</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Maltese Lira (obsolete)</title>
+      <title xml:lang="es">Lira maltesa (obsoleta)</title>
+      <title xml:lang="fr">Lire maltaise (obsolète)</title>
+      <title xml:lang="nl">Maltese lira (verouderd)</title>
+      <title xml:lang="ru">Мальтийская лира (устар.)</title>
+      <title xml:lang="sv">Maltesisk lira (obsolet)</title>
+      <title xml:lang="zh_CN">马耳他里拉(过时)</title>
+      <names>a-cr:MTL</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/0.429300</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Latvian Lats (obsolete)</title>
+      <title xml:lang="es">Lats letón (obtoleto)</title>
+      <title xml:lang="fr">Lats letton (obsolète)</title>
+      <title xml:lang="nl">Letlandse lat (verouderd)</title>
+      <title xml:lang="ru">Латвийский лат (устар.)</title>
+      <title xml:lang="sv">Lettiska lats (obsolet)</title>
+      <title xml:lang="zh_CN">拉脱维亚拉兹(过时)</title>
+      <names>a-cr:LVL</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/0.702800</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <hidden>true</hidden>
+      <title>Lithuanian Litas (obsolete)</title>
+      <title xml:lang="es">Litas lituana (obsoleta)</title>
+      <title xml:lang="fr">Litas lituanien (obsolète)</title>
+      <title xml:lang="nl">Litouwse litas (verouderd)</title>
+      <title xml:lang="ru">Литовский лит (устар.)</title>
+      <title xml:lang="sv">Litauisk litas (obsolet)</title>
+      <title xml:lang="zh_CN">立陶宛立特(过时)</title>
+      <names>a-cr:LTL</names>
+      <base>
+        <unit>EUR</unit>
+        <relation>1/3.45280</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+</QALCULATE>
